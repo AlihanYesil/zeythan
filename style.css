@@ -12,11 +12,11 @@ body {
   overflow-x: hidden;
 }
 
-.bg-darker {
+.zeythan-bg-darker {
   background-color: #0d1117 !important;
 }
 
-.navbar-dark {
+.zeythan-navbar-dark {
   background-color: #161b22 !important;
 }
 
@@ -26,13 +26,13 @@ body {
   justify-content: center;
 }
 
-.navbar-dark .container {
+.zeythan-navbar-dark .container {
   display: flex;
   justify-content: center;
 }
 
 /* Navbar Logo */
-.navbar-logo {
+.zeythan-navbar-logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -42,7 +42,7 @@ body {
 }
 
 /* Video Wrapper */
-.video-wrapper {
+.zeythan-video-wrapper {
   width: 512px;
   height: 512px;
   margin-left: auto;
@@ -52,14 +52,14 @@ body {
   box-shadow: 0 8px 32px rgba(88, 166, 255, 0.3);
 }
 
-.hero-video {
+.zeythan-hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.hero-description {
+.zeythan-hero-description {
   font-size: 1.1rem;
   font-weight: 400;
   color: #8b949e;
@@ -68,7 +68,7 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
+.zeythan-hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,7 +78,7 @@ body {
   overflow: hidden;
 }
 
-.hero-section::before {
+.zeythan-hero-section::before {
   content: '';
   position: absolute;
   width: 300px;
@@ -94,7 +94,7 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
-.hero-section::after {
+.zeythan-hero-section::after {
   content: '';
   position: absolute;
   width: 200px;
@@ -120,13 +120,13 @@ body {
   }
 }
 
-.hero-section .container {
+.zeythan-hero-section .container {
   position: relative;
   z-index: 2;
 }
 
 /* Buttons */
-.btn-discord {
+.zeythan-btn-discord {
   background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
   border: none;
   color: white;
@@ -137,18 +137,18 @@ body {
   box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
 }
 
-.btn-discord:hover {
+.zeythan-btn-discord:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(88, 101, 242, 0.6);
   color: white;
   background: linear-gradient(135deg, #6d77ff 0%, #5865f2 100%);
 }
 
-.btn-discord:active {
+.zeythan-btn-discord:active {
   transform: translateY(-1px);
 }
 
-.btn-cs2 {
+.zeythan-btn-cs2 {
   background: linear-gradient(135deg, #ff6a00 0%, #cc5500 100%);
   border: none;
   color: white;
@@ -159,43 +159,43 @@ body {
   box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);
 }
 
-.btn-cs2:hover {
+.zeythan-btn-cs2:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 106, 0, 0.6);
   color: white;
   background: linear-gradient(135deg, #ff8533 0%, #ff6a00 100%);
 }
 
-.btn-cs2:active {
+.zeythan-btn-cs2:active {
   transform: translateY(-1px);
 }
 
 /* Modal */
-.modal-content {
+.zeythan-modal-content {
   background-color: #161b22 !important;
   border: 1px solid #30363d !important;
 }
 
-.modal-header,
-.modal-footer {
+.zeythan-modal-header,
+.zeythan-modal-footer {
   border-color: #30363d !important;
 }
 
-.form-control {
+.zeythan-form-control {
   background-color: #0d1117 !important;
   border-color: #30363d !important;
   color: #c9d1d9 !important;
   transition: all 0.3s ease;
 }
 
-.form-control:focus {
+.zeythan-form-control:focus {
   background-color: #161b22 !important;
   border-color: #58a6ff !important;
   box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.25);
   color: #c9d1d9 !important;
 }
 
-.form-label {
+.zeythan-form-label {
   color: #8b949e !important;
   font-weight: 500;
   font-size: 0.9rem;
@@ -214,13 +214,13 @@ body {
 }
 
 /* Toast */
-.toast {
+.zeythan-toast {
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.alert-info {
+.zeythan-alert-info {
   background-color: #0550ae !important;
   border-color: #58a6ff !important;
 }
