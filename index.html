@@ -4,8 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZEYTHAN TOPLULUK SUNUCUSU</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='60' font-size='90' text-anchor='middle' dominant-baseline='middle'>🎮</text></svg>">
+    <meta name="description"
+        content="ZEYTHAN - Türkiye'nin yükselen oyun topluluğu. Rekabetçi CS2 sunucuları, aktif Discord topluluğu ve adil oyun anlayışı. Bize katıl!">
+    <meta name="keywords"
+        content="ZEYTHAN, CS2, Counter-Strike 2, Discord sunucusu, oyun topluluğu, Türkiye, gaming, multiplayer">
+    <meta name="author" content="ZEYTHAN Gaming Community">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ZEYTHAN - Gaming Topluluğu">
+    <meta property="og:description"
+        content="Rekabetçi CS2 sunucuları ve aktif Discord topluluğu ile Türkiye'nin yükselen oyun platformu.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZEYTHAN - Gaming Topluluğu">
+    <meta name="twitter:description"
+        content="Rekabetçi CS2 sunucuları ve aktif Discord topluluğu ile Türkiye'nin yükselen oyun platformu.">
+    <meta name="theme-color" content="#0d1117">
+    <title>ZEYTHAN - CS2 Sunucusu ve Gaming Topluluğu | Discord</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='60' font-size='90' text-anchor='middle' dominant-baseline='middle'>🎮</text></svg>">
+    <link rel="canonical" href="https://zeythan.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -17,73 +35,63 @@
         }
 
         body {
-            background-color: #0d1117;
+            background: radial-gradient(140% 120% at 50% 0%, #1b2330 0%, #0d1117 55%, #080b12 100%);
             color: #c9d1d9;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
             overflow-x: hidden;
+            overflow-y: auto;
+            min-height: 100vh;
+            position: relative;
+            transition: padding-left 0.3s ease;
         }
 
         .zeythan-bg-darker {
             background-color: #0d1117 !important;
         }
 
-        .zeythan-navbar-dark {
-            background-color: #161b22 !important;
-        }
-
-        .zeythan-navbar-brand {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .zeythan-navbar-dark .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .zeythan-navbar-logo {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 12px;
-            object-fit: cover;
-            border: 2px solid #58a6ff;
-        }
-
         .zeythan-video-wrapper {
-            width: 512px;
-            height: 512px;
+            width: 420px;
+            height: 420px;
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 8px 32px rgba(88, 166, 255, 0.3);
+            box-shadow: 0 10px 36px rgba(88, 166, 255, 0.28);
+            margin-bottom: 0.3rem;
+            position: relative;
+            /* lift the wrapper a bit and reduce black area */
+            margin-top: -20px;
+            background-color: #0d1117;
+            border: 3px solid rgba(88, 166, 255, 0.25);
         }
 
-        .zeythan-hero-video {
-            width: 100%;
-            height: 100%;
+        /* center the video absolutely inside the circular wrapper and slightly oversize
+           so any black edges are cropped and the visual balance improves */
+        .zeythan-video-wrapper video {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 138%;
+            height: 138%;
             object-fit: cover;
+            transform: translate(-50%, -50%);
             display: block;
-        }
-
-        .zeythan-hero-description {
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #8b949e;
-            margin-bottom: 3rem !important;
-            line-height: 1.6;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
         }
 
         .zeythan-hero-section {
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            /* reduce the overall black area height so content sits higher */
+            min-height: calc(100vh - 120px);
             background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
             position: relative;
             overflow: hidden;
+            margin-top: 0;
+            padding: 120px 20px 140px;
         }
 
         .zeythan-hero-section::before {
@@ -122,53 +130,185 @@
             }
         }
 
-        .zeythan-hero-section .container {
+        .zeythan-hero-section>div {
             position: relative;
             z-index: 2;
         }
 
-        .zeythan-btn-discord {
-            background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
-            border: none;
-            color: white;
-            font-weight: 600;
-            padding: 12px 32px;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+        main {
+            flex: 1;
+            position: relative;
         }
 
-        .zeythan-btn-discord:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(88, 101, 242, 0.6);
-            color: white;
-            background: linear-gradient(135deg, #6d77ff 0%, #5865f2 100%);
+        .zeythan-sidebar-toggle {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: 1px solid #2d333b;
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.18) 0%, rgba(88, 166, 255, 0.05) 100%);
+            color: #f0f6fc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1200;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .zeythan-btn-discord:active {
+        .zeythan-sidebar-toggle:hover {
             transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(56, 139, 253, 0.35);
         }
 
-        .zeythan-btn-cs2 {
-            background: linear-gradient(135deg, #ff6a00 0%, #cc5500 100%);
-            border: none;
-            color: white;
+        body.sidebar-open .zeythan-sidebar-toggle {
+            box-shadow: 0 8px 22px rgba(56, 139, 253, 0.45);
+        }
+
+        .zeythan-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 280px;
+            background: rgba(10, 14, 20, 0.96);
+            backdrop-filter: blur(14px);
+            border-right: 1px solid rgba(88, 166, 255, 0.18);
+            transform: translateX(-105%);
+            transition: transform 0.3s ease;
+            z-index: 1190;
+            display: flex;
+            flex-direction: column;
+            padding: 28px 24px;
+            gap: 24px;
+        }
+
+        body.sidebar-open .zeythan-sidebar {
+            transform: translateX(0);
+        }
+
+        .zeythan-sidebar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .zeythan-sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             font-weight: 600;
-            padding: 12px 32px;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);
+            color: #f0f6fc;
+            font-size: 1rem;
         }
 
-        .zeythan-btn-cs2:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 106, 0, 0.6);
-            color: white;
-            background: linear-gradient(135deg, #ff8533 0%, #ff6a00 100%);
+        .zeythan-sidebar-brand img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid rgba(88, 166, 255, 0.5);
+            object-fit: cover;
         }
 
-        .zeythan-btn-cs2:active {
-            transform: translateY(-1px);
+        .zeythan-sidebar-close {
+            border: none;
+            background: rgba(48, 54, 61, 0.55);
+            color: #f0f6fc;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .zeythan-sidebar-close:hover {
+            opacity: 0.9;
+            transform: rotate(6deg);
+        }
+
+        .zeythan-sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .zeythan-sidebar-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .zeythan-sidebar-title {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            color: #8b949e;
+        }
+
+        .zeythan-sidebar-link {
+            color: #f0f6fc;
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: rgba(22, 27, 34, 0.6);
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .zeythan-sidebar-link i {
+            color: rgba(88, 166, 255, 0.8);
+        }
+
+        .zeythan-sidebar-link:hover {
+            background: rgba(88, 166, 255, 0.12);
+            border-color: rgba(88, 166, 255, 0.35);
+            transform: translateX(2px);
+            color: #f0f6fc;
+        }
+
+        .zeythan-sidebar-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 1180;
+        }
+
+        body.sidebar-open .zeythan-sidebar-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        body.sidebar-open {
+            overflow: hidden;
+        }
+
+        .zeythan-footer {
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0.98) 0%, rgba(8, 11, 18, 0.98) 100%);
+            border-top: 1px solid rgba(88, 166, 255, 0.15);
+            color: #8b949e;
+            margin-top: auto;
+        }
+
+        .zeythan-footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .zeythan-footer a:hover {
+            text-decoration: underline;
         }
 
         .zeythan-modal-content {
@@ -224,23 +364,84 @@
             border-color: #58a6ff !important;
         }
 
+        @media (max-width: 992px) {
+            .zeythan-video-wrapper {
+                width: 320px;
+                height: 320px;
+                margin-top: -12px;
+            }
+
+            .zeythan-hero-section {
+                padding: 100px 16px 110px;
+                min-height: calc(100vh - 100px);
+            }
+
+            .zeythan-sidebar {
+                width: min(80vw, 320px);
+            }
+        }
+
         @media (max-width: 768px) {
-            .display-3 {
-                font-size: 2rem;
+            .zeythan-video-wrapper {
+                width: 260px;
+                height: 260px;
+                margin-top: -10px;
             }
 
-            .lead {
-                font-size: 1rem;
+            .zeythan-hero-section {
+                padding: 90px 12px 100px;
+                min-height: calc(100vh - 90px);
             }
 
-            .btn-lg {
-                padding: 10px 24px !important;
-                font-size: 0.95rem !important;
+            .zeythan-hero-section::before {
+                width: 150px;
+                height: 150px;
+                top: 5%;
+                right: 5%;
             }
 
-            .gap-4 {
-                gap: 1rem !important;
+            .zeythan-hero-section::after {
+                width: 100px;
+                height: 100px;
+                bottom: 5%;
+                left: 5%;
             }
+
+            .zeythan-sidebar-toggle {
+                top: 16px;
+                left: 16px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .zeythan-video-wrapper {
+                width: 230px;
+                height: 230px;
+                margin-bottom: 0.3rem;
+                margin-top: -6px;
+            }
+
+            .zeythan-hero-section {
+                padding: 70px 12px 80px;
+                margin-top: 0;
+            }
+
+            .zeythan-hero-section::before {
+                width: 100px;
+                height: 100px;
+                top: 2%;
+                right: 2%;
+            }
+
+            .zeythan-hero-section::after {
+                width: 80px;
+                height: 80px;
+                bottom: 2%;
+                left: 2%;
+            }
+
         }
 
         ::-webkit-scrollbar {
@@ -263,48 +464,101 @@
 </head>
 
 <body class="zeythan-bg-darker">
-    <!-- Navbar -->
-    <nav class="navbar zeythan-navbar-dark zeythan-bg-darker navbar-expand-lg">
-        <div class="container ">
-            <span class="navbar-brand zeythan-navbar-brand fw-bold text-white">
-                <img src="./zeythan.png" alt="ZEYTHAN" class="zeythan-navbar-logo">
-                ZEYTHAN Discord Sohbet ve Oyuncu Topluluğu
-            </span>
+    <button class="zeythan-sidebar-toggle" type="button" aria-label="Menüyü aç">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <aside class="zeythan-sidebar" aria-hidden="true">
+        <div class="zeythan-sidebar-header">
+            <div class="zeythan-sidebar-brand">
+                <img src="./zeythan.png" alt="ZEYTHAN Logosu">
+                <span>ZEYTHAN Topluluğu</span>
+            </div>
+            <button class="zeythan-sidebar-close" type="button" aria-label="Menüyü kapat">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
-    </nav>
+
+        <nav class="zeythan-sidebar-nav" aria-label="Ana menü">
+            <div class="zeythan-sidebar-section">
+                <span class="zeythan-sidebar-title">Sayfalar</span>
+                <a class="zeythan-sidebar-link" href="#" data-close-on-click="true">
+                    Anasayfa
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a class="zeythan-sidebar-link" href="https://discord.gg/4BuHesqQ23" target="_blank" rel="noopener"
+                    data-close-on-click="true">
+                    Discord Sunucusu
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a class="zeythan-sidebar-link" href="#" data-bs-toggle="modal" data-bs-target="#cs2Modal"
+                    data-close-on-click="true">
+                    CS2 Sunucumuz
+                    <i class="fab fa-steam"></i>
+                </a>
+            </div>
+
+            <div class="zeythan-sidebar-section">
+                <span class="zeythan-sidebar-title">Yayıncılarımız</span>
+                <a class="zeythan-sidebar-link" href="https://www.twitch.tv" target="_blank" rel="noopener"
+                    data-close-on-click="true">
+                    Twitch Ekibi
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a class="zeythan-sidebar-link" href="https://www.youtube.com" target="_blank" rel="noopener"
+                    data-close-on-click="true">
+                    YouTube Yayınları
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <div class="zeythan-sidebar-overlay"></div>
 
     <!-- Main Container -->
-    <div class="zeythan-hero-section">
-        <div class="container h-100 d-flex align-items-center justify-content-center">
-            <div class="text-center">
-                <!-- Video Section -->
-                <div class="zeythan-video-wrapper mb-4">
-                    <video autoplay muted loop playsinline class="zeythan-hero-video">
-                        <source src="./zeythan.mp4" type="video/mp4">
-                    </video>
-                </div>
+    <main>
+        <div class="zeythan-hero-section">
+            <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <!-- Video Section -->
+                    <div class="zeythan-video-wrapper mb-4">
+                        <video class="zeythan-hero-video" autoplay muted loop playsinline webkit-playsinline>
+                            <source src="./zeythan.mp4" type="video/mp4">
+                            <source src="./zeythan.webm" type="video/webm">
+                            <source src="./zeythan.mov" type="video/quicktime">
+                        </video>
+                    </div>
 
-                <h1 class="display-3 fw-bold text-white mb-2">ZEYTHAN</h1>
-                <p class="lead text-white mb-5">Oyuncu & Topluluğu</p>
-                <p class="zeythan-hero-description text-white mb-5">Rekabetçi CS2 sunucuları, Aktif Discord topluluğu ve
-                    adil
-                    oyun anlayışıyla<br>Türkiye'nin yükselen oyun topluluğu.</p>
+                    <h1 class="display-3 fw-bold text-white mb-2">ZEYTHAN - CS2 Gaming Topluluğu</h1>
+                    <p class="lead text-white mb-3" style="font-size: 1.75rem;">Oyuncu & Topluluğu</p>
+                    <p class="text-secondary mb-4" style="font-size: 0.95rem; line-height: 1.5;">Rekabetçi CS2
+                        sunucuları,
+                        Aktif Discord topluluğu ve adil oyun anlayışıyla Türkiye'nin yükselen oyun topluluğu.
+                        Counter-Strike
+                        2'de bize katıl!</p>
 
-                <!-- Buttons -->
-                <div class="d-flex gap-4 justify-content-center flex-wrap">
-                    <!-- Discord Button -->
-                    <a href="https://discord.gg/4BuHesqQ23" target="_blank" class="btn btn-lg zeythan-btn-discord">
-                        <i class="fab fa-discord"></i> Discord Sunucusu
-                    </a>
+                    <!-- Buttons -->
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <!-- Discord Button -->
+                        <a href="https://discord.gg/4BuHesqQ23" target="_blank" class="btn btn-lg fw-semibold px-4"
+                            style="background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%); color: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);">
+                            <i class="fab fa-discord"></i> Discord Sunucusu
+                        </a>
 
-                    <!-- CS2 Button with Modal -->
-                    <button class="btn btn-lg zeythan-btn-cs2" data-bs-toggle="modal" data-bs-target="#cs2Modal">
-                        <i class="fab fa-steam"></i> CS2 Bilgisi
-                    </button>
+                        <!-- CS2 Button with Modal -->
+                        <button class="btn btn-lg fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#cs2Modal"
+                            style="background: linear-gradient(135deg, #ff6a00 0%, #cc5500 100%); color: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);">
+                            <i class="fab fa-steam"></i> CS2 Bilgisi
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </main>
+
+    <footer class="zeythan-footer text-center py-4">
+        <small>© <span id="currentYear"></span> ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi</small>
+    </footer>
 
     <!-- CS2 Modal -->
     <div class="modal fade" id="cs2Modal" tabindex="-1">
@@ -356,6 +610,61 @@
 
 
     <script>
+        // iOS video autoplay fix
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.zeythan-hero-video');
+            if (video) {
+                video.play().catch(function (error) {
+                    console.log('Autoplay başlatılamadı, kullanıcı etkileşimi gerekebilir');
+                });
+            }
+
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            setupSidebar();
+        });
+
+        function setupSidebar() {
+            const body = document.body;
+            const toggleButton = document.querySelector('.zeythan-sidebar-toggle');
+            const closeButton = document.querySelector('.zeythan-sidebar-close');
+            const overlay = document.querySelector('.zeythan-sidebar-overlay');
+            const closableLinks = document.querySelectorAll('.zeythan-sidebar-link[data-close-on-click="true"]');
+
+            const openSidebar = () => {
+                body.classList.add('sidebar-open');
+                document.querySelector('.zeythan-sidebar').setAttribute('aria-hidden', 'false');
+            };
+
+            const closeSidebar = () => {
+                body.classList.remove('sidebar-open');
+                document.querySelector('.zeythan-sidebar').setAttribute('aria-hidden', 'true');
+            };
+
+            toggleButton.addEventListener('click', openSidebar);
+            closeButton.addEventListener('click', closeSidebar);
+            overlay.addEventListener('click', closeSidebar);
+
+            closableLinks.forEach(link => {
+                link.addEventListener('click', closeSidebar);
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeSidebar();
+                }
+            });
+        }
+
+        // Mobil uyumluluğu için viewport kontrol
+        function handleMobileViewport() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                document.body.style.touchAction = 'manipulation';
+            }
+        }
+
+        handleMobileViewport();
+
         function copyCS2Info() {
             const text = document.getElementById('cs2ServerInfo').value;
             navigator.clipboard.writeText(text).then(() => {
