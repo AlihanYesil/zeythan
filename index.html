@@ -39,7 +39,7 @@
             color: #c9d1d9;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
             overflow-x: hidden;
-            overflow-y: auto;
+            overflow-y: hidden;
             min-height: 100vh;
             position: relative;
             transition: padding-left 0.3s ease;
@@ -50,8 +50,8 @@
         }
 
         .zeythan-video-wrapper {
-            width: 420px;
-            height: 420px;
+            width: 360px;
+            height: 360px;
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
@@ -85,13 +85,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* reduce the overall black area height so content sits higher */
-            min-height: calc(100vh - 120px);
+            min-height: calc(100vh - 90px);
             background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
             position: relative;
             overflow: hidden;
             margin-top: 0;
-            padding: 120px 20px 140px;
+            padding: 80px 20px 90px;
         }
 
         .zeythan-hero-section::before {
@@ -135,6 +134,46 @@
             z-index: 2;
         }
 
+        .zeythan-hero-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.25rem;
+            font-size: clamp(2.8rem, 5vw, 3.75rem);
+            font-weight: 700;
+            background: linear-gradient(110deg, rgba(88, 166, 255, 0.95) 0%, rgba(56, 139, 253, 0.85) 22%, rgba(255, 128, 0, 0.88) 58%, rgba(255, 200, 92, 0.92) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .zeythan-hero-title .title-primary {
+            color: inherit;
+            letter-spacing: 0.08em;
+        }
+
+        .zeythan-hero-title .title-divider {
+            width: 72px;
+            height: 3px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(88, 166, 255, 0.9) 0%, rgba(255, 153, 0, 0.7) 100%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .zeythan-hero-section:hover .zeythan-hero-title .title-divider {
+            transform: scaleX(1.08);
+            opacity: 0.9;
+        }
+
+        .zeythan-hero-title .title-secondary {
+            font-size: clamp(1.1rem, 2.6vw, 1.6rem);
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            color: inherit;
+        }
+
         main {
             flex: 1;
             position: relative;
@@ -155,7 +194,8 @@
             justify-content: center;
             z-index: 1200;
             cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+            opacity: 1;
         }
 
         .zeythan-sidebar-toggle:hover {
@@ -165,6 +205,8 @@
 
         body.sidebar-open .zeythan-sidebar-toggle {
             box-shadow: 0 8px 22px rgba(56, 139, 253, 0.45);
+            opacity: 0;
+            pointer-events: none;
         }
 
         .zeythan-sidebar {
@@ -366,14 +408,14 @@
 
         @media (max-width: 992px) {
             .zeythan-video-wrapper {
-                width: 320px;
-                height: 320px;
-                margin-top: -12px;
+                width: 300px;
+                height: 300px;
+                margin-top: -8px;
             }
 
             .zeythan-hero-section {
-                padding: 100px 16px 110px;
-                min-height: calc(100vh - 100px);
+                padding: 70px 16px 80px;
+                min-height: calc(100vh - 80px);
             }
 
             .zeythan-sidebar {
@@ -383,14 +425,14 @@
 
         @media (max-width: 768px) {
             .zeythan-video-wrapper {
-                width: 260px;
-                height: 260px;
-                margin-top: -10px;
+                width: 240px;
+                height: 240px;
+                margin-top: -6px;
             }
 
             .zeythan-hero-section {
-                padding: 90px 12px 100px;
-                min-height: calc(100vh - 90px);
+                padding: 64px 12px 72px;
+                min-height: calc(100vh - 70px);
             }
 
             .zeythan-hero-section::before {
@@ -413,18 +455,33 @@
                 width: 42px;
                 height: 42px;
             }
+
+            .zeythan-hero-title {
+                flex-direction: column;
+                gap: 0.65rem;
+                letter-spacing: 0.04em;
+            }
+
+            .zeythan-hero-title .title-divider {
+                width: 120px;
+                height: 2px;
+            }
+
+            .zeythan-hero-title .title-secondary {
+                letter-spacing: 0.18em;
+            }
         }
 
         @media (max-width: 480px) {
             .zeythan-video-wrapper {
-                width: 230px;
-                height: 230px;
+                width: 210px;
+                height: 210px;
                 margin-bottom: 0.3rem;
-                margin-top: -6px;
+                margin-top: -4px;
             }
 
             .zeythan-hero-section {
-                padding: 70px 12px 80px;
+                padding: 56px 12px 60px;
                 margin-top: 0;
             }
 
@@ -486,6 +543,10 @@
                     Anasayfa
                     <i class="fas fa-arrow-right"></i>
                 </a>
+                <a class="zeythan-sidebar-link" href="./yayincilarimiz.html" data-close-on-click="true">
+                    Yayıncılarımız
+                    <i class="fas fa-star"></i>
+                </a>
                 <a class="zeythan-sidebar-link" href="https://discord.gg/4BuHesqQ23" target="_blank" rel="noopener"
                     data-close-on-click="true">
                     Discord Sunucusu
@@ -529,8 +590,11 @@
                             <source src="./zeythan.mov" type="video/quicktime">
                         </video>
                     </div>
-
-                    <h1 class="display-3 fw-bold text-white mb-2">ZEYTHAN - CS2 Gaming Topluluğu</h1>
+                    <h1 class="zeythan-hero-title mb-3">
+                        <span class="title-primary">ZEYTHAN</span>
+                        <span class="title-divider" aria-hidden="true"></span>
+                        <span class="title-secondary">Gaming Topluluğu</span>
+                    </h1>
                     <p class="lead text-white mb-3" style="font-size: 1.75rem;">Oyuncu & Topluluğu</p>
                     <p class="text-secondary mb-4" style="font-size: 0.95rem; line-height: 1.5;">Rekabetçi CS2
                         sunucuları,
