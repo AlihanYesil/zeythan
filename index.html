@@ -81,6 +81,25 @@
             -webkit-touch-callout: none;
         }
 
+        .zeythan-video-wrapper .zeythan-hero-fallback {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 138%;
+            height: 138%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            display: block;
+            border-radius: 50%;
+            pointer-events: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .zeythan-video-wrapper .zeythan-hero-fallback[hidden] {
+            display: none;
+        }
+
         .zeythan-hero-section {
             display: flex;
             align-items: center;
@@ -588,11 +607,14 @@
                 <div class="text-center">
                     <!-- Video Section -->
                     <div class="zeythan-video-wrapper mb-4">
-                        <video class="zeythan-hero-video" autoplay muted loop playsinline webkit-playsinline>
+                        <video class="zeythan-hero-video" autoplay muted loop playsinline webkit-playsinline
+                            preload="auto" poster="./zeythan.png">
                             <source src="./zeythan.mp4" type="video/mp4">
                             <source src="./zeythan.webm" type="video/webm">
                             <source src="./zeythan.mov" type="video/quicktime">
                         </video>
+                        <img class="zeythan-hero-fallback" src="./zeythan.png" alt="ZEYTHAN hero görseli" loading="lazy"
+                            hidden>
                     </div>
                     <h1 class="zeythan-hero-title mb-3">
                         <span class="title-primary">ZEYTHAN</span>
@@ -682,9 +704,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const video = document.querySelector('.zeythan-hero-video');
             if (video) {
-                video.play().catch(function (error) {
-                    console.log('Autoplay başlatılamadı, kullanıcı etkileşimi gerekebilir');
-                });
+                initializeHeroVideo(video);
             }
 
             document.getElementById('currentYear').textContent = new Date().getFullYear();
@@ -721,6 +741,54 @@
                     closeSidebar();
                 }
             });
+        }
+
+        function initializeHeroVideo(video) {
+            const fallbackImage = document.querySelector('.zeythan-hero-fallback');
+
+            const showFallback = () => {
+                if (!video.hidden) {
+                    video.hidden = true;
+                }
+                if (fallbackImage) {
+                    fallbackImage.hidden = false;
+                }
+            };
+
+            const hideFallback = () => {
+                if (video.hidden) {
+                    video.hidden = false;
+                }
+                if (fallbackImage) {
+                    fallbackImage.hidden = true;
+                }
+            };
+
+            const tryPlay = () => {
+                const playPromise = video.play();
+                if (playPromise && typeof playPromise.catch === 'function') {
+                    playPromise.catch(() => {
+                        console.log('Autoplay başlatılamadı, kullanıcı etkileşimi gerekebilir');
+                        showFallback();
+                    });
+                }
+            };
+
+            if (/iPad|iPhone|iPod/.test(navigator.userAgent) && video.canPlayType('video/mp4') === '') {
+                showFallback();
+                return;
+            }
+
+            video.addEventListener('error', showFallback);
+            video.addEventListener('loadeddata', hideFallback, { once: true });
+
+            tryPlay();
+
+            setTimeout(() => {
+                if (video.readyState < 2) {
+                    showFallback();
+                }
+            }, 2000);
         }
 
         // Mobil uyumluluğu için viewport kontrol
