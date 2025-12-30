@@ -60,9 +60,9 @@
             width: 46px;
             height: 46px;
             border-radius: 50%;
-            border: 1px solid #2d333b;
-            background: linear-gradient(135deg, rgba(88, 166, 255, 0.18) 0%, rgba(88, 166, 255, 0.05) 100%);
-            color: #f0f6fc;
+            border: 2px solid rgba(255, 153, 0, 0.75);
+            background: linear-gradient(145deg, rgba(18, 24, 33, 0.95) 0%, rgba(36, 46, 63, 0.75) 100%);
+            color: #f8fafc;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,11 +70,12 @@
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
             opacity: 1;
+            box-shadow: 0 0 0 4px rgba(255, 153, 0, 0.28), 0 14px 26px rgba(56, 139, 253, 0.32);
         }
 
         .zeythan-sidebar-toggle:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 8px 18px rgba(56, 139, 253, 0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 0 0 5px rgba(255, 153, 0, 0.42), 0 18px 32px rgba(56, 139, 253, 0.4);
         }
 
         body.sidebar-open .zeythan-sidebar-toggle {
