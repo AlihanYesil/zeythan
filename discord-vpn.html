@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SplitWire Turkey ile Discord kurulumu: Windows için adım adım video, 1.5.7 kurulum notları, WireSock açıklaması ve güvenli indirme kaynakları.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#090d14">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ZEYTHAN">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://zeythan.com/discord-vpn">
+  <meta property="og:title" content="SplitWire Turkey ile Discord kurulumu | ZEYTHAN">
+  <meta property="og:description" content="SplitWire Turkey 1.5.7 standart kurulum videosu, adımlar ve güvenlik notları.">
+  <meta property="og:image" content="https://zeythan.com/discord-vpn-poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SplitWire Turkey ile Discord kurulumu | ZEYTHAN">
+  <meta name="twitter:description" content="Windows'ta SplitWire Turkey ile Discord kurulumu için video ve adım adım rehber.">
+  <link rel="canonical" href="https://zeythan.com/discord-vpn">
+  <title>SplitWire Turkey ile Discord kurulumu | ZEYTHAN</title>
+  <link rel="icon" href="./zeythan.png">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "SplitWire Turkey ile Discord kurulumu",
+        "description": "SplitWire Turkey 1.5.7 için video eşliğinde standart Windows kurulum rehberi.",
+        "inLanguage": "tr-TR",
+        "dateModified": "2026-09-25",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://zeythan.com/discord-vpn" },
+        "image": "https://zeythan.com/discord-vpn-poster.jpg",
+        "author": { "@type": "Organization", "name": "ZEYTHAN" },
+        "publisher": { "@type": "Organization", "name": "ZEYTHAN" },
+        "citation": [
+          "https://github.com/cagritaskn/SplitWire-Turkey",
+          "https://github.com/cagritaskn/SplitWire-Turkey/releases"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://zeythan.com/" },
+          { "@type": "ListItem", "position": 2, "name": "VPN", "item": "https://zeythan.com/discord-vpn" },
+          { "@type": "ListItem", "position": 3, "name": "SplitWire", "item": "https://zeythan.com/discord-vpn" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="zeythan-bg-darker zeythan-vpn-page">
+  <button class="zeythan-sidebar-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="zeythan-site-sidebar">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+  <aside class="zeythan-sidebar" id="zeythan-site-sidebar" aria-hidden="true">
+    <div class="zeythan-sidebar-header">
+      <a class="zeythan-sidebar-brand" href="./index.html"><img src="./zeythan.png" alt="ZEYTHAN logosu" width="42" height="42"><span>ZEYTHAN Topluluğu</span></a>
+      <button class="zeythan-sidebar-close" type="button" aria-label="Menüyü kapat"><i class="fas fa-times" aria-hidden="true"></i></button>
+    </div>
+    <nav class="zeythan-sidebar-nav" aria-label="Ana menü">
+      <div class="zeythan-sidebar-section">
+        <span class="zeythan-sidebar-title">Sayfalar</span>
+        <a class="zeythan-sidebar-link" href="./index.html" data-close-on-click="true">Anasayfa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./oyunlar.html" data-close-on-click="true">Oynanılan Oyunlar <i class="fas fa-gamepad" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./yayincilarimiz.html" data-close-on-click="true">Yayıncılarımız <i class="fas fa-star" aria-hidden="true"></i></a>
+        <details class="zeythan-vpn-sidebar-menu">
+          <summary class="zeythan-sidebar-link zeythan-vpn-sidebar-toggle">VPN <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <div class="zeythan-vpn-sidebar-submenu">
+            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item active" href="./discord-vpn.html" data-close-on-click="true" aria-current="page">SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
+            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item " href="./goodbyedpi.html" data-close-on-click="true" >GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
+          </div>
+        </details>
+        <a class="zeythan-sidebar-link" href="https://discord.gg/M43GpGxcBy" target="_blank" rel="noopener noreferrer">Discord Sunucusu <i class="fab fa-discord" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+  </aside>
+  <div class="zeythan-sidebar-overlay" aria-hidden="true"></div>
+
+  <main>
+    <section class="zeythan-vpn-hero">
+      <span class="zeythan-vpn-eyebrow"><i class="fas fa-shield-halved" aria-hidden="true"></i> SPLITWIRE TURKEY · WINDOWS</span>
+      <h1>SplitWire ile Discord<br><span>kurulumu</span></h1>
+      <p>SplitWire Turkey 1.5.7 için videolu Windows kurulum rehberi. Standart kurulumun ne yaptığını öğren, adımları takip et ve dosyanın kaynağını doğrula.</p>
+      <a class="zeythan-vpn-primary-button" href="https://dosya.co/bg6l5gd6x504/SplitWire-Turkey-Setup-Windows-1.5.7.rar.html" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-download" aria-hidden="true"></i> SplitWire Turkey 1.5.7 dosyasını indir
+      </a>
+      <div class="zeythan-vpn-note zeythan-vpn-download-notice">
+        <i class="fas fa-triangle-exclamation" aria-hidden="true"></i>
+        <span>Bağlantı dosya.co üzerindeki RAR indirme sayfasına gider. Dosyanın yayıncısını ve güvenilirliğini doğrulamadan çalıştırma.</span>
+      </div>
+    </section>
+
+    <section class="zeythan-vpn-content zeythan-vpn-overview" aria-labelledby="splitwire-what-title">
+      <div class="zeythan-vpn-section-heading">
+        <span class="zeythan-vpn-eyebrow">SPLITWIRE NEDİR?</span>
+        <h2 id="splitwire-what-title">SplitWire Turkey ne işe yarar?</h2>
+      </div>
+      <article class="zeythan-vpn-panel">
+        <p>SplitWire Turkey, Windows'ta farklı DPI aşımı ve uygulamaya özel tünelleme yöntemlerini tek arayüzden kurup yönetmeye yarayan açık kaynaklı bir projedir. Hangi bağlantı yönteminin kullanılacağı seçilen kurulum türüne bağlıdır.</p>
+        <p>Bu sayfadaki 1.5.7 videosunda <strong>Standart Kurulum</strong> ve WireSock gösteriliyor; video sonundaki açıklama bu kurulumun Discord için çalıştığını belirtiyor. Bu, tüm bilgisayarı başka bir VPN sunucusuna bağlayan genel amaçlı bir VPN hizmetiyle aynı şey değildir.</p>
+        <ul>
+          <li>Kurulum türüne göre Discord bağlantısı için ilgili yöntemi yapılandırır.</li>
+          <li>Daha yeni sürümlerde farklı sekmeler, tarayıcı tünellemesi ve başka yöntemler bulunabilir; bu rehber 1.5.7 kaydını anlatır.</li>
+          <li>İndirme bağlantısı dosya.co'ya gider. Çalıştırmadan önce dosyanın yayıncısını ve kaynağını doğrula.</li>
+        </ul>
+        <div class="zeythan-vpn-source-links" aria-label="SplitWire resmi kaynakları">
+          <a href="https://github.com/cagritaskn/SplitWire-Turkey" target="_blank" rel="noopener noreferrer">SplitWire Turkey resmi GitHub projesi</a>
+          <a href="https://github.com/cagritaskn/SplitWire-Turkey/releases" target="_blank" rel="noopener noreferrer">Resmi sürümler</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="zeythan-vpn-video-wrap" aria-labelledby="video-title">
+      <div class="zeythan-vpn-video-heading">
+        <span class="zeythan-vpn-eyebrow">27 SANİYELİK EKRAN KAYDI</span>
+        <h2 id="video-title">Kurulum videosu</h2>
+      </div>
+      <video controls playsinline preload="metadata" poster="./discord-vpn-poster.jpg" aria-label="Zeythan logolu kapak görseliyle Discord kurulum videosu">
+        <source src="./discord-vpn-with-music.mp4" type="video/mp4">
+        Tarayıcın video oynatmayı desteklemiyor. <a href="./discord-vpn-with-music.mp4">Videoyu aç</a>.
+      </video>
+      <p class="zeythan-vpn-video-note">Videonun kayıt sesi kaldırıldı; yerine rehbere özel hazırlanmış hafif bir fon müziği eklendi.</p>
+    </section>
+
+    <section class="zeythan-vpn-content" id="kurulum" aria-labelledby="steps-title">
+      <div class="zeythan-vpn-section-heading">
+        <span class="zeythan-vpn-eyebrow">ADIM ADIM</span>
+        <h2 id="steps-title">Videodaki standart kurulum</h2>
+        <p>Kaydın sonunda da önerilen seçenek olarak “Standart Kurulum” gösteriliyor.</p>
+      </div>
+
+      <div class="zeythan-vpn-steps">
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">01</span>
+          <div><h3>Arşivi indir ve çıkart</h3><p>Yukarıdaki bağlantıdan SplitWire Turkey 1.5.7 RAR arşivini indir. Windows'un arşiv aracını veya güvendiğin bir arşiv programını kullanarak içeriğini yeni bir klasöre çıkart. Kurulum dosyasının adı videoda <strong>SplitWire-Turkey-Setup-Windows.exe</strong> olarak görünüyor.</p><p class="zeythan-vpn-password-note"><i class="fas fa-key" aria-hidden="true"></i> RAR şifresi: <strong>Zeythan</strong></p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">02</span>
+          <div><h3>Kurulum uygulamasını aç</h3><p>Çıkarttığın klasördeki SplitWire-Turkey uygulamasını başlat. Ekran kaydında Windows SmartScreen uyarısı için “Ek bilgi” ve “Yine de çalıştır” adımları anlatılıyor. Bu uyarıyı otomatik olarak geçme: yayıncı bilgisi doğrulanamıyorsa kurulumu durdur ve dosyanın kaynağını doğrula.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">03</span>
+          <div><h3>“Standart Kurulum”u seç</h3><p>Ana ekranda Standart Kurulum düğmesine tıkla. Onay penceresinde devam etmek istediğini seç. Videoda WireSock bileşeni yüklü olmadığında kurulumun bu bileşeni de indirdiği belirtiliyor.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">04</span>
+          <div><h3>Kurulumun bitmesini bekle</h3><p>“Kurulum başarıyla tamamlandı” mesajı geldiğinde ekrandaki yönergeyi izle. Değişikliklerin uygulanması için bilgisayarı şimdi yeniden başlatabilir ya da yeniden başlatmayı daha sonraya bırakabilirsin.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">05</span>
+          <div><h3>Yeniden başlat ve Discord'u dene</h3><p>Videoda bilgisayar yeniden başlatılıyor. Açıldıktan sonra Discord'u çalıştırıp mesaj ve ses bağlantısını kontrol et. Kaydın sonundaki not, standart kurulumun WireSock korumasını yalnızca Discord için uyguladığını söylüyor.</p></div>
+        </article>
+      </div>
+
+      <div class="zeythan-vpn-two-column">
+        <article class="zeythan-vpn-panel">
+          <span class="zeythan-vpn-panel-icon"><i class="fas fa-list-check" aria-hidden="true"></i></span>
+          <h3>Kurulum ekranındaki diğer seçenekler</h3>
+          <p>Uygulamada Alternatif Kurulum, ByeDPI ST Kurulum ve ByeDPI DLL Kurulum seçenekleri de görünüyor. Video bunları denemiyor; anlatılan işlem Standart Kurulum.</p>
+        </article>
+        <aside class="zeythan-vpn-panel zeythan-vpn-warning">
+          <span class="zeythan-vpn-panel-icon"><i class="fas fa-lock" aria-hidden="true"></i></span>
+          <h3>Windows güvenlik uyarısı</h3>
+          <p>SmartScreen, tanınmayan indirmeler hakkında uyarı verir. Uyarı çıkarsa “Yine de çalıştır”ı seçmeden önce dosyanın yayıncısını ve kaynağını doğrula.</p>
+          <a href="https://support.microsoft.com/en-us/windows/security/windows-security/app-browser-control-in-the-windows-security-app" target="_blank" rel="noopener noreferrer">Microsoft: uygulama ve tarayıcı koruması</a>
+        </aside>
+      </div>
+
+      <section class="zeythan-vpn-faq" aria-labelledby="splitwire-faq-title">
+        <h2 id="splitwire-faq-title">SplitWire hakkında sık sorulan sorular</h2>
+        <details><summary>SplitWire standart bir VPN hizmeti mi?</summary><p>SplitWire Turkey farklı DPI aşımı ve tünelleme yöntemlerini yönetir. Kullanılan yöntem kurulum seçeneğine bağlıdır; videodaki 1.5.7 standart kurulumunu genel amaçlı uzak VPN hizmeti gibi düşünme.</p></details>
+        <details><summary>Bu sayfadaki adımlar hangi sürüme ait?</summary><p>Video SplitWire Turkey 1.5.7 standart kurulumunu gösteriyor. Daha yeni sürümlerde ekranlar ve yöntemler değişebilir; en güncel bilgiler için resmi proje README'sini ve sürüm notlarını kontrol et.</p></details>
+        <details><summary>RAR arşivinin şifresi nedir?</summary><p>Bu SplitWire arşivi için videoyla birlikte verilen şifre <strong>Zeythan</strong>. Şifre, dosyanın güvenilir olduğunu tek başına doğrulamaz; arşivin kaynağını ayrıca kontrol et.</p></details>
+      </section>
+    </section>
+  </main>
+  <footer class="zeythan-footer text-center py-4"><small>© <span id="currentYear"></span> ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi</small></footer>
+  <script>    function setupZeythanSidebar() {
+      const body = document.body;
+      const sidebar = document.getElementById('zeythan-site-sidebar');
+      const toggleButton = document.querySelector('.zeythan-sidebar-toggle');
+      const closeButton = document.querySelector('.zeythan-sidebar-close');
+      const overlay = document.querySelector('.zeythan-sidebar-overlay');
+      if (!sidebar || !toggleButton || !closeButton || !overlay) return;
+      const closeSidebar = (returnFocus = false) => {
+        body.classList.remove('sidebar-open');
+        sidebar.setAttribute('aria-hidden', 'true');
+        overlay.setAttribute('aria-hidden', 'true');
+        toggleButton.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggleButton.focus();
+      };
+      toggleButton.addEventListener('click', () => {
+        body.classList.add('sidebar-open');
+        sidebar.setAttribute('aria-hidden', 'false');
+        overlay.setAttribute('aria-hidden', 'false');
+        toggleButton.setAttribute('aria-expanded', 'true');
+        closeButton.focus();
+      });
+      closeButton.addEventListener('click', () => closeSidebar(true));
+      overlay.addEventListener('click', () => closeSidebar(true));
+      sidebar.querySelectorAll('.zeythan-sidebar-link[data-close-on-click="true"]').forEach(link => link.addEventListener('click', () => closeSidebar()));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') closeSidebar(true); });
+    }
+    setupZeythanSidebar();document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

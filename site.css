@@ -1,0 +1,139 @@
+/* ZEYTHAN shared polish */
+:root { color-scheme: dark; --zeythan-bg:#090d14; --zeythan-panel:rgba(18,25,36,.92); --zeythan-line:rgba(151,170,198,.16); --zeythan-blue:#7285ff; --zeythan-orange:#ff9a3d; --zeythan-muted:#a7b0c0; --zeythan-radius:22px; }
+html { scroll-behavior:smooth; scroll-padding-top:1.5rem; }
+body { background-color:var(--zeythan-bg); color:#eef2fa; line-height:1.65; }
+::selection { color:#fff; background:rgba(114,133,255,.5); }
+a,button,input { -webkit-tap-highlight-color:transparent; }
+a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid var(--zeythan-orange); outline-offset:3px; }
+.zeythan-hero-section { background:radial-gradient(ellipse at 50% 10%,rgba(76,95,172,.19),transparent 55%),linear-gradient(145deg,#111927 0%,#090d14 72%); }
+.zeythan-hero-subtitle { color:var(--zeythan-muted); max-width:720px; }
+.zeythan-hero-actions a,.zeythan-hero-actions button { min-height:48px; }
+.zeythan-games-panel,.zeythan-streamer-card,.zeythan-games-intro-card { border-color:var(--zeythan-line)!important; box-shadow:0 18px 48px rgba(0,0,0,.2); }
+.zeythan-game-card { transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.zeythan-game-card:hover { transform:translateY(-4px); box-shadow:0 16px 32px rgba(0,0,0,.28); }
+.zeythan-game-cover img { background:#151d2a; }
+.zeythan-filter-chip,.zeythan-search-input { min-height:44px; }
+.zeythan-streamer-grid { align-items:stretch; }
+.zeythan-streamer-card { min-width:0; }
+.zeythan-streamer-name { margin:.25rem 0 .5rem; }
+.zeythan-social-button { min-height:44px; }
+.zeythan-sidebar { border-right-color:var(--zeythan-line); }
+.zeythan-sidebar-link { min-height:46px; }
+.zeythan-sidebar-toggle { border-color:rgba(255,154,61,.75); }
+.zeythan-footer { padding:1.5rem 1rem; }
+.zeythan-video-wrapper video,.zeythan-video-wrapper .zeythan-hero-fallback { border-radius:24px; }
+@media(max-width:768px) { .zeythan-hero-section{min-height:auto}.zeythan-games-panel{padding:1rem!important}.zeythan-games-grid{gap:1rem!important} }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important} }
+
+/* VPN setup guide */
+.zeythan-vpn-page { min-height:100vh; }
+.zeythan-vpn-header { width:min(100% - 2rem,1240px); margin:auto; min-height:82px; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; border-bottom:1px solid var(--zeythan-line); }
+.zeythan-vpn-brand { display:flex; align-items:center; gap:.7rem; color:#f8fafc; font-weight:800; letter-spacing:.12em; text-decoration:none; }
+.zeythan-vpn-brand img { border-radius:50%; object-fit:cover; }
+.zeythan-vpn-nav { display:flex; align-items:center; justify-content:center; gap:.4rem; flex-wrap:wrap; }
+.zeythan-vpn-nav a { padding:.55rem .8rem; border-radius:999px; color:var(--zeythan-muted); text-decoration:none; font-size:.92rem; }
+.zeythan-vpn-nav a:hover,.zeythan-vpn-nav a.active { color:#fff; background:rgba(114,133,255,.14); }
+.zeythan-vpn-discord { padding:.65rem 1rem; border-radius:999px; color:#fff; background:#5865f2; text-decoration:none; font-weight:650; white-space:nowrap; }
+.zeythan-vpn-hero { width:min(100% - 2rem,900px); margin:0 auto; padding:clamp(4rem,9vw,7rem) 0 3.5rem; text-align:center; }
+.zeythan-vpn-eyebrow { color:var(--zeythan-orange); font-size:.76rem; font-weight:750; letter-spacing:.17em; }
+.zeythan-vpn-hero h1 { margin:1.2rem 0; color:#f7f8fc; font-size:clamp(2.6rem,7vw,5rem); font-weight:850; line-height:1.04; letter-spacing:-.045em; }
+.zeythan-vpn-hero h1 span { color:#97a5ff; }
+.zeythan-vpn-hero>p { width:min(100%,620px); margin:0 auto 1.6rem; color:var(--zeythan-muted); font-size:1.08rem; }
+.zeythan-vpn-primary-button { display:inline-flex; align-items:center; justify-content:center; gap:.6rem; min-height:48px; padding:.75rem 1.2rem; border-radius:999px; color:#fff; background:linear-gradient(135deg,#6679f8,#4a5bd0); text-decoration:none; font-weight:700; box-shadow:0 10px 26px rgba(88,101,242,.25); }
+.zeythan-vpn-primary-button:hover { color:#fff; filter:brightness(1.08); transform:translateY(-1px); }
+.zeythan-vpn-note { display:flex; align-items:flex-start; justify-content:center; gap:.65rem; width:min(100%,650px); margin:2rem auto 0; padding:1rem 1.1rem; border:1px solid var(--zeythan-line); border-radius:16px; color:#bbc4d3; background:rgba(18,25,36,.68); text-align:left; font-size:.92rem; }
+.zeythan-vpn-note i { margin-top:.25rem; color:#97a5ff; }
+.zeythan-vpn-content { width:min(100% - 2rem,980px); margin:0 auto; padding:1rem 0 5rem; }
+.zeythan-vpn-section-heading { margin-bottom:1.6rem; }
+.zeythan-vpn-section-heading h2,.zeythan-vpn-cta h2 { margin:.45rem 0; color:#f8fafc; font-size:clamp(1.7rem,4vw,2.25rem); font-weight:780; letter-spacing:-.025em; }
+.zeythan-vpn-section-heading p,.zeythan-vpn-cta p { color:var(--zeythan-muted); margin:0; }
+.zeythan-vpn-steps { display:grid; gap:.8rem; }
+.zeythan-vpn-step { display:grid; grid-template-columns:56px 1fr; gap:1rem; align-items:start; padding:1.35rem 1.4rem; border:1px solid var(--zeythan-line); border-radius:18px; background:linear-gradient(145deg,rgba(21,29,42,.92),rgba(13,18,27,.94)); }
+.zeythan-vpn-step-number { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; color:#c4caff; background:rgba(114,133,255,.14); font-size:.85rem; font-weight:800; }
+.zeythan-vpn-step h3,.zeythan-vpn-panel h3 { margin:.1rem 0 .45rem; color:#f4f6fb; font-size:1.12rem; font-weight:720; }
+.zeythan-vpn-step p,.zeythan-vpn-panel p,.zeythan-vpn-panel li { margin:0; color:var(--zeythan-muted); }
+.zeythan-vpn-password-note { display:inline-flex; align-items:center; gap:.45rem; margin-top:.75rem!important; padding:.5rem .7rem; border:1px solid rgba(114,133,255,.24); border-radius:12px; color:#cbd2ff!important; background:rgba(114,133,255,.1); font-size:.9rem; }
+.zeythan-vpn-two-column { display:grid; grid-template-columns:1.15fr .85fr; gap:1rem; margin-top:1rem; }
+.zeythan-vpn-panel { padding:1.4rem; border:1px solid var(--zeythan-line); border-radius:18px; background:rgba(18,25,36,.78); }
+.zeythan-vpn-panel-icon { display:grid; place-items:center; width:42px; height:42px; margin-bottom:1rem; border-radius:13px; color:#aeb8ff; background:rgba(114,133,255,.14); }
+.zeythan-vpn-panel ul { display:grid; gap:.65rem; margin:.85rem 0 0; padding-left:1.15rem; }
+.zeythan-vpn-warning { border-color:rgba(255,154,61,.24); background:linear-gradient(145deg,rgba(47,33,23,.48),rgba(18,25,36,.78)); }
+.zeythan-vpn-warning .zeythan-vpn-panel-icon { color:#ffbd7b; background:rgba(255,154,61,.12); }
+.zeythan-vpn-warning p+p { margin-top:.8rem; }
+.zeythan-vpn-cta { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding:1.7rem; border:1px solid rgba(114,133,255,.22); border-radius:20px; background:radial-gradient(ellipse at 100% 0%,rgba(114,133,255,.13),transparent 60%),rgba(18,25,36,.78); }
+@media(max-width:760px) {
+  .zeythan-vpn-header { width:min(100% - 1.25rem,1240px); min-height:72px; flex-wrap:wrap; justify-content:space-between; gap:.35rem; padding:.65rem 0; }
+  .zeythan-vpn-nav { order:3; width:100%; justify-content:flex-start; flex-wrap:nowrap; overflow-x:auto; padding:.25rem 0; }
+  .zeythan-vpn-nav a { white-space:nowrap; }
+  .zeythan-vpn-discord { padding:.58rem .8rem; font-size:.88rem; }
+  .zeythan-vpn-two-column { grid-template-columns:1fr; }
+  .zeythan-vpn-cta { align-items:flex-start; flex-direction:column; }
+}
+@media(max-width:480px) {
+  .zeythan-vpn-step { grid-template-columns:42px 1fr; gap:.7rem; padding:1rem; }
+  .zeythan-vpn-step-number { width:38px; height:38px; border-radius:12px; }
+  .zeythan-vpn-panel { padding:1rem; }
+}
+.zeythan-vpn-video-wrap { width:min(100% - 2rem,980px); margin:0 auto 2.5rem; }
+.zeythan-vpn-video-heading { margin-bottom:.8rem; }
+.zeythan-vpn-video-heading h2 { margin:.4rem 0; color:#f8fafc; font-size:clamp(1.55rem,3.5vw,2rem); font-weight:780; }
+.zeythan-vpn-video-wrap video { display:block; width:100%; max-height:min(70vh,640px); border:1px solid var(--zeythan-line); border-radius:20px; background:#05070b; box-shadow:0 20px 54px rgba(0,0,0,.3); }
+.zeythan-vpn-video-note { margin:.75rem 0 0; color:var(--zeythan-muted); font-size:.9rem; text-align:center; }
+
+/* VPN navigation and article sections */
+.zeythan-vpn-sidebar-menu { margin:.1rem 0; }
+.zeythan-vpn-sidebar-menu>summary { width:100%; cursor:pointer; list-style:none; }
+.zeythan-vpn-sidebar-menu>summary::-webkit-details-marker { display:none; }
+.zeythan-vpn-sidebar-toggle i { transition:transform .2s ease; }
+.zeythan-vpn-sidebar-menu[open] .zeythan-vpn-sidebar-toggle i { transform:rotate(180deg); }
+.zeythan-vpn-sidebar-submenu { display:grid; gap:.35rem; margin:.4rem 0 .55rem .7rem; padding-left:.55rem; border-left:1px solid var(--zeythan-line); }
+.zeythan-vpn-sidebar-item { min-height:42px; padding-left:1rem; font-size:.94rem; }
+.zeythan-vpn-nav-group { display:flex; align-items:center; flex:0 0 auto; gap:.1rem; flex-wrap:wrap; }
+.zeythan-vpn-nav-toggle { display:inline-flex; align-items:center; gap:.45rem; padding:.55rem .8rem; border:0; border-radius:999px; color:var(--zeythan-muted); background:transparent; cursor:pointer; list-style:none; font:inherit; font-size:.92rem; }
+.zeythan-vpn-nav-toggle::-webkit-details-marker { display:none; }
+.zeythan-vpn-nav-toggle:hover,.zeythan-vpn-nav-group[open]>.zeythan-vpn-nav-toggle { color:#fff; background:rgba(114,133,255,.14); }
+.zeythan-vpn-nav-toggle i { transition:transform .2s ease; }
+.zeythan-vpn-nav-group[open]>.zeythan-vpn-nav-toggle i { transform:rotate(180deg); }
+.zeythan-vpn-nav-panel { display:flex; align-items:center; gap:.15rem; flex-wrap:wrap; }
+.zeythan-vpn-nav-panel a { display:inline-flex; align-items:center; min-height:42px; padding:.5rem .75rem; border-radius:999px; color:var(--zeythan-muted); text-decoration:none; font-size:.9rem; white-space:nowrap; }
+.zeythan-vpn-nav-panel a:hover,.zeythan-vpn-nav-panel a.active { color:#fff; background:rgba(114,133,255,.14); }
+.zeythan-vpn-overview { padding:0 0 2.5rem; }
+.zeythan-vpn-overview .zeythan-vpn-panel { padding:clamp(1.2rem,3vw,1.8rem); }
+.zeythan-vpn-overview p+p { margin-top:.75rem; }
+.zeythan-vpn-overview ul { display:grid; gap:.55rem; margin:.85rem 0; padding-left:1.2rem; color:var(--zeythan-muted); }
+.zeythan-vpn-source-links { display:flex; align-items:center; gap:.6rem 1rem; flex-wrap:wrap; margin-top:1rem; }
+.zeythan-vpn-source-links a { color:#aeb8ff; text-decoration:underline; text-underline-offset:3px; }
+.zeythan-vpn-faq { display:grid; gap:.7rem; margin:2rem 0; }
+.zeythan-vpn-faq h2 { margin:0 0 .4rem; color:#f8fafc; font-size:clamp(1.5rem,3.5vw,2rem); }
+.zeythan-vpn-faq details { padding:1rem 1.2rem; border:1px solid var(--zeythan-line); border-radius:16px; background:rgba(18,25,36,.7); }
+.zeythan-vpn-faq summary { color:#eef2fa; font-weight:700; cursor:pointer; }
+.zeythan-vpn-faq p { margin:.65rem 0 0; color:var(--zeythan-muted); }
+.zeythan-vpn-pending { border-color:rgba(255,154,61,.24); background:rgba(47,33,23,.28); }
+@media(max-width:760px) {
+  .zeythan-vpn-nav-group[open] { flex-wrap:nowrap; }
+  .zeythan-vpn-nav-panel { flex-wrap:nowrap; }
+}
+
+.zeythan-vpn-audio-control { display:flex; align-items:center; justify-content:center; gap:.75rem; margin:.85rem auto 0; color:var(--zeythan-muted); font-size:.9rem; }
+.zeythan-vpn-audio-control label { display:inline-flex; align-items:center; gap:.45rem; }
+.zeythan-vpn-audio-control input { width:min(220px,42vw); accent-color:#7285ff; }
+/* Shared left-side navigation for the VPN guides */
+.zeythan-vpn-page .zeythan-sidebar-toggle { position:fixed; top:24px; left:24px; width:46px; height:46px; border-radius:50%; border:2px solid rgba(255,153,0,.75); background:linear-gradient(145deg,rgba(18,24,33,.95),rgba(36,46,63,.75)); color:#f8fafc; display:flex; align-items:center; justify-content:center; z-index:1200; cursor:pointer; transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease; opacity:1; box-shadow:0 0 0 4px rgba(255,153,0,.28),0 14px 26px rgba(56,139,253,.32); }
+.zeythan-vpn-page .zeythan-sidebar-toggle:hover { transform:translateY(-2px); box-shadow:0 0 0 5px rgba(255,153,0,.42),0 18px 32px rgba(56,139,253,.4); }
+.zeythan-vpn-page.sidebar-open .zeythan-sidebar-toggle { opacity:0; pointer-events:none; }
+.zeythan-vpn-page .zeythan-sidebar { position:fixed; top:0; left:0; height:100vh; height:100dvh; width:min(80vw,280px); overflow-y:auto; background:rgba(10,14,20,.97); backdrop-filter:blur(14px); border-right:1px solid rgba(88,166,255,.18); transform:translateX(-105%); transition:transform .3s ease; z-index:1190; display:flex; flex-direction:column; padding:28px 24px; gap:24px; }
+.zeythan-vpn-page.sidebar-open .zeythan-sidebar { transform:translateX(0); }
+.zeythan-vpn-page .zeythan-sidebar-header { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.zeythan-vpn-page .zeythan-sidebar-brand { display:flex; align-items:center; gap:12px; color:#f0f6fc; font-size:1rem; font-weight:600; text-decoration:none; }
+.zeythan-vpn-page .zeythan-sidebar-brand img { width:42px; height:42px; border:2px solid rgba(88,166,255,.5); border-radius:50%; object-fit:cover; }
+.zeythan-vpn-page .zeythan-sidebar-close { display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:0; border-radius:50%; color:#f0f6fc; background:rgba(48,54,61,.55); cursor:pointer; }
+.zeythan-vpn-page .zeythan-sidebar-nav,.zeythan-vpn-page .zeythan-sidebar-section { display:flex; flex-direction:column; gap:8px; }
+.zeythan-vpn-page .zeythan-sidebar-title { margin:.3rem 0; color:#8b949e; font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; }
+.zeythan-vpn-page .zeythan-sidebar-link { display:flex; align-items:center; justify-content:space-between; min-height:46px; padding:10px 12px; border:1px solid transparent; border-radius:10px; color:#f0f6fc; background:rgba(22,27,34,.6); text-decoration:none; font-weight:500; transition:border-color .2s ease,background .2s ease,transform .2s ease; }
+.zeythan-vpn-page .zeythan-sidebar-link i { color:rgba(88,166,255,.8); }
+.zeythan-vpn-page .zeythan-sidebar-link:hover,.zeythan-vpn-page .zeythan-sidebar-link.active { transform:translateX(2px); border-color:rgba(88,166,255,.35); color:#f0f6fc; background:rgba(88,166,255,.12); }
+.zeythan-vpn-page .zeythan-sidebar-overlay { position:fixed; inset:0; z-index:1180; background:rgba(0,0,0,.45); opacity:0; pointer-events:none; transition:opacity .3s ease; }
+.zeythan-vpn-page.sidebar-open .zeythan-sidebar-overlay { opacity:1; pointer-events:auto; }
+.zeythan-vpn-page.sidebar-open { overflow:hidden; }
+@media(max-width:768px) { .zeythan-vpn-page .zeythan-sidebar-toggle { top:18px; left:18px; width:44px; height:44px; } .zeythan-vpn-page .zeythan-sidebar { width:min(80vw,320px); padding:24px 20px; } }
+@media(prefers-reduced-motion:reduce) { .zeythan-vpn-page .zeythan-sidebar,.zeythan-vpn-page .zeythan-sidebar-toggle,.zeythan-vpn-page .zeythan-sidebar-overlay { transition-duration:.01ms; } }

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GoodbyeDPI kurulum videosu ve adım adım Windows rehberi: RAR arşivini çıkarma, turkey_dnsredir seçenekleri, Discord kontrolü ve DNS güvenliği.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#090d14">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ZEYTHAN">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://zeythan.com/goodbyedpi">
+  <meta property="og:title" content="GoodbyeDPI ile Discord kurulum rehberi | ZEYTHAN">
+  <meta property="og:description" content="GoodbyeDPI kurulum videosu, arşiv adımları, alternatif script açıklaması ve güvenli kullanım notları.">
+  <meta property="og:image" content="https://zeythan.com/zeythan.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GoodbyeDPI ile Discord kurulum rehberi | ZEYTHAN">
+  <meta name="twitter:description" content="Windows için GoodbyeDPI video anlatımı ve adım adım kurulum notları.">
+  <link rel="canonical" href="https://zeythan.com/goodbyedpi">
+  <title>GoodbyeDPI ile Discord kurulum rehberi | ZEYTHAN</title>
+  <link rel="icon" href="./zeythan.png">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "GoodbyeDPI ile Discord kurulum rehberi",
+        "description": "GoodbyeDPI arşivini çıkarma, Türkiye komut dosyalarını değerlendirme ve bağlantıyı kontrol etme adımları.",
+        "inLanguage": "tr-TR",
+        "dateModified": "2026-09-25",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://zeythan.com/goodbyedpi" },
+        "image": "https://zeythan.com/zeythan.png",
+        "author": { "@type": "Organization", "name": "ZEYTHAN" },
+        "publisher": { "@type": "Organization", "name": "ZEYTHAN" },
+        "citation": [
+          "https://github.com/ValdikSS/GoodbyeDPI",
+          "https://github.com/ValdikSS/GoodbyeDPI/releases"
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "name": "GoodbyeDPI Windows kurulum videosu",
+        "description": "RAR arşivini çıkarma, turkey_dnsredir script seçenekleri ve çalışan GoodbyeDPI penceresi.",
+        "thumbnailUrl": "https://zeythan.com/zeythan.png",
+        "duration": "PT1M27S",
+        "contentUrl": "https://zeythan.com/goodbydpi_kurulum.mp4",
+        "embedUrl": "https://zeythan.com/goodbyedpi#video",
+        "inLanguage": "tr-TR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://zeythan.com/" },
+          { "@type": "ListItem", "position": 2, "name": "VPN", "item": "https://zeythan.com/discord-vpn" },
+          { "@type": "ListItem", "position": 3, "name": "GoodbyeDPI", "item": "https://zeythan.com/goodbyedpi" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="zeythan-bg-darker zeythan-vpn-page">
+  <button class="zeythan-sidebar-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="zeythan-site-sidebar">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+  <aside class="zeythan-sidebar" id="zeythan-site-sidebar" aria-hidden="true">
+    <div class="zeythan-sidebar-header">
+      <a class="zeythan-sidebar-brand" href="./index.html"><img src="./zeythan.png" alt="ZEYTHAN logosu" width="42" height="42"><span>ZEYTHAN Topluluğu</span></a>
+      <button class="zeythan-sidebar-close" type="button" aria-label="Menüyü kapat"><i class="fas fa-times" aria-hidden="true"></i></button>
+    </div>
+    <nav class="zeythan-sidebar-nav" aria-label="Ana menü">
+      <div class="zeythan-sidebar-section">
+        <span class="zeythan-sidebar-title">Sayfalar</span>
+        <a class="zeythan-sidebar-link" href="./index.html" data-close-on-click="true">Anasayfa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./oyunlar.html" data-close-on-click="true">Oynanılan Oyunlar <i class="fas fa-gamepad" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./yayincilarimiz.html" data-close-on-click="true">Yayıncılarımız <i class="fas fa-star" aria-hidden="true"></i></a>
+        <details class="zeythan-vpn-sidebar-menu">
+          <summary class="zeythan-sidebar-link zeythan-vpn-sidebar-toggle">VPN <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <div class="zeythan-vpn-sidebar-submenu">
+            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item " href="./discord-vpn.html" data-close-on-click="true" >SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
+            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item active" href="./goodbyedpi.html" data-close-on-click="true" aria-current="page">GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
+          </div>
+        </details>
+        <a class="zeythan-sidebar-link" href="https://discord.gg/M43GpGxcBy" target="_blank" rel="noopener noreferrer">Discord Sunucusu <i class="fab fa-discord" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+  </aside>
+  <div class="zeythan-sidebar-overlay" aria-hidden="true"></div>
+
+  <main>
+    <section class="zeythan-vpn-hero">
+      <span class="zeythan-vpn-eyebrow"><i class="fas fa-shield-halved" aria-hidden="true"></i> GOODBYEDPI · WINDOWS</span>
+      <h1>GoodbyeDPI ile Discord<br><span>kurulum rehberi</span></h1>
+      <p>Videoda arşiv çıkarılıyor, Türkiye komut dosyaları gösteriliyor ve çalışan GoodbyeDPI penceresi kontrol ediliyor. Aşağıda aynı akışı adım adım bulabilirsin.</p>
+      <a class="zeythan-vpn-primary-button" href="https://dosya.co/w8kwk0isl0xr/goodbyedpi.rar.html" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-download" aria-hidden="true"></i> GoodbyeDPI arşiv sayfasını aç
+      </a>
+      <div class="zeythan-vpn-note zeythan-vpn-download-notice">
+        <i class="fas fa-triangle-exclamation" aria-hidden="true"></i>
+        <span>Bu, paylaştığın dosya.co RAR sayfasıdır; resmi proje indirme adresi değildir ve arşivin içeriği burada doğrulanmadı. Kaynağı kontrol etmeden çalıştırma.</span>
+      </div>
+      <div class="zeythan-vpn-note">
+        <i class="fas fa-key" aria-hidden="true"></i>
+        <span>RAR şifresi: <strong>Zeythan</strong></span>
+      </div>
+    </section>
+
+    <section class="zeythan-vpn-content zeythan-vpn-overview" aria-labelledby="goodbyedpi-what-title">
+      <div class="zeythan-vpn-section-heading">
+        <span class="zeythan-vpn-eyebrow">GOODBYEDPI NEDİR?</span>
+        <h2 id="goodbyedpi-what-title">GoodbyeDPI ne işe yarar?</h2>
+      </div>
+      <article class="zeythan-vpn-panel">
+        <p>GoodbyeDPI, Windows'ta DPI temelli bağlantı filtrelerini aşmaya yönelik açık kaynaklı bir araçtır. Resmi proje, paketlerin WinDivert ve Windows Filtering Platform üzerinden yerel bilgisayarda işlendiğini açıklar. Bu, uzak sunucu üzerinden trafik yönlendiren klasik bir VPN hizmeti değildir.</p>
+        <p><strong>Güvenlik yazılımı uyumluluğu:</strong> Kaspersky veya benzeri bir program WinDivert sürücüsünü engellerse GoodbyeDPI başlatılamaz. Hata durumunda konsol mesajını ve güvenlik yazılımı uyarılarını kontrol et; korumayı kapatma.</p>
+        <p>Videodaki arşivde Türkiye için hazırlanmış <code>turkey_dnsredir</code> komut dosyaları ve alternatifleri görünüyor. Bu paket, resmi sürüm arşiviyle aynı kaynakta yayımlanmıyor; dosyaları açmadan önce kaynağı ve script içeriğini ayrıca doğrula.</p>
+        <div class="zeythan-vpn-source-links" aria-label="GoodbyeDPI resmi kaynakları">
+          <a href="https://github.com/ValdikSS/GoodbyeDPI" target="_blank" rel="noopener noreferrer">GoodbyeDPI resmi GitHub rehberi</a>
+          <a href="https://github.com/ValdikSS/GoodbyeDPI/releases" target="_blank" rel="noopener noreferrer">Resmi sürümler</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="zeythan-vpn-video-wrap" id="video" aria-labelledby="goodbyedpi-video-title">
+      <div class="zeythan-vpn-video-heading">
+        <span class="zeythan-vpn-eyebrow">1 DAKİKA 27 SANİYE · WINDOWS</span>
+        <h2 id="goodbyedpi-video-title">GoodbyeDPI kurulum videosu</h2>
+      </div>
+      <video id="goodbyedpi-video" controls playsinline preload="metadata" muted poster="./goodbyedpi-poster.svg" aria-label="ZEYTHAN logolu kapak görselli GoodbyeDPI kurulum videosu; kayıt sesi kapalıdır">
+        <source src="./goodbydpi_kurulum.mp4" type="video/mp4">
+        Tarayıcın video oynatmayı desteklemiyor. <a href="./goodbydpi_kurulum.mp4">Videoyu aç</a>.
+      </video>
+      <audio id="goodbyedpi-music" preload="metadata" aria-hidden="true">
+        <source src="./goodbyedpi-music.wav" type="audio/wav">
+      </audio>
+      <div class="zeythan-vpn-audio-control">
+        <label for="goodbyedpi-music-volume"><i class="fas fa-music" aria-hidden="true"></i> Fon müziği seviyesi</label>
+        <input id="goodbyedpi-music-volume" type="range" min="0" max="100" value="26" aria-label="Fon müziği ses düzeyi">
+      </div>
+      <p class="zeythan-vpn-video-note">Videonun kayıt sesi oynatıcıda kapalı. Yerine bu rehber için hazırlanmış özgün, düşük seviyeli fon müziği senkronize çalar.</p>
+    </section>
+
+    <section class="zeythan-vpn-content" id="kurulum" aria-labelledby="steps-title">
+      <div class="zeythan-vpn-section-heading">
+        <span class="zeythan-vpn-eyebrow">VİDEODAKİ AKIŞ</span>
+        <h2 id="steps-title">Kurulum adımları</h2>
+        <p>Videodaki ekrana ve görünen dosyalara göre hazırlandı. Arşivin içeriğini çalıştırmadan önce doğrula.</p>
+      </div>
+      <div class="zeythan-vpn-steps">
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">01</span>
+          <div><h3>RAR arşivini indir</h3><p>Sayfanın üstündeki bağlantı açılır. Bu bağlantı dosya.co üzerindeki üçüncü taraf RAR sayfasına gider; mümkünse resmi GitHub sürümünü tercih et.</p><p class="zeythan-vpn-password-note"><i class="fas fa-key" aria-hidden="true"></i> Arşiv şifresi: <strong>Zeythan</strong></p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">02</span>
+          <div><h3>Arşivi ayrı klasöre çıkart</h3><p>Videoda RAR dosyasına sağ tıklanıyor ve WinRAR menüsünden <strong>goodbyedpi\ klasörüne çıkar</strong> seçeneği kullanılıyor. Çıkan klasörü aç.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">03</span>
+          <div><h3>README dosyasını ve script'leri incele</h3><p>Klasörde <strong>README-BENİ OKU.txt</strong>, <code>turkey_dnsredir.cmd</code> ve farklı <code>turkey_dnsredir_alternative…</code> komut dosyaları görünüyor. Hangi script'in ne yaptığını, özellikle DNS ayarlarını, çalıştırmadan önce kontrol et.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">04</span>
+          <div><h3>Bir script'i tek başına çalıştır</h3><p>Videodaki not, alternatifleri Discord açılana kadar <strong>tek tek</strong> denemeyi söylüyor. Birden fazla script'i aynı anda başlatma; sonraki seçeneğe geçmeden önce çalışan komut penceresini kapat. Hangi seçeneğin işe yarayacağı bağlantına göre değişebilir.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">05</span>
+          <div><h3>Çalışma mesajını ve Discord'u kontrol et</h3><p>Videonun son bölümünde GoodbyeDPI konsolunda <strong>“Filter activated, GoodbyeDPI is now running!”</strong> mesajı görülüyor; aynı ekranda <code>DNS redirect: 1</code> de yer alıyor. Discord'u test et. DNS yönlendirmesini ne yaptığını anlamadan onaylama.</p></div>
+        </article>
+        <article class="zeythan-vpn-step">
+          <span class="zeythan-vpn-step-number">06</span>
+          <div><h3>İşin bitince durdur</h3><p>Resmi README'ye göre araç açık komut penceresi çalıştığı sürece etkin kalır. Kullanmayı bitirdiğinde pencereyi kapat; farklı bir alternatifi deneyeceksen önce mevcut çalışan pencereyi durdur.</p></div>
+        </article>
+      </div>
+
+      <div class="zeythan-vpn-two-column">
+        <article class="zeythan-vpn-panel">
+          <span class="zeythan-vpn-panel-icon"><i class="fas fa-circle-info" aria-hidden="true"></i></span>
+          <h3>Video ile resmi rehber arasındaki fark</h3>
+          <p>Video, kendi RAR paketindeki Türkiye script'lerini ve GoodbyeDPI 0.2.3rc3 konsolunu gösteriyor. Resmi projenin sonraki sürümlerindeki dosya isimleri veya başlangıç yöntemi değişebilir; resmi README ve sürüm notlarını ayrıca kontrol et.</p>
+        </article>
+        <aside class="zeythan-vpn-panel zeythan-vpn-warning">
+          <span class="zeythan-vpn-panel-icon"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i></span>
+          <h3>DNS ve yönetici izni</h3>
+          <p>Videodaki konsolda DNS yönlendirme seçeneği etkin görünüyor. Resmi projedeki bazı hazır script'ler DNS isteklerini Yandex'e ve standart dışı bir porta yönlendirir. Komut dosyasını ve hedef DNS'i incelemeden yönetici izni verme.</p>
+          <a href="https://github.com/ValdikSS/GoodbyeDPI#quick-start" target="_blank" rel="noopener noreferrer">Resmi Quick Start yönergesi</a>
+        </aside>
+      </div>
+
+      <section class="zeythan-vpn-faq" aria-labelledby="goodbyedpi-faq-title">
+        <h2 id="goodbyedpi-faq-title">GoodbyeDPI hakkında sık sorulan sorular</h2>
+        <details><summary>RAR şifresi nedir?</summary><p>Bu arşiv için şifre <strong>Zeythan</strong>.</p></details>
+        <details><summary>GoodbyeDPI bilgisayarımı VPN sunucusuna bağlar mı?</summary><p>Hayır. Resmi proje açıklamasındaki yöntem Windows üzerinde yerel paket işlemeye dayanır; klasik bir uzak VPN sunucusu hizmeti değildir.</p></details>
+        <details><summary>Neden birden fazla turkey_dnsredir script'i var?</summary><p>Paylaşılan pakette alternatif komut dosyaları bulunuyor. Videodaki not bunları sırayla denemeyi öneriyor; yalnızca birini çalıştır ve DNS ayarını kontrol et.</p></details>
+        <details><summary>Programı nasıl durdururum?</summary><p>Resmi yönergeye göre açık konsol penceresi çalışırken araç etkindir. Durdurmak için o pencereyi kapat.</p></details>
+      </section>
+
+    </section>
+  </main>
+  <footer class="zeythan-footer text-center py-4"><small>© <span id="currentYear"></span> ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi</small></footer>
+  <script>
+    const goodbyedpiVideo = document.getElementById('goodbyedpi-video');
+    const goodbyedpiMusic = document.getElementById('goodbyedpi-music');
+    const goodbyedpiVolume = document.getElementById('goodbyedpi-music-volume');
+    goodbyedpiMusic.volume = Number(goodbyedpiVolume.value) / 100;
+    goodbyedpiVolume.addEventListener('input', () => { goodbyedpiMusic.volume = Number(goodbyedpiVolume.value) / 100; });
+    goodbyedpiVideo.addEventListener('play', () => {
+      goodbyedpiMusic.currentTime = goodbyedpiVideo.currentTime;
+      goodbyedpiMusic.play().catch(() => {});
+    });
+    goodbyedpiVideo.addEventListener('pause', () => goodbyedpiMusic.pause());
+    goodbyedpiVideo.addEventListener('seeking', () => {
+      if (Math.abs(goodbyedpiMusic.currentTime - goodbyedpiVideo.currentTime) > 0.4) goodbyedpiMusic.currentTime = goodbyedpiVideo.currentTime;
+    });
+    goodbyedpiVideo.addEventListener('ended', () => { goodbyedpiMusic.pause(); goodbyedpiMusic.currentTime = 0; });
+        function setupZeythanSidebar() {
+      const body = document.body;
+      const sidebar = document.getElementById('zeythan-site-sidebar');
+      const toggleButton = document.querySelector('.zeythan-sidebar-toggle');
+      const closeButton = document.querySelector('.zeythan-sidebar-close');
+      const overlay = document.querySelector('.zeythan-sidebar-overlay');
+      if (!sidebar || !toggleButton || !closeButton || !overlay) return;
+      const closeSidebar = (returnFocus = false) => {
+        body.classList.remove('sidebar-open');
+        sidebar.setAttribute('aria-hidden', 'true');
+        overlay.setAttribute('aria-hidden', 'true');
+        toggleButton.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggleButton.focus();
+      };
+      toggleButton.addEventListener('click', () => {
+        body.classList.add('sidebar-open');
+        sidebar.setAttribute('aria-hidden', 'false');
+        overlay.setAttribute('aria-hidden', 'false');
+        toggleButton.setAttribute('aria-expanded', 'true');
+        closeButton.focus();
+      });
+      closeButton.addEventListener('click', () => closeSidebar(true));
+      overlay.addEventListener('click', () => closeSidebar(true));
+      sidebar.querySelectorAll('.zeythan-sidebar-link[data-close-on-click="true"]').forEach(link => link.addEventListener('click', () => closeSidebar()));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') closeSidebar(true); });
+    }
+    setupZeythanSidebar();document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
