@@ -35,6 +35,20 @@
             box-sizing: border-box;
         }
 
+        html,
+        body {
+            /* Anasayfada kaydırma çubuğu gösterilmez; içerik yine de erişilebilir kalır. */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+
         body {
             background: radial-gradient(140% 120% at 50% 0%, #1b2330 0%, #0d1117 55%, #080b12 100%);
             color: #c9d1d9;
@@ -51,8 +65,8 @@
         }
 
         .zeythan-video-wrapper {
-            width: 360px;
-            height: 360px;
+            width: min(340px, 36vh);
+            height: min(340px, 36vh);
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
@@ -110,7 +124,7 @@
             position: relative;
             overflow: hidden;
             margin-top: 0;
-            padding: 80px 20px 90px;
+            padding: 60px 20px 60px;
         }
 
         .zeythan-hero-section::before {
@@ -213,6 +227,19 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
+        }
+
+        /* Geniş ekranlarda dört buton eşit genişlikte, hizalı bir ızgara oluşturur. */
+        @media (min-width: 992px) {
+            .zeythan-hero-button-row {
+                width: min(880px, calc(100vw - 40px));
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .zeythan-hero-button-row .btn {
+                flex: 1 1 0;
+            }
         }
 
         main {
@@ -446,6 +473,18 @@
         .zeythan-alert-info {
             background-color: #0550ae !important;
             border-color: #58a6ff !important;
+        }
+
+        /* Kısa ekranlarda (örn. 1366x768) kaydırma çubuğu çıkmasın diye boşlukları sık. */
+        @media (min-width: 993px) and (max-height: 880px) {
+            .zeythan-video-wrapper {
+                width: min(320px, 32vh);
+                height: min(320px, 32vh);
+            }
+
+            .zeythan-hero-section {
+                padding: 36px 20px 36px;
+            }
         }
 
         @media (max-width: 992px) {

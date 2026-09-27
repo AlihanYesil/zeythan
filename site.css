@@ -166,8 +166,12 @@ a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid var
 .zeythan-activity-empty i { margin-right:.45rem; }
 
 /* Anasayfa canlı çipi */
-.zeythan-activity-chip { display:inline-flex; align-items:center; gap:.65rem; margin-top:.5rem; padding:.55rem 1.1rem .55rem .9rem; border:1px solid var(--zeythan-line); border-radius:999px; background:rgba(18,25,36,.72); color:#eef2fa; font-size:.9rem; font-weight:600; cursor:pointer; transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+@property --zeythan-chip-angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.zeythan-activity-chip { position:relative; display:inline-flex; align-items:center; gap:.65rem; margin-top:1.15rem; padding:.55rem 1.1rem .55rem .9rem; border:1px solid var(--zeythan-line); border-radius:999px; background:rgba(18,25,36,.72); color:#eef2fa; font-size:.9rem; font-weight:600; cursor:pointer; transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
 .zeythan-activity-chip:hover { transform:translateY(-2px); border-color:rgba(114,133,255,.4); box-shadow:0 10px 24px rgba(0,0,0,.3); }
+/* Logodaki gibi dönen ışık halkası */
+.zeythan-activity-chip::before { content:''; position:absolute; inset:-2.5px; padding:2.5px; border-radius:inherit; background:conic-gradient(from var(--zeythan-chip-angle), rgba(88,166,255,0) 0deg, rgba(88,166,255,1) 55deg, rgba(151,165,255,1) 95deg, rgba(255,153,0,1) 140deg, rgba(88,166,255,0) 210deg, rgba(88,166,255,0) 360deg); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); mask-composite:exclude; animation:zeythan-chip-spin 4s linear infinite; filter:drop-shadow(0 0 6px rgba(114,133,255,.7)); pointer-events:none; }
+@keyframes zeythan-chip-spin { to { --zeythan-chip-angle:360deg; } }
 .zeythan-activity-chip[hidden] { display:none; }
 .zeythan-activity-chip-cta { display:inline-flex; align-items:center; gap:.35rem; color:#97a5ff; }
 .zeythan-live-dot { flex:0 0 auto; width:9px; height:9px; border-radius:50%; background:#3fb950; animation:zeythan-pulse 2s infinite; }
@@ -182,4 +186,4 @@ body.modal-open .zeythan-sidebar-toggle { opacity:0; pointer-events:none; }
   .zeythan-activity-icon { width:46px; height:46px; border-radius:13px; }
   .zeythan-activity-count strong { font-size:1.3rem; }
 }
-@media(prefers-reduced-motion:reduce) { .zeythan-live-dot { animation:none; } .zeythan-activity-card:hover,.zeythan-activity-chip:hover { transform:none; } }
+@media(prefers-reduced-motion:reduce) { .zeythan-live-dot { animation:none; } .zeythan-activity-chip::before { animation:none; } .zeythan-activity-card:hover,.zeythan-activity-chip:hover { transform:none; } }
