@@ -131,18 +131,10 @@
         <span class="zeythan-vpn-eyebrow">1 DAKİKA 27 SANİYE · WINDOWS</span>
         <h2 id="goodbyedpi-video-title">GoodbyeDPI kurulum videosu</h2>
       </div>
-      <video id="goodbyedpi-video" controls playsinline preload="none" muted poster="./goodbyedpi-poster.webp" aria-label="ZEYTHAN logolu kapak görselli GoodbyeDPI kurulum videosu; kayıt sesi kapalıdır">
+      <video id="goodbyedpi-video" controls playsinline preload="none" poster="./goodbyedpi-poster.webp" aria-label="ZEYTHAN logolu kapak görselli GoodbyeDPI kurulum videosu; hafif fon müziği içerir">
         <source src="./goodbydpi_kurulum.mp4" type="video/mp4">
         Tarayıcın video oynatmayı desteklemiyor. <a href="./goodbydpi_kurulum.mp4">Videoyu aç</a>.
       </video>
-      <audio id="goodbyedpi-music" preload="none" aria-hidden="true">
-        <source src="./goodbyedpi-music.m4a" type="audio/mp4">
-      </audio>
-      <div class="zeythan-vpn-audio-control">
-        <label for="goodbyedpi-music-volume"><i class="fas fa-music" aria-hidden="true"></i> Fon müziği seviyesi</label>
-        <input id="goodbyedpi-music-volume" type="range" min="0" max="100" value="26" aria-label="Fon müziği ses düzeyi">
-      </div>
-      <p class="zeythan-vpn-video-note">Videonun kayıt sesi oynatıcıda kapalı. Yerine bu rehber için hazırlanmış özgün, düşük seviyeli fon müziği senkronize çalar.</p>
     </section>
 
     <section class="zeythan-vpn-content" id="kurulum" aria-labelledby="steps-title">
@@ -204,21 +196,7 @@
   </main>
   <footer class="zeythan-footer text-center py-4"><small>© <span id="currentYear"></span> ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi</small></footer>
   <script>
-    const goodbyedpiVideo = document.getElementById('goodbyedpi-video');
-    const goodbyedpiMusic = document.getElementById('goodbyedpi-music');
-    const goodbyedpiVolume = document.getElementById('goodbyedpi-music-volume');
-    goodbyedpiMusic.volume = Number(goodbyedpiVolume.value) / 100;
-    goodbyedpiVolume.addEventListener('input', () => { goodbyedpiMusic.volume = Number(goodbyedpiVolume.value) / 100; });
-    goodbyedpiVideo.addEventListener('play', () => {
-      goodbyedpiMusic.currentTime = goodbyedpiVideo.currentTime;
-      goodbyedpiMusic.play().catch(() => {});
-    });
-    goodbyedpiVideo.addEventListener('pause', () => goodbyedpiMusic.pause());
-    goodbyedpiVideo.addEventListener('seeking', () => {
-      if (Math.abs(goodbyedpiMusic.currentTime - goodbyedpiVideo.currentTime) > 0.4) goodbyedpiMusic.currentTime = goodbyedpiVideo.currentTime;
-    });
-    goodbyedpiVideo.addEventListener('ended', () => { goodbyedpiMusic.pause(); goodbyedpiMusic.currentTime = 0; });
-        function setupZeythanSidebar() {
+    function setupZeythanSidebar() {
       const body = document.body;
       const sidebar = document.getElementById('zeythan-site-sidebar');
       const toggleButton = document.querySelector('.zeythan-sidebar-toggle');
