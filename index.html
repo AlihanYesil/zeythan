@@ -21,12 +21,12 @@
         content="Rekabetçi CS2 sunucuları ve aktif Discord topluluğu ile Türkiye'nin yükselen oyun platformu.">
     <meta name="theme-color" content="#0d1117">
     <title>ZEYTHAN - CS2 Sunucusu ve Gaming Topluluğu | Discord</title>
-    <link rel="icon" type="image/png" href="./zeythan.png">
+    <link rel="icon" type="image/png" href="./zeythan-favicon.png">
     <link rel="canonical" href="https://zeythann.com.tr/">
     <link href="./bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="./bootstrap.bundle.min.js"></script>
-    <script src="./config.js?v=20260927"></script>
+    <script src="./bootstrap.bundle.min.js" defer></script>
+    <script src="./config.js?v=20260927" defer></script>
     <style>
         * {
             margin: 0;
@@ -608,7 +608,7 @@
             background: #484f58;
         }
     </style>
-    <link rel="stylesheet" href="./site.css?v=20260927">
+    <link rel="stylesheet" href="./site.css?v=20260927b">
 </head>
 
 <body class="zeythan-bg-darker">
@@ -619,7 +619,7 @@
     <aside class="zeythan-sidebar" aria-hidden="true">
         <div class="zeythan-sidebar-header">
             <div class="zeythan-sidebar-brand">
-                <img src="./zeythan.png" alt="ZEYTHAN Logosu">
+                <img src="./zeythan-logo.webp" alt="ZEYTHAN Logosu">
                 <span>ZEYTHAN Topluluğu</span>
             </div>
             <button class="zeythan-sidebar-close" type="button" aria-label="Menüyü kapat">
@@ -630,19 +630,19 @@
         <nav class="zeythan-sidebar-nav" aria-label="Ana menü">
             <div class="zeythan-sidebar-section">
                 <span class="zeythan-sidebar-title">Sayfalar</span>
-                <a class="zeythan-sidebar-link active" href="./index.html" data-close-on-click="true">
+                <a class="zeythan-sidebar-link active" href="./" data-close-on-click="true">
                     Anasayfa
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <a class="zeythan-sidebar-link" href="./oyunlar.html" data-close-on-click="true">
+                <a class="zeythan-sidebar-link" href="./oyunlar" data-close-on-click="true">
                     Oynanılan Oyunlar
                     <i class="fas fa-gamepad"></i>
                 </a>
-                <a class="zeythan-sidebar-link" href="./yayincilarimiz.html" data-close-on-click="true">
+                <a class="zeythan-sidebar-link" href="./yayincilarimiz" data-close-on-click="true">
                     Yayıncılarımız
                     <i class="fas fa-star"></i>
                 </a>
-                <a class="zeythan-sidebar-link" href="./aktiviteler.html" data-close-on-click="true">
+                <a class="zeythan-sidebar-link" href="./aktiviteler" data-close-on-click="true">
                     Sunucu Aktiviteleri
                     <i class="fas fa-signal"></i>
                 </a>
@@ -651,10 +651,10 @@
                         VPN <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </summary>
                     <div class="zeythan-vpn-sidebar-submenu">
-                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./discord-vpn.html" data-close-on-click="true">
+                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./discord-vpn" data-close-on-click="true">
                             SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i>
                         </a>
-                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./goodbyedpi.html" data-close-on-click="true">
+                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./goodbyedpi" data-close-on-click="true">
                             GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -684,12 +684,12 @@
                     <!-- Video Section -->
                     <div class="zeythan-video-wrapper mb-4">
                         <video class="zeythan-hero-video" autoplay muted loop playsinline webkit-playsinline
-                            preload="metadata" poster="./zeythan.png">
-                            <source src="./zeythan.mp4" type="video/mp4">
+                            preload="metadata" poster="./zeythan-poster.webp">
                             <source src="./zeythan.webm" type="video/webm">
+                            <source src="./zeythan.mp4" type="video/mp4">
 
                         </video>
-                        <img class="zeythan-hero-fallback" src="./zeythan.png" alt="ZEYTHAN hero görseli" loading="lazy"
+                        <img class="zeythan-hero-fallback" src="./zeythan-logo.webp" alt="ZEYTHAN hero görseli" loading="lazy"
                             hidden>
                     </div>
                     <h1 class="zeythan-hero-title mb-3">
@@ -718,11 +718,11 @@
 
                         <div class="zeythan-hero-button-row">
                             <!-- VPN Buttons -->
-                            <a href="./discord-vpn.html" class="btn btn-lg fw-semibold px-4"
+                            <a href="./discord-vpn" class="btn btn-lg fw-semibold px-4"
                                 style="background: linear-gradient(135deg, #6679f8 0%, #4a5bd0 100%); color: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);">
                                 <i class="fas fa-shield-halved"></i> VPN (SplitWire)
                             </a>
-                            <a href="./goodbyedpi.html" class="btn btn-lg fw-semibold px-4"
+                            <a href="./goodbyedpi" class="btn btn-lg fw-semibold px-4"
                                 style="background: linear-gradient(135deg, #16a34a 0%, #0f7a38 100%); color: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);">
                                 <i class="fas fa-shield-halved"></i> VPN (GoodbyeDPI)
                             </a>
@@ -802,8 +802,10 @@
                     </div>
                 </div>
                 <div class="modal-footer zeythan-modal-footer border-light">
-                    <a href="./aktiviteler.html" class="btn btn-outline-light">Tüm sayfayı aç</a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <a href="./aktiviteler" class="btn zeythan-activity-open">
+                        <i class="fas fa-signal" aria-hidden="true"></i> Tüm sayfayı aç
+                    </a>
+                    <button type="button" class="btn zeythan-activity-close" data-bs-dismiss="modal">Kapat</button>
                 </div>
             </div>
         </div>
@@ -936,7 +938,7 @@
             toast.show();
         }
     </script>
-    <script src="./activity.js?v=20260927"></script>
+    <script src="./activity.js?v=20260927" defer></script>
 </body>
 
 </html>

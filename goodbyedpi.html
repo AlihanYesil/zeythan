@@ -18,10 +18,10 @@
   <meta name="twitter:description" content="Windows için GoodbyeDPI video anlatımı ve adım adım kurulum notları.">
   <link rel="canonical" href="https://zeythann.com.tr/goodbyedpi">
   <title>GoodbyeDPI ile Discord kurulum rehberi | ZEYTHAN</title>
-  <link rel="icon" href="./zeythan.png">
+  <link rel="icon" href="./zeythan-favicon.png">
   <link rel="stylesheet" href="./bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="./site.css?v=20260927">
+  <link rel="stylesheet" href="./site.css?v=20260927b">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,21 +69,21 @@
   </button>
   <aside class="zeythan-sidebar" id="zeythan-site-sidebar" aria-hidden="true">
     <div class="zeythan-sidebar-header">
-      <a class="zeythan-sidebar-brand" href="./index.html"><img src="./zeythan.png" alt="ZEYTHAN logosu" width="42" height="42"><span>ZEYTHAN Topluluğu</span></a>
+      <a class="zeythan-sidebar-brand" href="./"><img src="./zeythan-logo.webp" alt="ZEYTHAN logosu" width="42" height="42"><span>ZEYTHAN Topluluğu</span></a>
       <button class="zeythan-sidebar-close" type="button" aria-label="Menüyü kapat"><i class="fas fa-times" aria-hidden="true"></i></button>
     </div>
     <nav class="zeythan-sidebar-nav" aria-label="Ana menü">
       <div class="zeythan-sidebar-section">
         <span class="zeythan-sidebar-title">Sayfalar</span>
-        <a class="zeythan-sidebar-link" href="./index.html" data-close-on-click="true">Anasayfa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-        <a class="zeythan-sidebar-link" href="./oyunlar.html" data-close-on-click="true">Oynanılan Oyunlar <i class="fas fa-gamepad" aria-hidden="true"></i></a>
-        <a class="zeythan-sidebar-link" href="./yayincilarimiz.html" data-close-on-click="true">Yayıncılarımız <i class="fas fa-star" aria-hidden="true"></i></a>
-        <a class="zeythan-sidebar-link" href="./aktiviteler.html" data-close-on-click="true">Sunucu Aktiviteleri <i class="fas fa-signal" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./" data-close-on-click="true">Anasayfa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./oyunlar" data-close-on-click="true">Oynanılan Oyunlar <i class="fas fa-gamepad" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./yayincilarimiz" data-close-on-click="true">Yayıncılarımız <i class="fas fa-star" aria-hidden="true"></i></a>
+        <a class="zeythan-sidebar-link" href="./aktiviteler" data-close-on-click="true">Sunucu Aktiviteleri <i class="fas fa-signal" aria-hidden="true"></i></a>
         <details class="zeythan-vpn-sidebar-menu">
           <summary class="zeythan-sidebar-link zeythan-vpn-sidebar-toggle">VPN <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
           <div class="zeythan-vpn-sidebar-submenu">
-            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item " href="./discord-vpn.html" data-close-on-click="true" >SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
-            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item active" href="./goodbyedpi.html" data-close-on-click="true" aria-current="page">GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
+            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item " href="./discord-vpn" data-close-on-click="true" >SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
+            <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item active" href="./goodbyedpi" data-close-on-click="true" aria-current="page">GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i></a>
           </div>
         </details>
         <a class="zeythan-sidebar-link" href="https://discord.gg/M43GpGxcBy" target="_blank" rel="noopener noreferrer">Discord Sunucusu <i class="fab fa-discord" aria-hidden="true"></i></a>
@@ -131,12 +131,12 @@
         <span class="zeythan-vpn-eyebrow">1 DAKİKA 27 SANİYE · WINDOWS</span>
         <h2 id="goodbyedpi-video-title">GoodbyeDPI kurulum videosu</h2>
       </div>
-      <video id="goodbyedpi-video" controls playsinline preload="metadata" muted poster="./goodbyedpi-poster.svg" aria-label="ZEYTHAN logolu kapak görselli GoodbyeDPI kurulum videosu; kayıt sesi kapalıdır">
+      <video id="goodbyedpi-video" controls playsinline preload="none" muted poster="./goodbyedpi-poster.webp" aria-label="ZEYTHAN logolu kapak görselli GoodbyeDPI kurulum videosu; kayıt sesi kapalıdır">
         <source src="./goodbydpi_kurulum.mp4" type="video/mp4">
         Tarayıcın video oynatmayı desteklemiyor. <a href="./goodbydpi_kurulum.mp4">Videoyu aç</a>.
       </video>
-      <audio id="goodbyedpi-music" preload="metadata" aria-hidden="true">
-        <source src="./goodbyedpi-music.wav" type="audio/wav">
+      <audio id="goodbyedpi-music" preload="none" aria-hidden="true">
+        <source src="./goodbyedpi-music.m4a" type="audio/mp4">
       </audio>
       <div class="zeythan-vpn-audio-control">
         <label for="goodbyedpi-music-volume"><i class="fas fa-music" aria-hidden="true"></i> Fon müziği seviyesi</label>

@@ -187,3 +187,14 @@ body.modal-open .zeythan-sidebar-toggle { opacity:0; pointer-events:none; }
   .zeythan-activity-count strong { font-size:1.3rem; }
 }
 @media(prefers-reduced-motion:reduce) { .zeythan-live-dot { animation:none; } .zeythan-activity-chip::before { animation:none; } .zeythan-activity-card:hover,.zeythan-activity-chip:hover { transform:none; } }
+
+/* Aktivite popup alt butonları */
+#activityModal .modal-footer { gap:.6rem; border-top-color:var(--zeythan-line)!important; }
+#activityModal .modal-footer .btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; min-height:44px; padding:.6rem 1.5rem; border:1px solid transparent; border-radius:999px; font-weight:600; transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease; }
+#activityModal .modal-footer .btn:hover { transform:translateY(-2px); }
+#activityModal .zeythan-activity-open { background:linear-gradient(135deg,#6679f8 0%,#4a5bd0 100%); color:#fff; box-shadow:0 4px 15px rgba(88,101,242,.4); }
+#activityModal .zeythan-activity-open:hover { color:#fff; box-shadow:0 8px 20px rgba(88,101,242,.5); }
+#activityModal .zeythan-activity-close { border-color:var(--zeythan-line); background:rgba(18,25,36,.72); color:#eef2fa; box-shadow:0 4px 15px rgba(0,0,0,.25); }
+#activityModal .zeythan-activity-close:hover { border-color:rgba(114,133,255,.4); background:rgba(114,133,255,.14); color:#fff; }
+@media(max-width:480px) { #activityModal .modal-footer { justify-content:center; } #activityModal .modal-footer .btn { flex:1 1 auto; } }
+@media(prefers-reduced-motion:reduce) { #activityModal .modal-footer .btn:hover { transform:none; } }
