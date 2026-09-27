@@ -1,0 +1,135 @@
+- generic [active] [ref=f7e1]:
+  - button "Menüyü aç" [ref=f7e2] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f7e3]: 
+  - complementary [aria-hidden] [ref=f7e4]:
+    - generic [ref=f7e5]:
+      - link [ref=f7e6] [cursor=pointer]:
+        - /url: ./
+        - generic [ref=f7e8]: ZEYTHAN Topluluğu
+      - button [ref=f7e9] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f7e10]: 
+    - navigation [ref=f7e11]:
+      - generic [ref=f7e12]:
+        - generic [ref=f7e13]: Sayfalar
+        - link [ref=f7e14] [cursor=pointer]:
+          - /url: ./
+          - text: Anasayfa
+          - generic [aria-hidden] [ref=f7e15]: 
+        - link [ref=f7e16] [cursor=pointer]:
+          - /url: ./oyunlar
+          - text: Oynanılan Oyunlar
+          - generic [aria-hidden] [ref=f7e17]: 
+        - link [ref=f7e18] [cursor=pointer]:
+          - /url: ./yayincilarimiz
+          - text: Yayıncılarımız
+          - generic [aria-hidden] [ref=f7e19]: 
+        - link [ref=f7e20] [cursor=pointer]:
+          - /url: ./aktiviteler
+          - text: Sunucu Aktiviteleri
+          - generic [aria-hidden] [ref=f7e21]: 
+        - group [ref=f7e22]:
+          - generic [ref=f7e23] [cursor=pointer]:
+            - text: VPN
+            - generic [aria-hidden] [ref=f7e24]: 
+          - text:  
+        - link [ref=f7e25] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - text: Discord Sunucusu
+          - generic [aria-hidden] [ref=f7e26]: 
+  - main [ref=f7e27]:
+    - generic [ref=f7e28]:
+      - generic [ref=f7e29]:
+        - generic [aria-hidden] [ref=f7e30]: 
+        - text: SPLITWIRE TURKEY · WINDOWS
+      - heading "SplitWire ile Discord kurulumu" [level=1] [ref=f7e31]: SplitWire ile Discordkurulumu
+      - paragraph [ref=f7e32]: SplitWire Turkey 1.5.7 için videolu Windows kurulum rehberi. Standart kurulumun ne yaptığını öğren, adımları takip et ve dosyanın kaynağını doğrula.
+      - link "SplitWire Turkey 1.5.7 dosyasını indir" [ref=f7e33] [cursor=pointer]:
+        - /url: https://drive.google.com/file/d/1D6-msTeF3e_LfUej4puk03ldsuY4kgIF/view?usp=drive_link
+        - generic [aria-hidden] [ref=f7e34]: 
+        - text: SplitWire Turkey 1.5.7 dosyasını indir
+      - generic [ref=f7e35]:
+        - generic [aria-hidden] [ref=f7e36]: 
+        - generic [ref=f7e37]: Bağlantı drive.google.com üzerindeki RAR indirme sayfasına gider. Dosyanın yayıncısını ve güvenilirliğini doğrulamadan çalıştırma.
+    - region [ref=f7e38]:
+      - generic [ref=f7e39]:
+        - text: SPLITWIRE NEDİR?
+        - heading "SplitWire Turkey ne işe yarar?" [level=2] [ref=f7e40]
+      - article [ref=f7e41]:
+        - paragraph [ref=f7e42]: SplitWire Turkey, Windows'ta farklı DPI aşımı ve uygulamaya özel tünelleme yöntemlerini tek arayüzden kurup yönetmeye yarayan açık kaynaklı bir projedir. Hangi bağlantı yönteminin kullanılacağı seçilen kurulum türüne bağlıdır.
+        - paragraph [ref=f7e43]:
+          - text: Bu sayfadaki 1.5.7 videosunda
+          - strong [ref=f7e44]: Standart Kurulum
+          - text: ve WireSock gösteriliyor; video sonundaki açıklama bu kurulumun Discord için çalıştığını belirtiyor. Bu, tüm bilgisayarı başka bir VPN sunucusuna bağlayan genel amaçlı bir VPN hizmetiyle aynı şey değildir.
+        - list [ref=f7e45]:
+          - listitem [ref=f7e46]: Kurulum türüne göre Discord bağlantısı için ilgili yöntemi yapılandırır.
+          - listitem [ref=f7e47]: Daha yeni sürümlerde farklı sekmeler, tarayıcı tünellemesi ve başka yöntemler bulunabilir; bu rehber 1.5.7 kaydını anlatır.
+          - listitem [ref=f7e48]: İndirme bağlantısı drive.google.com'ya gider. Çalıştırmadan önce dosyanın yayıncısını ve kaynağını doğrula.
+        - generic "SplitWire resmi kaynakları" [ref=f7e49]:
+          - link "SplitWire Turkey resmi GitHub projesi" [ref=f7e50] [cursor=pointer]:
+            - /url: https://github.com/cagritaskn/SplitWire-Turkey
+          - link "Resmi sürümler" [ref=f7e51] [cursor=pointer]:
+            - /url: https://github.com/cagritaskn/SplitWire-Turkey/releases
+    - region [ref=f7e52]:
+      - generic [ref=f7e53]:
+        - text: 27 SANİYELİK EKRAN KAYDI
+        - heading "Kurulum videosu" [level=2] [ref=f7e54]
+      - generic "Zeythan logolu kapak görseliyle Discord kurulum videosu" [ref=f7e55]: Tarayıcın video oynatmayı desteklemiyor. .
+    - region [ref=f7e56]:
+      - generic [ref=f7e57]:
+        - text: ADIM ADIM
+        - heading "Videodaki standart kurulum" [level=2] [ref=f7e58]
+        - paragraph [ref=f7e59]: Kaydın sonunda da önerilen seçenek olarak “Standart Kurulum” gösteriliyor.
+      - generic [ref=f7e60]:
+        - article [ref=f7e61]:
+          - generic [ref=f7e62]: "01"
+          - generic [ref=f7e63]:
+            - heading "Arşivi indir ve çıkart" [level=3] [ref=f7e64]
+            - paragraph [ref=f7e65]:
+              - text: Yukarıdaki bağlantıdan SplitWire Turkey 1.5.7 RAR arşivini indir. Windows'un arşiv aracını veya güvendiğin bir arşiv programını kullanarak içeriğini yeni bir klasöre çıkart. Kurulum dosyasının adı videoda
+              - strong [ref=f7e66]: SplitWire-Turkey-Setup-Windows.exe
+              - text: olarak görünüyor.
+            - paragraph [ref=f7e67]:
+              - generic [aria-hidden] [ref=f7e68]: 
+              - text: "RAR şifresi:"
+              - strong [ref=f7e69]: Zeythan
+        - article [ref=f7e70]:
+          - generic [ref=f7e71]: "02"
+          - generic [ref=f7e72]:
+            - heading "Kurulum uygulamasını aç" [level=3] [ref=f7e73]
+            - paragraph [ref=f7e74]: "Çıkarttığın klasördeki SplitWire-Turkey uygulamasını başlat. Ekran kaydında Windows SmartScreen uyarısı için “Ek bilgi” ve “Yine de çalıştır” adımları anlatılıyor. Bu uyarıyı otomatik olarak geçme: yayıncı bilgisi doğrulanamıyorsa kurulumu durdur ve dosyanın kaynağını doğrula."
+        - article [ref=f7e75]:
+          - generic [ref=f7e76]: "03"
+          - generic [ref=f7e77]:
+            - heading "“Standart Kurulum”u seç" [level=3] [ref=f7e78]
+            - paragraph [ref=f7e79]: Ana ekranda Standart Kurulum düğmesine tıkla. Onay penceresinde devam etmek istediğini seç. Videoda WireSock bileşeni yüklü olmadığında kurulumun bu bileşeni de indirdiği belirtiliyor.
+        - article [ref=f7e80]:
+          - generic [ref=f7e81]: "04"
+          - generic [ref=f7e82]:
+            - heading "Kurulumun bitmesini bekle" [level=3] [ref=f7e83]
+            - paragraph [ref=f7e84]: “Kurulum başarıyla tamamlandı” mesajı geldiğinde ekrandaki yönergeyi izle. Değişikliklerin uygulanması için bilgisayarı şimdi yeniden başlatabilir ya da yeniden başlatmayı daha sonraya bırakabilirsin.
+        - article [ref=f7e85]:
+          - generic [ref=f7e86]: "05"
+          - generic [ref=f7e87]:
+            - heading "Yeniden başlat ve Discord'u dene" [level=3] [ref=f7e88]
+            - paragraph [ref=f7e89]: Videoda bilgisayar yeniden başlatılıyor. Açıldıktan sonra Discord'u çalıştırıp mesaj ve ses bağlantısını kontrol et. Kaydın sonundaki not, standart kurulumun WireSock korumasını yalnızca Discord için uyguladığını söylüyor.
+      - generic [ref=f7e90]:
+        - article [ref=f7e91]:
+          - generic [aria-hidden] [ref=f7e93]: 
+          - heading "Kurulum ekranındaki diğer seçenekler" [level=3] [ref=f7e94]
+          - paragraph [ref=f7e95]: Uygulamada Alternatif Kurulum, ByeDPI ST Kurulum ve ByeDPI DLL Kurulum seçenekleri de görünüyor. Video bunları denemiyor; anlatılan işlem Standart Kurulum.
+        - complementary [ref=f7e96]:
+          - generic [aria-hidden] [ref=f7e98]: 
+          - heading "Windows güvenlik uyarısı" [level=3] [ref=f7e99]
+          - paragraph [ref=f7e100]: SmartScreen, tanınmayan indirmeler hakkında uyarı verir. Uyarı çıkarsa “Yine de çalıştır”ı seçmeden önce dosyanın yayıncısını ve kaynağını doğrula.
+          - 'link "Microsoft: uygulama ve tarayıcı koruması" [ref=f7e101] [cursor=pointer]':
+            - /url: https://support.microsoft.com/en-us/windows/security/windows-security/app-browser-control-in-the-windows-security-app
+      - region [ref=f7e102]:
+        - heading "SplitWire hakkında sık sorulan sorular" [level=2] [ref=f7e103]
+        - group [ref=f7e104]:
+          - generic "SplitWire standart bir VPN hizmeti mi?" [ref=f7e105] [cursor=pointer]
+        - group [ref=f7e106]:
+          - generic "Bu sayfadaki adımlar hangi sürüme ait?" [ref=f7e107] [cursor=pointer]
+        - group [ref=f7e108]:
+          - generic "RAR arşivinin şifresi nedir?" [ref=f7e109] [cursor=pointer]
+  - contentinfo [ref=f7e110]:
+    - generic [ref=f7e111]: © 2026 ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi

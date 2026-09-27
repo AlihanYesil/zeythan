@@ -1,0 +1,1635 @@
+- generic [active] [ref=e1]:
+  - button "Menüyü aç" [ref=e2] [cursor=pointer]:
+    - generic [ref=e3]: 
+  - complementary [aria-hidden] [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ZEYTHAN Topluluğu
+      - button [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: 
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Sayfalar
+        - link [ref=e14] [cursor=pointer]:
+          - /url: ./
+          - text: Anasayfa
+          - generic [ref=e15]: 
+        - link [ref=e16] [cursor=pointer]:
+          - /url: ./oyunlar
+          - text: Oynanılan Oyunlar
+          - generic [ref=e17]: 
+        - link [ref=e18] [cursor=pointer]:
+          - /url: ./yayincilarimiz
+          - text: Yayıncılarımız
+          - generic [ref=e19]: 
+        - link [ref=e20] [cursor=pointer]:
+          - /url: ./aktiviteler
+          - text: Sunucu Aktiviteleri
+          - generic [ref=e21]: 
+        - group [ref=e22]:
+          - generic [ref=e23] [cursor=pointer]:
+            - text: VPN
+            - generic [aria-hidden] [ref=e24]: 
+          - text:  
+        - link [ref=e25] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - text: Discord Sunucusu
+          - generic [ref=e26]: 
+        - link [ref=e27] [cursor=pointer]:
+          - /url: "#"
+          - text: CS2 Sunucumuz
+          - generic [ref=e28]: 
+  - main [ref=e29]:
+    - generic [ref=e31]:
+      - heading "Oyunlarımız Topluluk Favorileri" [level=1] [ref=e32]:
+        - generic [ref=e33]: Oyunlarımız
+        - generic [ref=e35]: Topluluk Favorileri
+      - paragraph [ref=e36]: ZEYTHAN ekibi olarak rekabetçi arenadan macera dünyalarına kadar haftalık etkinliklerde buluştuğumuz 60'tan fazla oyunu bu listede topladık. Türlere göre filtreleyin, aradığınız oyunu bulun ve Discord'da takımınızı oluşturun.
+      - generic [ref=e37]:
+        - link "Topluluğa Katıl" [ref=e38] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - generic [aria-hidden] [ref=e39]: 
+        - link "Yayıncılarımız" [ref=e41] [cursor=pointer]:
+          - /url: ./yayincilarimiz
+          - generic [aria-hidden] [ref=e42]: 
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [aria-hidden] [ref=e47]: 
+          - generic [ref=e48]:
+            - generic [ref=e49]: Planlı Etkinlikler
+            - heading "Haftalık Etkinlik Takvimi" [level=3] [ref=e50]
+            - paragraph [ref=e51]: CS2 scrim geceleri, MMO baskınları ve hayatta kalma temalı seanslar için ayrıntılı takvim Discord'da paylaşılıyor.
+        - generic [ref=e52]:
+          - generic [aria-hidden] [ref=e54]: 
+          - generic [ref=e55]:
+            - generic [ref=e56]: Takım Eşlemesi
+            - heading "Rol ve Takım Sistemi" [level=3] [ref=e57]
+            - paragraph [ref=e58]: FPS, RPG ve sosyal oyun rollerinden seçim yaparak oyun arkadaşlarını kolayca bul.
+        - generic [ref=e59]:
+          - generic [aria-hidden] [ref=e61]: 
+          - generic [ref=e62]:
+            - generic [ref=e63]: Rekabetçi Ligler
+            - heading "Sıralı Ligler" [level=3] [ref=e64]
+            - paragraph [ref=e65]: CS2 ve Valorant özelinde sezonluk lig puanları, MVP ödülleri ve sürpriz giveaway'ler.
+    - generic [ref=e67]:
+      - generic "Oyun filtreleri" [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]: Oyun ara
+          - searchbox "Oyun ara" [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - generic [aria-hidden] [ref=e74]: 
+              - generic [ref=e75]: 64 oyun listelendi
+            - generic [ref=e76]: "En az 60 oyun - yeni öneriler için #oyun-oner kanalına bekliyoruz."
+        - tablist "Tür filtreleri" [ref=e77]:
+          - button "Tümü" [ref=e78] [cursor=pointer]
+          - button "FPS" [ref=e79] [cursor=pointer]
+          - button "MMO" [ref=e80] [cursor=pointer]
+          - button "Hayatta Kalma" [ref=e81] [cursor=pointer]
+          - button "RPG" [ref=e82] [cursor=pointer]
+          - button "Taktik" [ref=e83] [cursor=pointer]
+          - button "Casual" [ref=e84] [cursor=pointer]
+      - generic [ref=e85]:
+        - article [ref=e86]:
+          - figure [ref=e87]:
+            - img "Counter-Strike 2 kapak görseli" [ref=e88]
+          - generic [ref=e89]:
+            - heading "Counter-Strike 2" [level=2] [ref=e90]
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e93]: 
+                - text: Rekabetçi
+              - generic [ref=e94]:
+                - generic [ref=e95]: 
+                - text: 5v5
+              - generic [ref=e96]:
+                - generic [ref=e97]: 
+                - text: "2023"
+            - generic [ref=e98]:
+              - generic [ref=e99]: FPS
+              - generic [ref=e100]: Taktik
+          - generic [ref=e102]:
+            - generic [ref=e103]: 
+            - text: PC
+        - article [ref=e104]:
+          - figure [ref=e105]:
+            - img "Valorant kapak görseli" [ref=e106]
+          - generic [ref=e107]:
+            - heading "Valorant" [level=2] [ref=e108]
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: 
+                - text: Rekabetçi
+              - generic [ref=e112]:
+                - generic [ref=e113]: 
+                - text: 5v5
+              - generic [ref=e114]:
+                - generic [ref=e115]: 
+                - text: "2020"
+            - generic [ref=e116]:
+              - generic [ref=e117]: FPS
+              - generic [ref=e118]: Ajan Sistem
+          - generic [ref=e120]:
+            - generic [ref=e121]: 
+            - text: PC
+        - article [ref=e122]:
+          - figure [ref=e123]:
+            - img "Escape from Tarkov kapak görseli" [ref=e124]
+          - generic [ref=e125]:
+            - heading "Escape from Tarkov" [level=2] [ref=e126]
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: 
+                - text: Hardcore
+              - generic [ref=e130]:
+                - generic [ref=e131]: 
+                - text: 1-5
+              - generic [ref=e132]:
+                - generic [ref=e133]: 
+                - text: Beta
+            - generic [ref=e134]:
+              - generic [ref=e135]: FPS
+              - generic [ref=e136]: Hayatta Kalma
+          - generic [ref=e138]:
+            - generic [ref=e139]: 
+            - text: PC
+        - article [ref=e140]:
+          - figure [ref=e141]:
+            - img "Call of Duty Warzone kapak görseli" [ref=e142]
+          - generic [ref=e143]:
+            - 'heading "Call of Duty: Warzone" [level=2] [ref=e144]'
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - generic [ref=e147]: 
+                - text: Battle Royale
+              - generic [ref=e148]:
+                - generic [ref=e149]: 
+                - text: 150+
+              - generic [ref=e150]:
+                - generic [ref=e151]: 
+                - text: "2020"
+            - generic [ref=e152]:
+              - generic [ref=e153]: FPS
+              - generic [ref=e154]: BR
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]: 
+              - text: Konsol
+            - generic [ref=e158]:
+              - generic [ref=e159]: 
+              - text: Xbox
+            - generic [ref=e160]:
+              - generic [ref=e161]: 
+              - text: PC
+        - article [ref=e162]:
+          - figure [ref=e163]:
+            - img "Rainbow Six Siege kapak görseli" [ref=e164]
+          - generic [ref=e165]:
+            - heading "Rainbow Six Siege" [level=2] [ref=e166]
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]: 
+                - text: Rekabetçi
+              - generic [ref=e170]:
+                - generic [ref=e171]: 
+                - text: 5v5
+              - generic [ref=e172]:
+                - generic [ref=e173]: 
+                - text: "2015"
+            - generic [ref=e174]:
+              - generic [ref=e175]: FPS
+              - generic [ref=e176]: Taktik
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: 
+              - text: PC
+            - generic [ref=e180]:
+              - generic [ref=e181]: 
+              - text: Konsol
+        - article [ref=e182]:
+          - figure [ref=e183]:
+            - img "Overwatch 2 kapak görseli" [ref=e184]
+          - generic [ref=e185]:
+            - heading "Overwatch 2" [level=2] [ref=e186]
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - generic [ref=e189]: 
+                - text: Kahraman FPS
+              - generic [ref=e190]:
+                - generic [ref=e191]: 
+                - text: 5v5
+              - generic [ref=e192]:
+                - generic [ref=e193]: 
+                - text: "2022"
+            - generic [ref=e194]:
+              - generic [ref=e195]: FPS
+              - generic [ref=e196]: Casual
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - generic [ref=e199]: 
+              - text: PC
+            - generic [ref=e200]:
+              - generic [ref=e201]: 
+              - text: Konsol
+        - article [ref=e202]:
+          - figure [ref=e203]:
+            - img "Apex Legends kapak görseli" [ref=e204]
+          - generic [ref=e205]:
+            - heading "Apex Legends" [level=2] [ref=e206]
+            - generic [ref=e207]:
+              - generic [ref=e208]:
+                - generic [ref=e209]: 
+                - text: Battle Royale
+              - generic [ref=e210]:
+                - generic [ref=e211]: 
+                - text: 3'lü takım
+              - generic [ref=e212]:
+                - generic [ref=e213]: 
+                - text: "2019"
+            - generic [ref=e214]:
+              - generic [ref=e215]: FPS
+              - generic [ref=e216]: BR
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - generic [ref=e219]: 
+              - text: Konsol
+            - generic [ref=e220]:
+              - generic [ref=e221]: 
+              - text: Xbox
+            - generic [ref=e222]:
+              - generic [ref=e223]: 
+              - text: PC
+        - article [ref=e224]:
+          - figure [ref=e225]:
+            - img "PUBG Battlegrounds kapak görseli" [ref=e226]
+          - generic [ref=e227]:
+            - 'heading "PUBG: Battlegrounds" [level=2] [ref=e228]'
+            - generic [ref=e229]:
+              - generic [ref=e230]:
+                - generic [ref=e231]: 
+                - text: Battle Royale
+              - generic [ref=e232]:
+                - generic [ref=e233]: 
+                - text: "100"
+              - generic [ref=e234]:
+                - generic [ref=e235]: 
+                - text: "2017"
+            - generic [ref=e236]:
+              - generic [ref=e237]: FPS
+              - generic [ref=e238]: BR
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - generic [ref=e241]: 
+              - text: PC
+            - generic [ref=e242]:
+              - generic [ref=e243]: 
+              - text: Konsol
+        - article [ref=e244]:
+          - figure [ref=e245]:
+            - img "Battlefield 2042 kapak görseli" [ref=e246]
+          - generic [ref=e247]:
+            - heading "Battlefield 2042" [level=2] [ref=e248]
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - generic [ref=e251]: 
+                - text: Büyük Çatışma
+              - generic [ref=e252]:
+                - generic [ref=e253]: 
+                - text: "128"
+              - generic [ref=e254]:
+                - generic [ref=e255]: 
+                - text: "2021"
+            - generic [ref=e256]:
+              - generic [ref=e257]: FPS
+              - generic [ref=e258]: Casual
+          - generic [ref=e259]:
+            - generic [ref=e260]:
+              - generic [ref=e261]: 
+              - text: Konsol
+            - generic [ref=e262]:
+              - generic [ref=e263]: 
+              - text: Xbox
+            - generic [ref=e264]:
+              - generic [ref=e265]: 
+              - text: PC
+        - article [ref=e266]:
+          - figure [ref=e267]:
+            - img "Arena Breakout Infinite kapak görseli" [ref=e268]
+          - generic [ref=e269]:
+            - 'heading "Arena Breakout: Infinite" [level=2] [ref=e270]'
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]: 
+                - text: Extraction
+              - generic [ref=e274]:
+                - generic [ref=e275]: 
+                - text: 1-4
+              - generic [ref=e276]:
+                - generic [ref=e277]: 
+                - text: "2023"
+            - generic [ref=e278]:
+              - generic [ref=e279]: FPS
+              - generic [ref=e280]: Taktik
+          - generic [ref=e282]:
+            - generic [ref=e283]: 
+            - text: Mobil
+        - article [ref=e284]:
+          - figure [ref=e285]:
+            - img "Halo Infinite kapak görseli" [ref=e286]
+          - generic [ref=e287]:
+            - heading "Halo Infinite" [level=2] [ref=e288]
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - generic [ref=e291]: 
+                - text: Arena
+              - generic [ref=e292]:
+                - generic [ref=e293]: 
+                - text: 4v4 / BTB
+              - generic [ref=e294]:
+                - generic [ref=e295]: 
+                - text: "2021"
+            - generic [ref=e296]:
+              - generic [ref=e297]: FPS
+              - generic [ref=e298]: Sci-Fi
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - generic [ref=e301]: 
+              - text: Xbox
+            - generic [ref=e302]:
+              - generic [ref=e303]: 
+              - text: PC
+        - article [ref=e304]:
+          - figure [ref=e305]:
+            - img "Final Fantasy XIV kapak görseli" [ref=e306]
+          - generic [ref=e307]:
+            - heading "Final Fantasy XIV" [level=2] [ref=e308]
+            - generic [ref=e309]:
+              - generic [ref=e310]:
+                - generic [ref=e311]: 
+                - text: MMORPG
+              - generic [ref=e312]:
+                - generic [ref=e313]: 
+                - text: 24 Raids
+              - generic [ref=e314]:
+                - generic [ref=e315]: 
+                - text: "2013"
+            - generic [ref=e316]:
+              - generic [ref=e317]: MMO
+              - generic [ref=e318]: RPG
+          - generic [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]: 
+              - text: Konsol
+            - generic [ref=e322]:
+              - generic [ref=e323]: 
+              - text: PC
+        - article [ref=e324]:
+          - figure [ref=e325]:
+            - img "World of Warcraft kapak görseli" [ref=e326]
+          - generic [ref=e327]:
+            - heading "World of Warcraft" [level=2] [ref=e328]
+            - generic [ref=e329]:
+              - generic [ref=e330]:
+                - generic [ref=e331]: 
+                - text: Mythic+
+              - generic [ref=e332]:
+                - generic [ref=e333]: 
+                - text: 5-25
+              - generic [ref=e334]:
+                - generic [ref=e335]: 
+                - text: "2004"
+            - generic [ref=e336]:
+              - generic [ref=e337]: MMO
+              - generic [ref=e338]: RPG
+          - generic [ref=e340]:
+            - generic [ref=e341]: 
+            - text: PC
+        - article [ref=e342]:
+          - figure [ref=e343]:
+            - img "Lost Ark kapak görseli" [ref=e344]
+          - generic [ref=e345]:
+            - heading "Lost Ark" [level=2] [ref=e346]
+            - generic [ref=e347]:
+              - generic [ref=e348]:
+                - generic [ref=e349]: 
+                - text: Raid
+              - generic [ref=e350]:
+                - generic [ref=e351]: 
+                - text: 4-8
+              - generic [ref=e352]:
+                - generic [ref=e353]: 
+                - text: "2019"
+            - generic [ref=e354]:
+              - generic [ref=e355]: MMO
+              - generic [ref=e356]: RPG
+          - generic [ref=e358]:
+            - generic [ref=e359]: 
+            - text: PC
+        - article [ref=e360]:
+          - figure [ref=e361]:
+            - img "Guild Wars 2 kapak görseli" [ref=e362]
+          - generic [ref=e363]:
+            - heading "Guild Wars 2" [level=2] [ref=e364]
+            - generic [ref=e365]:
+              - generic [ref=e366]:
+                - generic [ref=e367]: 
+                - text: PvE / WvW
+              - generic [ref=e368]:
+                - generic [ref=e369]: 
+                - text: 5-50
+              - generic [ref=e370]:
+                - generic [ref=e371]: 
+                - text: "2012"
+            - generic [ref=e372]:
+              - generic [ref=e373]: MMO
+              - generic [ref=e374]: RPG
+          - generic [ref=e376]:
+            - generic [ref=e377]: 
+            - text: PC
+        - article [ref=e378]:
+          - figure [ref=e379]:
+            - img "Elden Ring kapak görseli" [ref=e380]
+          - generic [ref=e381]:
+            - heading "Elden Ring" [level=2] [ref=e382]
+            - generic [ref=e383]:
+              - generic [ref=e384]:
+                - generic [ref=e385]: 
+                - text: Soulslike
+              - generic [ref=e386]:
+                - generic [ref=e387]: 
+                - text: Co-op
+              - generic [ref=e388]:
+                - generic [ref=e389]: 
+                - text: "2022"
+            - generic [ref=e390]:
+              - generic [ref=e391]: RPG
+              - generic [ref=e392]: Zorlayıcı
+          - generic [ref=e393]:
+            - generic [ref=e394]:
+              - generic [ref=e395]: 
+              - text: PC
+            - generic [ref=e396]:
+              - generic [ref=e397]: 
+              - text: Konsol
+        - article [ref=e398]:
+          - figure [ref=e399]:
+            - img "Baldur's Gate 3 kapak görseli" [ref=e400]
+          - generic [ref=e401]:
+            - heading "Baldur's Gate 3" [level=2] [ref=e402]
+            - generic [ref=e403]:
+              - generic [ref=e404]:
+                - generic [ref=e405]: 
+                - text: CRPG
+              - generic [ref=e406]:
+                - generic [ref=e407]: 
+                - text: 1-4
+              - generic [ref=e408]:
+                - generic [ref=e409]: 
+                - text: "2023"
+            - generic [ref=e410]:
+              - generic [ref=e411]: RPG
+              - generic [ref=e412]: Kooperatif
+          - generic [ref=e413]:
+            - generic [ref=e414]:
+              - generic [ref=e415]: 
+              - text: PC
+            - generic [ref=e416]:
+              - generic [ref=e417]: 
+              - text: Konsol
+        - article [ref=e418]:
+          - figure [ref=e419]:
+            - img "Path of Exile kapak görseli" [ref=e420]
+          - generic [ref=e421]:
+            - heading "Path of Exile" [level=2] [ref=e422]
+            - generic [ref=e423]:
+              - generic [ref=e424]:
+                - generic [ref=e425]: 
+                - text: ARPG
+              - generic [ref=e426]:
+                - generic [ref=e427]: 
+                - text: 1-6
+              - generic [ref=e428]:
+                - generic [ref=e429]: 
+                - text: "2013"
+            - generic [ref=e430]:
+              - generic [ref=e431]: RPG
+              - generic [ref=e432]: MMO
+          - generic [ref=e433]:
+            - generic [ref=e434]:
+              - generic [ref=e435]: 
+              - text: PC
+            - generic [ref=e436]:
+              - generic [ref=e437]: 
+              - text: Xbox
+        - article [ref=e438]:
+          - figure [ref=e439]:
+            - img "Diablo IV kapak görseli" [ref=e440]
+          - generic [ref=e441]:
+            - heading "Diablo IV" [level=2] [ref=e442]
+            - generic [ref=e443]:
+              - generic [ref=e444]:
+                - generic [ref=e445]: 
+                - text: Sezonlar
+              - generic [ref=e446]:
+                - generic [ref=e447]: 
+                - text: 1-4
+              - generic [ref=e448]:
+                - generic [ref=e449]: 
+                - text: "2023"
+            - generic [ref=e450]:
+              - generic [ref=e451]: ARPG
+              - generic [ref=e452]: Kooperatif
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - generic [ref=e455]: 
+              - text: Konsol
+            - generic [ref=e456]:
+              - generic [ref=e457]: 
+              - text: PC
+        - article [ref=e458]:
+          - figure [ref=e459]:
+            - img "The Witcher 3 kapak görseli" [ref=e460]
+          - generic [ref=e461]:
+            - heading "The Witcher 3" [level=2] [ref=e462]
+            - generic [ref=e463]:
+              - generic [ref=e464]:
+                - generic [ref=e465]: 
+                - text: Hikaye
+              - generic [ref=e466]:
+                - generic [ref=e467]: 
+                - text: Tek Oyuncu
+              - generic [ref=e468]:
+                - generic [ref=e469]: 
+                - text: "2015"
+            - generic [ref=e470]:
+              - generic [ref=e471]: RPG
+              - generic [ref=e472]: Lore
+          - generic [ref=e473]:
+            - generic [ref=e474]:
+              - generic [ref=e475]: 
+              - text: PC
+            - generic [ref=e476]:
+              - generic [ref=e477]: 
+              - text: Konsol
+        - article [ref=e478]:
+          - figure [ref=e479]:
+            - img "Rust kapak görseli" [ref=e480]
+          - generic [ref=e481]:
+            - heading "Rust" [level=2] [ref=e482]
+            - generic [ref=e483]:
+              - generic [ref=e484]:
+                - generic [ref=e485]: 
+                - text: Hardcore
+              - generic [ref=e486]:
+                - generic [ref=e487]: 
+                - text: 100+
+              - generic [ref=e488]:
+                - generic [ref=e489]: 
+                - text: "2018"
+            - generic [ref=e490]:
+              - generic [ref=e491]: Hayatta Kalma
+              - generic [ref=e492]: PVP
+          - generic [ref=e494]:
+            - generic [ref=e495]: 
+            - text: PC
+        - article [ref=e496]:
+          - figure [ref=e497]:
+            - img "Ark Survival Ascended kapak görseli" [ref=e498]
+          - generic [ref=e499]:
+            - 'heading "Ark: Survival Ascended" [level=2] [ref=e500]'
+            - generic [ref=e501]:
+              - generic [ref=e502]:
+                - generic [ref=e503]: 
+                - text: Dino PVP
+              - generic [ref=e504]:
+                - generic [ref=e505]: 
+                - text: 1-70
+              - generic [ref=e506]:
+                - generic [ref=e507]: 
+                - text: "2023"
+            - generic [ref=e508]:
+              - generic [ref=e509]: Hayatta Kalma
+              - generic [ref=e510]: Sandbox
+          - generic [ref=e511]:
+            - generic [ref=e512]:
+              - generic [ref=e513]: 
+              - text: PC
+            - generic [ref=e514]:
+              - generic [ref=e515]: 
+              - text: Xbox
+        - article [ref=e516]:
+          - figure [ref=e517]:
+            - img "Sea of Thieves kapak görseli" [ref=e518]
+          - generic [ref=e519]:
+            - heading "Sea of Thieves" [level=2] [ref=e520]
+            - generic [ref=e521]:
+              - generic [ref=e522]:
+                - generic [ref=e523]: 
+                - text: Açık Deniz
+              - generic [ref=e524]:
+                - generic [ref=e525]: 
+                - text: 2-4
+              - generic [ref=e526]:
+                - generic [ref=e527]: 
+                - text: "2018"
+            - generic [ref=e528]:
+              - generic [ref=e529]: Kooperatif
+              - generic [ref=e530]: Macera
+          - generic [ref=e531]:
+            - generic [ref=e532]:
+              - generic [ref=e533]: 
+              - text: Xbox
+            - generic [ref=e534]:
+              - generic [ref=e535]: 
+              - text: PC
+        - article [ref=e536]:
+          - figure [ref=e537]:
+            - img "Sons of the Forest kapak görseli" [ref=e538]
+          - generic [ref=e539]:
+            - heading "Sons of the Forest" [level=2] [ref=e540]
+            - generic [ref=e541]:
+              - generic [ref=e542]:
+                - generic [ref=e543]: 
+                - text: Korku
+              - generic [ref=e544]:
+                - generic [ref=e545]: 
+                - text: 1-8
+              - generic [ref=e546]:
+                - generic [ref=e547]: 
+                - text: "2023"
+            - generic [ref=e548]:
+              - generic [ref=e549]: Hayatta Kalma
+              - generic [ref=e550]: Kooperatif
+          - generic [ref=e552]:
+            - generic [ref=e553]: 
+            - text: PC
+        - article [ref=e554]:
+          - figure [ref=e555]:
+            - img "Palworld kapak görseli" [ref=e556]
+          - generic [ref=e557]:
+            - heading "Palworld" [level=2] [ref=e558]
+            - generic [ref=e559]:
+              - generic [ref=e560]:
+                - generic [ref=e561]: 
+                - text: Açık Dünya
+              - generic [ref=e562]:
+                - generic [ref=e563]: 
+                - text: 1-4
+              - generic [ref=e564]:
+                - generic [ref=e565]: 
+                - text: "2024"
+            - generic [ref=e566]:
+              - generic [ref=e567]: Hayatta Kalma
+              - generic [ref=e568]: Creature
+          - generic [ref=e569]:
+            - generic [ref=e570]:
+              - generic [ref=e571]: 
+              - text: PC
+            - generic [ref=e572]:
+              - generic [ref=e573]: 
+              - text: Xbox
+        - article [ref=e574]:
+          - figure [ref=e575]:
+            - img "Fall Guys kapak görseli" [ref=e576]
+          - generic [ref=e577]:
+            - heading "Fall Guys" [level=2] [ref=e578]
+            - generic [ref=e579]:
+              - generic [ref=e580]:
+                - generic [ref=e581]: 
+                - text: Parti
+              - generic [ref=e582]:
+                - generic [ref=e583]: 
+                - text: "60"
+              - generic [ref=e584]:
+                - generic [ref=e585]: 
+                - text: "2020"
+            - generic [ref=e586]:
+              - generic [ref=e587]: Casual
+              - generic [ref=e588]: Crossplay
+          - generic [ref=e589]:
+            - generic [ref=e590]:
+              - generic [ref=e591]: 
+              - text: PC
+            - generic [ref=e592]:
+              - generic [ref=e593]: 
+              - text: Konsol
+        - article [ref=e594]:
+          - figure [ref=e595]:
+            - img "Among Us kapak görseli" [ref=e596]
+          - generic [ref=e597]:
+            - heading "Among Us" [level=2] [ref=e598]
+            - generic [ref=e599]:
+              - generic [ref=e600]:
+                - generic [ref=e601]: 
+                - text: Sosyal
+              - generic [ref=e602]:
+                - generic [ref=e603]: 
+                - text: 4-15
+              - generic [ref=e604]:
+                - generic [ref=e605]: 
+                - text: "2018"
+            - generic [ref=e606]:
+              - generic [ref=e607]: Casual
+              - generic [ref=e608]: Sosyal
+          - generic [ref=e609]:
+            - generic [ref=e610]:
+              - generic [ref=e611]: 
+              - text: Mobil
+            - generic [ref=e612]:
+              - generic [ref=e613]: 
+              - text: PC
+        - article [ref=e614]:
+          - figure [ref=e615]:
+            - img "Minecraft kapak görseli" [ref=e616]
+          - generic [ref=e617]:
+            - heading "Minecraft" [level=2] [ref=e618]
+            - generic [ref=e619]:
+              - generic [ref=e620]:
+                - generic [ref=e621]: 
+                - text: Sandbox
+              - generic [ref=e622]:
+                - generic [ref=e623]: 
+                - text: 2-30
+              - generic [ref=e624]:
+                - generic [ref=e625]: 
+                - text: "2011"
+            - generic [ref=e626]:
+              - generic [ref=e627]: Survival
+              - generic [ref=e628]: Creative
+          - generic [ref=e629]:
+            - generic [ref=e630]:
+              - generic [ref=e631]: 
+              - text: Konsol
+            - generic [ref=e632]:
+              - generic [ref=e633]: 
+              - text: PC
+            - generic [ref=e634]:
+              - generic [ref=e635]: 
+              - text: Mobil
+        - article [ref=e636]:
+          - figure [ref=e637]:
+            - img "Rocket League kapak görseli" [ref=e638]
+          - generic [ref=e639]:
+            - heading "Rocket League" [level=2] [ref=e640]
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - generic [ref=e643]: 
+                - text: Roket Futbolu
+              - generic [ref=e644]:
+                - generic [ref=e645]: 
+                - text: 1-4
+              - generic [ref=e646]:
+                - generic [ref=e647]: 
+                - text: "2015"
+            - generic [ref=e648]:
+              - generic [ref=e649]: Casual
+              - generic [ref=e650]: E-Spor
+          - generic [ref=e651]:
+            - generic [ref=e652]:
+              - generic [ref=e653]: 
+              - text: Konsol
+            - generic [ref=e654]:
+              - generic [ref=e655]: 
+              - text: Xbox
+            - generic [ref=e656]:
+              - generic [ref=e657]: 
+              - text: PC
+        - article [ref=e658]:
+          - figure [ref=e659]:
+            - img "EA Sports FC 25 kapak görseli" [ref=e660]
+          - generic [ref=e661]:
+            - heading "EA Sports FC 25" [level=2] [ref=e662]
+            - generic [ref=e663]:
+              - generic [ref=e664]:
+                - generic [ref=e665]: 
+                - text: Futbol
+              - generic [ref=e666]:
+                - generic [ref=e667]: 
+                - text: 1-22
+              - generic [ref=e668]:
+                - generic [ref=e669]: 
+                - text: "2024"
+            - generic [ref=e670]:
+              - generic [ref=e671]: Casual
+              - generic [ref=e672]: Spor
+          - generic [ref=e673]:
+            - generic [ref=e674]:
+              - generic [ref=e675]: 
+              - text: Konsol
+            - generic [ref=e676]:
+              - generic [ref=e677]: 
+              - text: Xbox
+            - generic [ref=e678]:
+              - generic [ref=e679]: 
+              - text: PC
+        - article [ref=e680]:
+          - figure [ref=e681]:
+            - img "Dota 2 kapak görseli" [ref=e682]
+          - generic [ref=e683]:
+            - heading "Dota 2" [level=2] [ref=e684]
+            - generic [ref=e685]:
+              - generic [ref=e686]:
+                - generic [ref=e687]: 
+                - text: MOBA
+              - generic [ref=e688]:
+                - generic [ref=e689]: 
+                - text: 5v5
+              - generic [ref=e690]:
+                - generic [ref=e691]: 
+                - text: "2013"
+            - generic [ref=e692]:
+              - generic [ref=e693]: Taktik
+              - generic [ref=e694]: E-Spor
+          - generic [ref=e696]:
+            - generic [ref=e697]: 
+            - text: PC
+        - article [ref=e698]:
+          - figure [ref=e699]:
+            - img "League of Legends kapak görseli" [ref=e700]
+          - generic [ref=e701]:
+            - heading "League of Legends" [level=2] [ref=e702]
+            - generic [ref=e703]:
+              - generic [ref=e704]:
+                - generic [ref=e705]: 
+                - text: MOBA
+              - generic [ref=e706]:
+                - generic [ref=e707]: 
+                - text: 5v5
+              - generic [ref=e708]:
+                - generic [ref=e709]: 
+                - text: "2009"
+            - generic [ref=e710]:
+              - generic [ref=e711]: Taktik
+              - generic [ref=e712]: E-Spor
+          - generic [ref=e714]:
+            - generic [ref=e715]: 
+            - text: PC
+        - article [ref=e716]:
+          - figure [ref=e717]:
+            - img "Teamfight Tactics kapak görseli" [ref=e718]
+          - generic [ref=e719]:
+            - heading "Teamfight Tactics" [level=2] [ref=e720]
+            - generic [ref=e721]:
+              - generic [ref=e722]:
+                - generic [ref=e723]: 
+                - text: Auto Chess
+              - generic [ref=e724]:
+                - generic [ref=e725]: 
+                - text: "8"
+              - generic [ref=e726]:
+                - generic [ref=e727]: 
+                - text: "2019"
+            - generic [ref=e728]:
+              - generic [ref=e729]: Taktik
+              - generic [ref=e730]: Sezon
+          - generic [ref=e731]:
+            - generic [ref=e732]:
+              - generic [ref=e733]: 
+              - text: Mobil
+            - generic [ref=e734]:
+              - generic [ref=e735]: 
+              - text: PC
+        - article [ref=e736]:
+          - figure [ref=e737]:
+            - img "Legends of Runeterra kapak görseli" [ref=e738]
+          - generic [ref=e739]:
+            - heading "Legends of Runeterra" [level=2] [ref=e740]
+            - generic [ref=e741]:
+              - generic [ref=e742]:
+                - generic [ref=e743]: 
+                - text: Kart Oyunu
+              - generic [ref=e744]:
+                - generic [ref=e745]: 
+                - text: 1v1
+              - generic [ref=e746]:
+                - generic [ref=e747]: 
+                - text: "2020"
+            - generic [ref=e748]:
+              - generic [ref=e749]: Taktik
+              - generic [ref=e750]: Kart
+          - generic [ref=e751]:
+            - generic [ref=e752]:
+              - generic [ref=e753]: 
+              - text: Mobil
+            - generic [ref=e754]:
+              - generic [ref=e755]: 
+              - text: PC
+        - article [ref=e756]:
+          - figure [ref=e757]:
+            - img "Metin2 kapak görseli" [ref=e758]
+          - generic [ref=e759]:
+            - heading "Metin2" [level=2] [ref=e760]
+            - generic [ref=e761]:
+              - generic [ref=e762]:
+                - generic [ref=e763]: 
+                - text: Klasik MMO
+              - generic [ref=e764]:
+                - generic [ref=e765]: 
+                - text: Lonca
+              - generic [ref=e766]:
+                - generic [ref=e767]: 
+                - text: "2004"
+            - generic [ref=e768]:
+              - generic [ref=e769]: MMO
+              - generic [ref=e770]: PvP
+          - generic [ref=e772]:
+            - generic [ref=e773]: 
+            - text: PC
+        - article [ref=e774]:
+          - figure [ref=e775]:
+            - img "Red Dead Online kapak görseli" [ref=e776]
+          - generic [ref=e777]:
+            - heading "Red Dead Online" [level=2] [ref=e778]
+            - generic [ref=e779]:
+              - generic [ref=e780]:
+                - generic [ref=e781]: 
+                - text: Vahşi Batı
+              - generic [ref=e782]:
+                - generic [ref=e783]: 
+                - text: 1-7
+              - generic [ref=e784]:
+                - generic [ref=e785]: 
+                - text: "2019"
+            - generic [ref=e786]:
+              - generic [ref=e787]: RPG
+              - generic [ref=e788]: Açık Dünya
+          - generic [ref=e789]:
+            - generic [ref=e790]:
+              - generic [ref=e791]: 
+              - text: Konsol
+            - generic [ref=e792]:
+              - generic [ref=e793]: 
+              - text: Xbox
+            - generic [ref=e794]:
+              - generic [ref=e795]: 
+              - text: PC
+        - article [ref=e796]:
+          - figure [ref=e797]:
+            - img "Genshin Impact kapak görseli" [ref=e798]
+          - generic [ref=e799]:
+            - heading "Genshin Impact" [level=2] [ref=e800]
+            - generic [ref=e801]:
+              - generic [ref=e802]:
+                - generic [ref=e803]: 
+                - text: Açık Dünya
+              - generic [ref=e804]:
+                - generic [ref=e805]: 
+                - text: Co-op
+              - generic [ref=e806]:
+                - generic [ref=e807]: 
+                - text: "2020"
+            - generic [ref=e808]:
+              - generic [ref=e809]: RPG
+              - generic [ref=e810]: Anime
+          - generic [ref=e811]:
+            - generic [ref=e812]:
+              - generic [ref=e813]: 
+              - text: PC
+            - generic [ref=e814]:
+              - generic [ref=e815]: 
+              - text: Mobil
+        - article [ref=e816]:
+          - figure [ref=e817]:
+            - img "Destiny 2 kapak görseli" [ref=e818]
+          - generic [ref=e819]:
+            - heading "Destiny 2" [level=2] [ref=e820]
+            - generic [ref=e821]:
+              - generic [ref=e822]:
+                - generic [ref=e823]: 
+                - text: Looter Shooter
+              - generic [ref=e824]:
+                - generic [ref=e825]: 
+                - text: 1-6
+              - generic [ref=e826]:
+                - generic [ref=e827]: 
+                - text: "2017"
+            - generic [ref=e828]:
+              - generic [ref=e829]: FPS
+              - generic [ref=e830]: RPG
+          - generic [ref=e831]:
+            - generic [ref=e832]:
+              - generic [ref=e833]: 
+              - text: Konsol
+            - generic [ref=e834]:
+              - generic [ref=e835]: 
+              - text: PC
+        - article [ref=e836]:
+          - figure [ref=e837]:
+            - img "Starfield kapak görseli" [ref=e838]
+          - generic [ref=e839]:
+            - heading "Starfield" [level=2] [ref=e840]
+            - generic [ref=e841]:
+              - generic [ref=e842]:
+                - generic [ref=e843]: 
+                - text: Uzay RPG
+              - generic [ref=e844]:
+                - generic [ref=e845]: 
+                - text: Tek Oyuncu
+              - generic [ref=e846]:
+                - generic [ref=e847]: 
+                - text: "2023"
+            - generic [ref=e848]:
+              - generic [ref=e849]: RPG
+              - generic [ref=e850]: Keşif
+          - generic [ref=e851]:
+            - generic [ref=e852]:
+              - generic [ref=e853]: 
+              - text: Xbox
+            - generic [ref=e854]:
+              - generic [ref=e855]: 
+              - text: PC
+        - article [ref=e856]:
+          - figure [ref=e857]:
+            - img "Cyberpunk 2077 kapak görseli" [ref=e858]
+          - generic [ref=e859]:
+            - heading "Cyberpunk 2077" [level=2] [ref=e860]
+            - generic [ref=e861]:
+              - generic [ref=e862]:
+                - generic [ref=e863]: 
+                - text: Hikaye
+              - generic [ref=e864]:
+                - generic [ref=e865]: 
+                - text: Tek Oyuncu
+              - generic [ref=e866]:
+                - generic [ref=e867]: 
+                - text: "2020"
+            - generic [ref=e868]:
+              - generic [ref=e869]: RPG
+              - generic [ref=e870]: Cyberpunk
+          - generic [ref=e871]:
+            - generic [ref=e872]:
+              - generic [ref=e873]: 
+              - text: Konsol
+            - generic [ref=e874]:
+              - generic [ref=e875]: 
+              - text: PC
+        - article [ref=e876]:
+          - figure [ref=e877]:
+            - img "The Division 2 kapak görseli" [ref=e878]
+          - generic [ref=e879]:
+            - heading "The Division 2" [level=2] [ref=e880]
+            - generic [ref=e881]:
+              - generic [ref=e882]:
+                - generic [ref=e883]: 
+                - text: Looter Shooter
+              - generic [ref=e884]:
+                - generic [ref=e885]: 
+                - text: 1-8
+              - generic [ref=e886]:
+                - generic [ref=e887]: 
+                - text: "2019"
+            - generic [ref=e888]:
+              - generic [ref=e889]: Kooperatif
+              - generic [ref=e890]: Taktik
+          - generic [ref=e891]:
+            - generic [ref=e892]:
+              - generic [ref=e893]: 
+              - text: Konsol
+            - generic [ref=e894]:
+              - generic [ref=e895]: 
+              - text: PC
+        - article [ref=e896]:
+          - figure [ref=e897]:
+            - img "No Man's Sky kapak görseli" [ref=e898]
+          - generic [ref=e899]:
+            - heading "No Man's Sky" [level=2] [ref=e900]
+            - generic [ref=e901]:
+              - generic [ref=e902]:
+                - generic [ref=e903]: 
+                - text: Keşif
+              - generic [ref=e904]:
+                - generic [ref=e905]: 
+                - text: 1-4
+              - generic [ref=e906]:
+                - generic [ref=e907]: 
+                - text: "2016"
+            - generic [ref=e908]:
+              - generic [ref=e909]: Hayatta Kalma
+              - generic [ref=e910]: Uzay
+          - generic [ref=e911]:
+            - generic [ref=e912]:
+              - generic [ref=e913]: 
+              - text: Konsol
+            - generic [ref=e914]:
+              - generic [ref=e915]: 
+              - text: PC
+        - article [ref=e916]:
+          - figure [ref=e917]:
+            - img "Pathfinder Wrath of the Righteous kapak görseli" [ref=e918]
+          - generic [ref=e919]:
+            - 'heading "Pathfinder: Wrath of the Righteous" [level=2] [ref=e920]'
+            - generic [ref=e921]:
+              - generic [ref=e922]:
+                - generic [ref=e923]: 
+                - text: CRPG
+              - generic [ref=e924]:
+                - generic [ref=e925]: 
+                - text: Tek Oyuncu
+              - generic [ref=e926]:
+                - generic [ref=e927]: 
+                - text: "2021"
+            - generic [ref=e928]:
+              - generic [ref=e929]: RPG
+              - generic [ref=e930]: Fantastik
+          - generic [ref=e932]:
+            - generic [ref=e933]: 
+            - text: PC
+        - article [ref=e934]:
+          - figure [ref=e935]:
+            - img "Star Citizen kapak görseli" [ref=e936]
+          - generic [ref=e937]:
+            - heading "Star Citizen" [level=2] [ref=e938]
+            - generic [ref=e939]:
+              - generic [ref=e940]:
+                - generic [ref=e941]: 
+                - text: Uzay Sim
+              - generic [ref=e942]:
+                - generic [ref=e943]: 
+                - text: MMO
+              - generic [ref=e944]:
+                - generic [ref=e945]: 
+                - text: Alpha
+            - generic [ref=e946]:
+              - generic [ref=e947]: RPG
+              - generic [ref=e948]: Keşif
+          - generic [ref=e950]:
+            - generic [ref=e951]: 
+            - text: PC
+        - article [ref=e952]:
+          - figure [ref=e953]:
+            - img "Helldivers 2 kapak görseli" [ref=e954]
+          - generic [ref=e955]:
+            - heading "Helldivers 2" [level=2] [ref=e956]
+            - generic [ref=e957]:
+              - generic [ref=e958]:
+                - generic [ref=e959]: 
+                - text: Kooperatif
+              - generic [ref=e960]:
+                - generic [ref=e961]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e962]:
+                - generic [ref=e963]: 
+                - text: "2024"
+            - generic [ref=e964]:
+              - generic [ref=e965]: FPS
+              - generic [ref=e966]: Taktik
+          - generic [ref=e967]:
+            - generic [ref=e968]:
+              - generic [ref=e969]: 
+              - text: Konsol
+            - generic [ref=e970]:
+              - generic [ref=e971]: 
+              - text: PC
+        - article [ref=e972]:
+          - figure [ref=e973]:
+            - img "Marvel Rivals kapak görseli" [ref=e974]
+          - generic [ref=e975]:
+            - heading "Marvel Rivals" [level=2] [ref=e976]
+            - generic [ref=e977]:
+              - generic [ref=e978]:
+                - generic [ref=e979]: 
+                - text: Kahraman
+              - generic [ref=e980]:
+                - generic [ref=e981]: 
+                - text: 6v6
+              - generic [ref=e982]:
+                - generic [ref=e983]: 
+                - text: "2024"
+            - generic [ref=e984]:
+              - generic [ref=e985]: FPS
+              - generic [ref=e986]: Kahraman
+          - generic [ref=e987]:
+            - generic [ref=e988]:
+              - generic [ref=e989]: 
+              - text: Konsol
+            - generic [ref=e990]:
+              - generic [ref=e991]: 
+              - text: PC
+        - article [ref=e992]:
+          - figure [ref=e993]:
+            - img "The Finals kapak görseli" [ref=e994]
+          - generic [ref=e995]:
+            - heading "The Finals" [level=2] [ref=e996]
+            - generic [ref=e997]:
+              - generic [ref=e998]:
+                - generic [ref=e999]: 
+                - text: Arena
+              - generic [ref=e1000]:
+                - generic [ref=e1001]: 
+                - text: 3v3v3
+              - generic [ref=e1002]:
+                - generic [ref=e1003]: 
+                - text: "2023"
+            - generic [ref=e1004]:
+              - generic [ref=e1005]: FPS
+              - generic [ref=e1006]: Arena
+          - generic [ref=e1007]:
+            - generic [ref=e1008]:
+              - generic [ref=e1009]: 
+              - text: Konsol
+            - generic [ref=e1010]:
+              - generic [ref=e1011]: 
+              - text: PC
+        - article [ref=e1012]:
+          - figure [ref=e1013]:
+            - img "Ready or Not kapak görseli" [ref=e1014]
+          - generic [ref=e1015]:
+            - heading "Ready or Not" [level=2] [ref=e1016]
+            - generic [ref=e1017]:
+              - generic [ref=e1018]:
+                - generic [ref=e1019]: 
+                - text: Taktik
+              - generic [ref=e1020]:
+                - generic [ref=e1021]: 
+                - text: 1-5 Oyuncu
+              - generic [ref=e1022]:
+                - generic [ref=e1023]: 
+                - text: "2023"
+            - generic [ref=e1024]:
+              - generic [ref=e1025]: FPS
+              - generic [ref=e1026]: Taktik
+          - generic [ref=e1028]:
+            - generic [ref=e1029]: 
+            - text: PC
+        - article [ref=e1030]:
+          - figure [ref=e1031]:
+            - img "Hunt Showdown kapak görseli" [ref=e1032]
+          - generic [ref=e1033]:
+            - 'heading "Hunt: Showdown" [level=2] [ref=e1034]'
+            - generic [ref=e1035]:
+              - generic [ref=e1036]:
+                - generic [ref=e1037]: 
+                - text: PvPvE
+              - generic [ref=e1038]:
+                - generic [ref=e1039]: 
+                - text: 1-3 Oyuncu
+              - generic [ref=e1040]:
+                - generic [ref=e1041]: 
+                - text: "2019"
+            - generic [ref=e1042]:
+              - generic [ref=e1043]: FPS
+              - generic [ref=e1044]: Hayatta Kalma
+          - generic [ref=e1045]:
+            - generic [ref=e1046]:
+              - generic [ref=e1047]: 
+              - text: Konsol
+            - generic [ref=e1048]:
+              - generic [ref=e1049]: 
+              - text: PC
+        - article [ref=e1050]:
+          - figure [ref=e1051]:
+            - img "Deep Rock Galactic kapak görseli" [ref=e1052]
+          - generic [ref=e1053]:
+            - heading "Deep Rock Galactic" [level=2] [ref=e1054]
+            - generic [ref=e1055]:
+              - generic [ref=e1056]:
+                - generic [ref=e1057]: 
+                - text: Kooperatif
+              - generic [ref=e1058]:
+                - generic [ref=e1059]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e1060]:
+                - generic [ref=e1061]: 
+                - text: "2020"
+            - generic [ref=e1062]:
+              - generic [ref=e1063]: FPS
+              - generic [ref=e1064]: Hayatta Kalma
+          - generic [ref=e1065]:
+            - generic [ref=e1066]:
+              - generic [ref=e1067]: 
+              - text: Konsol
+            - generic [ref=e1068]:
+              - generic [ref=e1069]: 
+              - text: PC
+        - article [ref=e1070]:
+          - figure [ref=e1071]:
+            - img "Valheim kapak görseli" [ref=e1072]
+          - generic [ref=e1073]:
+            - heading "Valheim" [level=2] [ref=e1074]
+            - generic [ref=e1075]:
+              - generic [ref=e1076]:
+                - generic [ref=e1077]: 
+                - text: Viking
+              - generic [ref=e1078]:
+                - generic [ref=e1079]: 
+                - text: 1-10 Oyuncu
+              - generic [ref=e1080]:
+                - generic [ref=e1081]: 
+                - text: "2021"
+            - generic [ref=e1082]:
+              - generic [ref=e1083]: Hayatta Kalma
+              - generic [ref=e1084]: RPG
+          - generic [ref=e1086]:
+            - generic [ref=e1087]: 
+            - text: PC
+        - article [ref=e1088]:
+          - figure [ref=e1089]:
+            - img "Terraria kapak görseli" [ref=e1090]
+          - generic [ref=e1091]:
+            - heading "Terraria" [level=2] [ref=e1092]
+            - generic [ref=e1093]:
+              - generic [ref=e1094]:
+                - generic [ref=e1095]: 
+                - text: Sandbox
+              - generic [ref=e1096]:
+                - generic [ref=e1097]: 
+                - text: 1-8 Oyuncu
+              - generic [ref=e1098]:
+                - generic [ref=e1099]: 
+                - text: "2011"
+            - generic [ref=e1100]:
+              - generic [ref=e1101]: Hayatta Kalma
+              - generic [ref=e1102]: Sandbox
+          - generic [ref=e1103]:
+            - generic [ref=e1104]:
+              - generic [ref=e1105]: 
+              - text: Konsol
+            - generic [ref=e1106]:
+              - generic [ref=e1107]: 
+              - text: PC
+        - article [ref=e1108]:
+          - figure [ref=e1109]:
+            - img "Project Zomboid kapak görseli" [ref=e1110]
+          - generic [ref=e1111]:
+            - heading "Project Zomboid" [level=2] [ref=e1112]
+            - generic [ref=e1113]:
+              - generic [ref=e1114]:
+                - generic [ref=e1115]: 
+                - text: Zombi
+              - generic [ref=e1116]:
+                - generic [ref=e1117]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e1118]:
+                - generic [ref=e1119]: 
+                - text: "2013"
+            - generic [ref=e1120]:
+              - generic [ref=e1121]: Hayatta Kalma
+              - generic [ref=e1122]: RPG
+          - generic [ref=e1124]:
+            - generic [ref=e1125]: 
+            - text: PC
+        - article [ref=e1126]:
+          - figure [ref=e1127]:
+            - img "DayZ kapak görseli" [ref=e1128]
+          - generic [ref=e1129]:
+            - heading "DayZ" [level=2] [ref=e1130]
+            - generic [ref=e1131]:
+              - generic [ref=e1132]:
+                - generic [ref=e1133]: 
+                - text: Zombi
+              - generic [ref=e1134]:
+                - generic [ref=e1135]: 
+                - text: MMO
+              - generic [ref=e1136]:
+                - generic [ref=e1137]: 
+                - text: "2018"
+            - generic [ref=e1138]:
+              - generic [ref=e1139]: Hayatta Kalma
+              - generic [ref=e1140]: MMO
+          - generic [ref=e1141]:
+            - generic [ref=e1142]:
+              - generic [ref=e1143]: 
+              - text: Konsol
+            - generic [ref=e1144]:
+              - generic [ref=e1145]: 
+              - text: PC
+        - article [ref=e1146]:
+          - figure [ref=e1147]:
+            - img "Grand Theft Auto V kapak görseli" [ref=e1148]
+          - generic [ref=e1149]:
+            - heading "Grand Theft Auto V" [level=2] [ref=e1150]
+            - generic [ref=e1151]:
+              - generic [ref=e1152]:
+                - generic [ref=e1153]: 
+                - text: Açık Dünya
+              - generic [ref=e1154]:
+                - generic [ref=e1155]: 
+                - text: Online
+              - generic [ref=e1156]:
+                - generic [ref=e1157]: 
+                - text: "2013"
+            - generic [ref=e1158]:
+              - generic [ref=e1159]: Açık Dünya
+              - generic [ref=e1160]: Online
+          - generic [ref=e1161]:
+            - generic [ref=e1162]:
+              - generic [ref=e1163]: 
+              - text: Konsol
+            - generic [ref=e1164]:
+              - generic [ref=e1165]: 
+              - text: PC
+        - article [ref=e1166]:
+          - figure [ref=e1167]:
+            - img "Monster Hunter World kapak görseli" [ref=e1168]
+          - generic [ref=e1169]:
+            - 'heading "Monster Hunter: World" [level=2] [ref=e1170]'
+            - generic [ref=e1171]:
+              - generic [ref=e1172]:
+                - generic [ref=e1173]: 
+                - text: Aksiyon RPG
+              - generic [ref=e1174]:
+                - generic [ref=e1175]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e1176]:
+                - generic [ref=e1177]: 
+                - text: "2018"
+            - generic [ref=e1178]:
+              - generic [ref=e1179]: RPG
+              - generic [ref=e1180]: Aksiyon
+          - generic [ref=e1181]:
+            - generic [ref=e1182]:
+              - generic [ref=e1183]: 
+              - text: Konsol
+            - generic [ref=e1184]:
+              - generic [ref=e1185]: 
+              - text: PC
+        - article [ref=e1186]:
+          - figure [ref=e1187]:
+            - img "Sekiro Shadows Die Twice kapak görseli" [ref=e1188]
+          - generic [ref=e1189]:
+            - 'heading "Sekiro: Shadows Die Twice" [level=2] [ref=e1190]'
+            - generic [ref=e1191]:
+              - generic [ref=e1192]:
+                - generic [ref=e1193]: 
+                - text: Souls-like
+              - generic [ref=e1194]:
+                - generic [ref=e1195]: 
+                - text: Tek Oyuncu
+              - generic [ref=e1196]:
+                - generic [ref=e1197]: 
+                - text: "2019"
+            - generic [ref=e1198]:
+              - generic [ref=e1199]: RPG
+              - generic [ref=e1200]: Souls-like
+          - generic [ref=e1201]:
+            - generic [ref=e1202]:
+              - generic [ref=e1203]: 
+              - text: Konsol
+            - generic [ref=e1204]:
+              - generic [ref=e1205]: 
+              - text: PC
+        - article [ref=e1206]:
+          - figure [ref=e1207]:
+            - img "Resident Evil 4 kapak görseli" [ref=e1208]
+          - generic [ref=e1209]:
+            - heading "Resident Evil 4" [level=2] [ref=e1210]
+            - generic [ref=e1211]:
+              - generic [ref=e1212]:
+                - generic [ref=e1213]: 
+                - text: Korku
+              - generic [ref=e1214]:
+                - generic [ref=e1215]: 
+                - text: Tek Oyuncu
+              - generic [ref=e1216]:
+                - generic [ref=e1217]: 
+                - text: "2023"
+            - generic [ref=e1218]:
+              - generic [ref=e1219]: Hayatta Kalma
+              - generic [ref=e1220]: Korku
+          - generic [ref=e1221]:
+            - generic [ref=e1222]:
+              - generic [ref=e1223]: 
+              - text: Konsol
+            - generic [ref=e1224]:
+              - generic [ref=e1225]: 
+              - text: PC
+        - article [ref=e1226]:
+          - figure [ref=e1227]:
+            - img "Dead by Daylight kapak görseli" [ref=e1228]
+          - generic [ref=e1229]:
+            - heading "Dead by Daylight" [level=2] [ref=e1230]
+            - generic [ref=e1231]:
+              - generic [ref=e1232]:
+                - generic [ref=e1233]: 
+                - text: Asimetrik
+              - generic [ref=e1234]:
+                - generic [ref=e1235]: 
+                - text: 1v4
+              - generic [ref=e1236]:
+                - generic [ref=e1237]: 
+                - text: "2016"
+            - generic [ref=e1238]:
+              - generic [ref=e1239]: Hayatta Kalma
+              - generic [ref=e1240]: Asimetrik
+          - generic [ref=e1241]:
+            - generic [ref=e1242]:
+              - generic [ref=e1243]: 
+              - text: Konsol
+            - generic [ref=e1244]:
+              - generic [ref=e1245]: 
+              - text: PC
+        - article [ref=e1246]:
+          - figure [ref=e1247]:
+            - img "Warframe kapak görseli" [ref=e1248]
+          - generic [ref=e1249]:
+            - heading "Warframe" [level=2] [ref=e1250]
+            - generic [ref=e1251]:
+              - generic [ref=e1252]:
+                - generic [ref=e1253]: 
+                - text: Looter
+              - generic [ref=e1254]:
+                - generic [ref=e1255]: 
+                - text: MMO
+              - generic [ref=e1256]:
+                - generic [ref=e1257]: 
+                - text: "2013"
+            - generic [ref=e1258]:
+              - generic [ref=e1259]: FPS
+              - generic [ref=e1260]: MMO
+          - generic [ref=e1261]:
+            - generic [ref=e1262]:
+              - generic [ref=e1263]: 
+              - text: Konsol
+            - generic [ref=e1264]:
+              - generic [ref=e1265]: 
+              - text: PC
+        - article [ref=e1266]:
+          - figure [ref=e1267]:
+            - img "Satisfactory kapak görseli" [ref=e1268]
+          - generic [ref=e1269]:
+            - heading "Satisfactory" [level=2] [ref=e1270]
+            - generic [ref=e1271]:
+              - generic [ref=e1272]:
+                - generic [ref=e1273]: 
+                - text: Fabrika
+              - generic [ref=e1274]:
+                - generic [ref=e1275]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e1276]:
+                - generic [ref=e1277]: 
+                - text: "2024"
+            - generic [ref=e1278]:
+              - generic [ref=e1279]: Hayatta Kalma
+              - generic [ref=e1280]: Fabrika
+          - generic [ref=e1282]:
+            - generic [ref=e1283]: 
+            - text: PC
+        - article [ref=e1284]:
+          - figure [ref=e1285]:
+            - img "Forza Horizon 5 kapak görseli" [ref=e1286]
+          - generic [ref=e1287]:
+            - heading "Forza Horizon 5" [level=2] [ref=e1288]
+            - generic [ref=e1289]:
+              - generic [ref=e1290]:
+                - generic [ref=e1291]: 
+                - text: Yarış
+              - generic [ref=e1292]:
+                - generic [ref=e1293]: 
+                - text: Online
+              - generic [ref=e1294]:
+                - generic [ref=e1295]: 
+                - text: "2021"
+            - generic [ref=e1296]:
+              - generic [ref=e1297]: Yarış
+              - generic [ref=e1298]: Online
+          - generic [ref=e1299]:
+            - generic [ref=e1300]:
+              - generic [ref=e1301]: 
+              - text: Konsol
+            - generic [ref=e1302]:
+              - generic [ref=e1303]: 
+              - text: PC
+        - article [ref=e1304]:
+          - figure [ref=e1305]:
+            - img "Phasmophobia kapak görseli" [ref=e1306]
+          - generic [ref=e1307]:
+            - heading "Phasmophobia" [level=2] [ref=e1308]
+            - generic [ref=e1309]:
+              - generic [ref=e1310]:
+                - generic [ref=e1311]: 
+                - text: Korku
+              - generic [ref=e1312]:
+                - generic [ref=e1313]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e1314]:
+                - generic [ref=e1315]: 
+                - text: "2020"
+            - generic [ref=e1316]:
+              - generic [ref=e1317]: Hayatta Kalma
+              - generic [ref=e1318]: Korku
+          - generic [ref=e1320]:
+            - generic [ref=e1321]: 
+            - text: PC
+        - article [ref=e1322]:
+          - figure [ref=e1323]:
+            - img "Lethal Company kapak görseli" [ref=e1324]
+          - generic [ref=e1325]:
+            - heading "Lethal Company" [level=2] [ref=e1326]
+            - generic [ref=e1327]:
+              - generic [ref=e1328]:
+                - generic [ref=e1329]: 
+                - text: Kooperatif
+              - generic [ref=e1330]:
+                - generic [ref=e1331]: 
+                - text: 1-4 Oyuncu
+              - generic [ref=e1332]:
+                - generic [ref=e1333]: 
+                - text: "2023"
+            - generic [ref=e1334]:
+              - generic [ref=e1335]: Hayatta Kalma
+              - generic [ref=e1336]: Kooperatif
+          - generic [ref=e1338]:
+            - generic [ref=e1339]: 
+            - text: PC
+      - text: 
+  - contentinfo [ref=e1340]:
+    - generic [ref=e1341]: © 2026 ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi

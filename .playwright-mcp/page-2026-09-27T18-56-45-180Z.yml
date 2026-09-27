@@ -1,0 +1,167 @@
+- generic [active] [ref=f2e1]:
+  - button "Menüyü aç" [ref=f2e2] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f2e3]: 
+  - complementary [aria-hidden] [ref=f2e4]:
+    - generic [ref=f2e5]:
+      - link [ref=f2e6] [cursor=pointer]:
+        - /url: ./
+        - generic [ref=f2e8]: ZEYTHAN Topluluğu
+      - button [ref=f2e9] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f2e10]: 
+    - navigation [ref=f2e11]:
+      - generic [ref=f2e12]:
+        - generic [ref=f2e13]: Sayfalar
+        - link [ref=f2e14] [cursor=pointer]:
+          - /url: ./
+          - text: Anasayfa
+          - generic [aria-hidden] [ref=f2e15]: 
+        - link [ref=f2e16] [cursor=pointer]:
+          - /url: ./oyunlar
+          - text: Oynanılan Oyunlar
+          - generic [aria-hidden] [ref=f2e17]: 
+        - link [ref=f2e18] [cursor=pointer]:
+          - /url: ./yayincilarimiz
+          - text: Yayıncılarımız
+          - generic [aria-hidden] [ref=f2e19]: 
+        - link [ref=f2e20] [cursor=pointer]:
+          - /url: ./aktiviteler
+          - text: Sunucu Aktiviteleri
+          - generic [aria-hidden] [ref=f2e21]: 
+        - group [ref=f2e22]:
+          - generic [ref=f2e23] [cursor=pointer]:
+            - text: VPN
+            - generic [aria-hidden] [ref=f2e24]: 
+          - text:  
+        - link [ref=f2e25] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - text: Discord Sunucusu
+          - generic [aria-hidden] [ref=f2e26]: 
+  - main [ref=f2e27]:
+    - generic [ref=f2e28]:
+      - generic [ref=f2e29]:
+        - generic [aria-hidden] [ref=f2e30]: 
+        - text: GOODBYEDPI · WINDOWS
+      - heading "GoodbyeDPI ile Discord kurulum rehberi" [level=1] [ref=f2e31]: GoodbyeDPI ile Discordkurulum rehberi
+      - paragraph [ref=f2e32]: Videoda arşiv çıkarılıyor, Türkiye komut dosyaları gösteriliyor ve çalışan GoodbyeDPI penceresi kontrol ediliyor. Aşağıda aynı akışı adım adım bulabilirsin.
+      - link "GoodbyeDPI arşiv sayfasını aç" [ref=f2e33] [cursor=pointer]:
+        - /url: https://drive.google.com/file/d/1VsjKnKfkLSrWgaAqRAnoNOudCTZew5Gb/view
+        - generic [aria-hidden] [ref=f2e34]: 
+        - text: GoodbyeDPI arşiv sayfasını aç
+      - generic [ref=f2e35]:
+        - generic [aria-hidden] [ref=f2e36]: 
+        - generic [ref=f2e37]: Bu, paylaştığın google drive RAR sayfasıdır; resmi proje indirme adresi değildir ve arşivin içeriği burada doğrulanmadı. Kaynağı kontrol etmeden çalıştırma.
+      - generic [ref=f2e38]:
+        - generic [aria-hidden] [ref=f2e39]: 
+        - generic [ref=f2e40]:
+          - text: "RAR şifresi:"
+          - strong [ref=f2e41]: Zeythan
+    - region [ref=f2e42]:
+      - generic [ref=f2e43]:
+        - text: GOODBYEDPI NEDİR?
+        - heading "GoodbyeDPI ne işe yarar?" [level=2] [ref=f2e44]
+      - article [ref=f2e45]:
+        - paragraph [ref=f2e46]: GoodbyeDPI, Windows'ta DPI temelli bağlantı filtrelerini aşmaya yönelik açık kaynaklı bir araçtır. Resmi proje, paketlerin WinDivert ve Windows Filtering Platform üzerinden yerel bilgisayarda işlendiğini açıklar. Bu, uzak sunucu üzerinden trafik yönlendiren klasik bir VPN hizmeti değildir.
+        - paragraph [ref=f2e47]:
+          - strong [ref=f2e48]: "Güvenlik yazılımı uyumluluğu:"
+          - text: Kaspersky veya benzeri bir program WinDivert sürücüsünü engellerse GoodbyeDPI başlatılamaz. Hata durumunda konsol mesajını ve güvenlik yazılımı uyarılarını kontrol et; korumayı kapatma.
+        - paragraph [ref=f2e49]:
+          - text: Videodaki arşivde Türkiye için hazırlanmış
+          - code [ref=f2e50]: turkey_dnsredir
+          - text: komut dosyaları ve alternatifleri görünüyor. Bu paket, resmi sürüm arşiviyle aynı kaynakta yayımlanmıyor; dosyaları açmadan önce kaynağı ve script içeriğini ayrıca doğrula.
+        - generic "GoodbyeDPI resmi kaynakları" [ref=f2e51]:
+          - link "GoodbyeDPI resmi GitHub rehberi" [ref=f2e52] [cursor=pointer]:
+            - /url: https://github.com/ValdikSS/GoodbyeDPI
+          - link "Resmi sürümler" [ref=f2e53] [cursor=pointer]:
+            - /url: https://github.com/ValdikSS/GoodbyeDPI/releases
+    - region [ref=f2e54]:
+      - generic [ref=f2e55]:
+        - text: 1 DAKİKA 27 SANİYE · WINDOWS
+        - heading "GoodbyeDPI kurulum videosu" [level=2] [ref=f2e56]
+      - generic "ZEYTHAN logolu kapak görselli GoodbyeDPI kurulum videosu; kayıt sesi kapalıdır" [ref=f2e57]: Tarayıcın video oynatmayı desteklemiyor. .
+      - generic [ref=f2e58]:
+        - generic [ref=f2e59]:
+          - generic [aria-hidden] [ref=f2e60]: 
+          - text: Fon müziği seviyesi
+        - slider "Fon müziği ses düzeyi" [ref=f2e61]: "26"
+      - paragraph [ref=f2e62]: Videonun kayıt sesi oynatıcıda kapalı. Yerine bu rehber için hazırlanmış özgün, düşük seviyeli fon müziği senkronize çalar.
+    - region [ref=f2e63]:
+      - generic [ref=f2e64]:
+        - text: VİDEODAKİ AKIŞ
+        - heading "Kurulum adımları" [level=2] [ref=f2e65]
+        - paragraph [ref=f2e66]: Videodaki ekrana ve görünen dosyalara göre hazırlandı. Arşivin içeriğini çalıştırmadan önce doğrula.
+      - generic [ref=f2e67]:
+        - article [ref=f2e68]:
+          - generic [ref=f2e69]: "01"
+          - generic [ref=f2e70]:
+            - heading "RAR arşivini indir" [level=3] [ref=f2e71]
+            - paragraph [ref=f2e72]: Sayfanın üstündeki bağlantı açılır. Bu bağlantı google drive üzerindeki üçüncü taraf RAR sayfasına gider; mümkünse resmi GitHub sürümünü tercih et.
+            - paragraph [ref=f2e73]:
+              - generic [aria-hidden] [ref=f2e74]: 
+              - text: "Arşiv şifresi:"
+              - strong [ref=f2e75]: Zeythan
+        - article [ref=f2e76]:
+          - generic [ref=f2e77]: "02"
+          - generic [ref=f2e78]:
+            - heading "Arşivi ayrı klasöre çıkart" [level=3] [ref=f2e79]
+            - paragraph [ref=f2e80]:
+              - text: Videoda RAR dosyasına sağ tıklanıyor ve WinRAR menüsünden
+              - strong [ref=f2e81]: goodbyedpi\ klasörüne çıkar
+              - text: seçeneği kullanılıyor. Çıkan klasörü aç.
+        - article [ref=f2e82]:
+          - generic [ref=f2e83]: "03"
+          - generic [ref=f2e84]:
+            - heading "README dosyasını ve script'leri incele" [level=3] [ref=f2e85]
+            - paragraph [ref=f2e86]:
+              - text: Klasörde
+              - strong [ref=f2e87]: README-BENİ OKU.txt
+              - text: ","
+              - code [ref=f2e88]: turkey_dnsredir.cmd
+              - text: ve farklı
+              - code [ref=f2e89]: turkey_dnsredir_alternative…
+              - text: komut dosyaları görünüyor. Hangi script'in ne yaptığını, özellikle DNS ayarlarını, çalıştırmadan önce kontrol et.
+        - article [ref=f2e90]:
+          - generic [ref=f2e91]: "04"
+          - generic [ref=f2e92]:
+            - heading "Bir script'i tek başına çalıştır" [level=3] [ref=f2e93]
+            - paragraph [ref=f2e94]:
+              - text: Videodaki not, alternatifleri Discord açılana kadar
+              - strong [ref=f2e95]: tek tek
+              - text: denemeyi söylüyor. Birden fazla script'i aynı anda başlatma; sonraki seçeneğe geçmeden önce çalışan komut penceresini kapat. Hangi seçeneğin işe yarayacağı bağlantına göre değişebilir.
+        - article [ref=f2e96]:
+          - generic [ref=f2e97]: "05"
+          - generic [ref=f2e98]:
+            - heading "Çalışma mesajını ve Discord'u kontrol et" [level=3] [ref=f2e99]
+            - paragraph [ref=f2e100]:
+              - text: Videonun son bölümünde GoodbyeDPI konsolunda
+              - strong [ref=f2e101]: “Filter activated, GoodbyeDPI is now running!”
+              - text: mesajı görülüyor; aynı ekranda
+              - code [ref=f2e102]: "DNS redirect: 1"
+              - text: de yer alıyor. Discord'u test et. DNS yönlendirmesini ne yaptığını anlamadan onaylama.
+        - article [ref=f2e103]:
+          - generic [ref=f2e104]: "06"
+          - generic [ref=f2e105]:
+            - heading "İşin bitince durdur" [level=3] [ref=f2e106]
+            - paragraph [ref=f2e107]: Resmi README'ye göre araç açık komut penceresi çalıştığı sürece etkin kalır. Kullanmayı bitirdiğinde pencereyi kapat; farklı bir alternatifi deneyeceksen önce mevcut çalışan pencereyi durdur.
+      - generic [ref=f2e108]:
+        - article [ref=f2e109]:
+          - generic [aria-hidden] [ref=f2e111]: 
+          - heading "Video ile resmi rehber arasındaki fark" [level=3] [ref=f2e112]
+          - paragraph [ref=f2e113]: Video, kendi RAR paketindeki Türkiye script'lerini ve GoodbyeDPI 0.2.3rc3 konsolunu gösteriyor. Resmi projenin sonraki sürümlerindeki dosya isimleri veya başlangıç yöntemi değişebilir; resmi README ve sürüm notlarını ayrıca kontrol et.
+        - complementary [ref=f2e114]:
+          - generic [aria-hidden] [ref=f2e116]: 
+          - heading "DNS ve yönetici izni" [level=3] [ref=f2e117]
+          - paragraph [ref=f2e118]: Videodaki konsolda DNS yönlendirme seçeneği etkin görünüyor. Resmi projedeki bazı hazır script'ler DNS isteklerini Yandex'e ve standart dışı bir porta yönlendirir. Komut dosyasını ve hedef DNS'i incelemeden yönetici izni verme.
+          - link "Resmi Quick Start yönergesi" [ref=f2e119] [cursor=pointer]:
+            - /url: https://github.com/ValdikSS/GoodbyeDPI#quick-start
+      - region [ref=f2e120]:
+        - heading "GoodbyeDPI hakkında sık sorulan sorular" [level=2] [ref=f2e121]
+        - group [ref=f2e122]:
+          - generic "RAR şifresi nedir?" [ref=f2e123] [cursor=pointer]
+        - group [ref=f2e124]:
+          - generic "GoodbyeDPI bilgisayarımı VPN sunucusuna bağlar mı?" [ref=f2e125] [cursor=pointer]
+        - group [ref=f2e126]:
+          - generic "Neden birden fazla turkey_dnsredir script'i var?" [ref=f2e127] [cursor=pointer]
+        - group [ref=f2e128]:
+          - generic "Programı nasıl durdururum?" [ref=f2e129] [cursor=pointer]
+  - contentinfo [ref=f2e130]:
+    - generic [ref=f2e131]: © 2026 ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi

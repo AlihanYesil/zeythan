@@ -1,0 +1,70 @@
+- generic [active] [ref=f1e1]:
+  - button "Menüyü aç" [ref=f1e2] [cursor=pointer]:
+    - generic [ref=f1e3]: 
+  - complementary [aria-hidden] [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: ZEYTHAN Topluluğu
+      - button [ref=f1e9] [cursor=pointer]:
+        - generic [ref=f1e10]: 
+    - navigation [ref=f1e11]:
+      - generic [ref=f1e12]:
+        - generic [ref=f1e13]: Sayfalar
+        - link [ref=f1e14] [cursor=pointer]:
+          - /url: ./index.html
+          - text: Anasayfa
+          - generic [ref=f1e15]: 
+        - link [ref=f1e16] [cursor=pointer]:
+          - /url: ./oyunlar.html
+          - text: Oynanılan Oyunlar
+          - generic [ref=f1e17]: 
+        - link [ref=f1e18] [cursor=pointer]:
+          - /url: ./yayincilarimiz.html
+          - text: Yayıncılarımız
+          - generic [ref=f1e19]: 
+        - link [ref=f1e20] [cursor=pointer]:
+          - /url: ./aktiviteler.html
+          - text: Sunucu Aktiviteleri
+          - generic [ref=f1e21]: 
+        - group [ref=f1e22]:
+          - generic [ref=f1e23] [cursor=pointer]:
+            - text: VPN
+            - generic [aria-hidden] [ref=f1e24]: 
+          - text:  
+        - link [ref=f1e25] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - text: Discord Sunucusu
+          - generic [ref=f1e26]: 
+        - link [ref=f1e27] [cursor=pointer]:
+          - /url: "#"
+          - text: CS2 Sunucumuz
+          - generic [ref=f1e28]: 
+  - main [ref=f1e29]:
+    - generic [ref=f1e32]:
+      - heading "ZEYTHAN Gaming Topluluğu" [level=1] [ref=f1e35]:
+        - generic [ref=f1e36]: ZEYTHAN
+        - generic [ref=f1e38]: Gaming Topluluğu
+      - paragraph [ref=f1e39]: Oyun, ekip, rekabet.
+      - paragraph [ref=f1e40]: CS2 sunucumuzda rekabet et, Discord'da ekibini kur. ZEYTHAN'da oyun keyifli, ortam saygılı.
+      - generic [ref=f1e41]:
+        - generic [ref=f1e42]:
+          - link " Discord Sunucusuna Katıl" [ref=f1e43] [cursor=pointer]:
+            - /url: https://discord.gg/M43GpGxcBy
+            - generic [ref=f1e44]: 
+            - text: Discord Sunucusuna Katıl
+          - button " CS2 Sunucusuna Bağlan" [ref=f1e45] [cursor=pointer]:
+            - generic [ref=f1e46]: 
+            - text: CS2 Sunucusuna Bağlan
+        - generic [ref=f1e47]:
+          - link " VPN (SplitWire)" [ref=f1e48] [cursor=pointer]:
+            - /url: ./discord-vpn.html
+            - generic [ref=f1e49]: 
+            - text: VPN (SplitWire)
+          - link " VPN (GoodbyeDPI)" [ref=f1e50] [cursor=pointer]:
+            - /url: ./goodbyedpi.html
+            - generic [ref=f1e51]: 
+            - text: VPN (GoodbyeDPI)
+      - text: 
+  - contentinfo [ref=f1e52]:
+    - generic [ref=f1e53]: © 2026 ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi
+  - text:      
+  - generic [ref=f1e54]: 

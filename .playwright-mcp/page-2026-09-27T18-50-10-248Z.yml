@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - button "Menüyü aç" [ref=e2] [cursor=pointer]:
+    - generic [ref=e3]: 
+  - complementary [aria-hidden] [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ZEYTHAN Topluluğu
+      - button [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: 
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Sayfalar
+        - link [ref=e14] [cursor=pointer]:
+          - /url: ./
+          - text: Anasayfa
+          - generic [ref=e15]: 
+        - link [ref=e16] [cursor=pointer]:
+          - /url: ./oyunlar
+          - text: Oynanılan Oyunlar
+          - generic [ref=e17]: 
+        - link [ref=e18] [cursor=pointer]:
+          - /url: ./yayincilarimiz
+          - text: Yayıncılarımız
+          - generic [ref=e19]: 
+        - link [ref=e20] [cursor=pointer]:
+          - /url: ./aktiviteler
+          - text: Sunucu Aktiviteleri
+          - generic [ref=e21]: 
+        - link [ref=e22] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - text: Discord Sunucusu
+          - generic [ref=e23]: 
+        - link [ref=e24] [cursor=pointer]:
+          - /url: "#"
+          - text: CS2 Sunucumuz
+          - generic [ref=e25]: 
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - heading "Yayıncılarımız Ekranın Parlayanları" [level=1] [ref=e29]:
+        - generic [ref=e30]: Yayıncılarımız
+        - generic [ref=e32]: Ekranın Parlayanları
+      - paragraph [ref=e33]: ZEYTHAN topluluğunun öne çıkan yayıncılarını keşfedin. Sevdikleri oyunları tutku ile paylaşan içerik üreticilerimizi Twitch, Kick, TikTok ve Instagram üzerinden takip ederek destekleyin.
+      - generic [ref=e34]:
+        - link " Topluluğa Katıl" [ref=e35] [cursor=pointer]:
+          - /url: https://discord.gg/M43GpGxcBy
+          - generic [ref=e36]: 
+          - text: Topluluğa Katıl
+        - link " Anasayfaya Dön" [ref=e37] [cursor=pointer]:
+          - /url: ./
+          - generic [ref=e38]: 
+          - text: Anasayfaya Dön
+    - generic [ref=e41]:
+      - article [ref=e42]:
+        - img "Bahadır Düzcan profil görseli" [ref=e44]
+        - generic [ref=e45]:
+          - text: Bahadır Düzcan
+          - heading "Bahax41" [level=2] [ref=e46]
+          - paragraph [ref=e47]: Kick'te sohbet ağırlıklı yayınlar, TikTok'ta günlük highlight videoları ve Instagram'da kulis paylaşımlarıyla topluluğu dinamik tutuyor.
+        - generic [ref=e48]:
+          - link " Youtube" [ref=e49] [cursor=pointer]:
+            - /url: https://www.youtube.com/@bahadirduzcan
+            - generic [ref=e50]: 
+            - generic [ref=e51]: Youtube
+          - link " Twitch" [ref=e52] [cursor=pointer]:
+            - /url: https://www.twitch.tv/bahax41
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Twitch
+          - link " Kick" [ref=e55] [cursor=pointer]:
+            - /url: https://kick.com/bahax41
+            - generic [ref=e56]: 
+            - generic [ref=e57]: Kick
+          - link " TikTok" [ref=e58] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@bahax41
+            - generic [ref=e59]: 
+            - generic [ref=e60]: TikTok
+          - link " Instagram" [ref=e61] [cursor=pointer]:
+            - /url: https://www.instagram.com/bahadirduzcan/
+            - generic [ref=e62]: 
+            - generic [ref=e63]: Instagram
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: 
+            - text: Haftada 4 yayın
+          - generic [ref=e67]:
+            - generic [ref=e68]: 
+            - text: Çoklu platform
+      - article [ref=e69]:
+        - img "NovaPulse profil görseli" [ref=e71]
+        - generic [ref=e72]:
+          - text: Ali Sarıaslan
+          - heading "Pakachu" [level=2] [ref=e73]
+          - paragraph [ref=e74]: Yüksek tempolu CS2 maçları ve taktik analizlerle topluluğumuza rehberlik ediyor. Turnuva yayınlarında takım liderliği yapıyor.
+        - generic [ref=e75]:
+          - link " Youtube" [ref=e76] [cursor=pointer]:
+            - /url: https://www.youtube.com/@pakachu_
+            - generic [ref=e77]: 
+            - generic [ref=e78]: Youtube
+          - link " Twitch" [ref=e79] [cursor=pointer]:
+            - /url: https://www.twitch.tv/paakachu
+            - generic [ref=e80]: 
+            - generic [ref=e81]: Twitch
+          - link " Kick" [ref=e82] [cursor=pointer]:
+            - /url: https://kick.com/pakachuuu
+            - generic [ref=e83]: 
+            - generic [ref=e84]: Kick
+          - link " TikTok" [ref=e85] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@pakachu.s
+            - generic [ref=e86]: 
+            - generic [ref=e87]: TikTok
+          - link " Instagram" [ref=e88] [cursor=pointer]:
+            - /url: https://www.instagram.com
+            - generic [ref=e89]: 
+            - generic [ref=e90]: Instagram
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: 
+            - text: Haftada 5 yayın
+          - generic [ref=e94]:
+            - generic [ref=e95]: 
+            - text: Çoklu platform
+  - contentinfo [ref=e96]:
+    - generic [ref=e97]: © 2026 ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi
