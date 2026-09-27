@@ -137,3 +137,49 @@ a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid var
 .zeythan-vpn-page.sidebar-open { overflow:hidden; }
 @media(max-width:768px) { .zeythan-vpn-page .zeythan-sidebar-toggle { top:18px; left:18px; width:44px; height:44px; } .zeythan-vpn-page .zeythan-sidebar { width:min(80vw,320px); padding:24px 20px; } }
 @media(prefers-reduced-motion:reduce) { .zeythan-vpn-page .zeythan-sidebar,.zeythan-vpn-page .zeythan-sidebar-toggle,.zeythan-vpn-page .zeythan-sidebar-overlay { transition-duration:.01ms; } }
+
+/* Sunucu aktiviteleri */
+.zeythan-activity-section { padding:40px 20px 100px; }
+.zeythan-activity-wrap { width:min(100%,1240px); margin:0 auto; }
+.zeythan-activity-lead { color:var(--zeythan-muted); max-width:760px; margin:0 auto 1.75rem; text-align:center; }
+.zeythan-activity-stats { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin-bottom:1.4rem; }
+.zeythan-stat-pill { display:inline-flex; align-items:center; gap:.45rem; padding:.5rem 1rem; border:1px solid var(--zeythan-line); border-radius:999px; background:rgba(18,25,36,.72); color:#eef2fa; font-size:.92rem; font-weight:600; }
+.zeythan-stat-pill i { font-size:.72rem; }
+.zeythan-stat-online i { color:#3fb950; }
+.zeythan-stat-active i { color:var(--zeythan-orange); }
+.zeythan-activity-updated { margin-left:auto; color:var(--zeythan-muted); font-size:.82rem; }
+.zeythan-activity-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.85rem; }
+.zeythan-activity-card { display:flex; align-items:center; gap:1rem; min-width:0; padding:1rem 1.15rem; border:1px solid var(--zeythan-line); border-radius:18px; background:linear-gradient(145deg,rgba(21,29,42,.92),rgba(13,18,27,.94)); transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.zeythan-activity-card:hover { transform:translateY(-3px); border-color:rgba(114,133,255,.35); box-shadow:0 14px 30px rgba(0,0,0,.28); }
+.zeythan-activity-icon { position:relative; flex:0 0 auto; width:56px; height:56px; display:grid; place-items:center; overflow:hidden; border:1px solid rgba(114,133,255,.28); border-radius:16px; background:linear-gradient(135deg,rgba(88,166,255,.28),rgba(255,154,61,.22)); }
+.zeythan-activity-icon.is-custom { background:linear-gradient(135deg,rgba(114,133,255,.34),rgba(88,101,242,.24)); border-color:rgba(114,133,255,.4); }
+.zeythan-activity-icon img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.zeythan-activity-icon-fallback { color:#f0f6fc; font-size:1.35rem; font-weight:800; }
+.zeythan-activity-icon-fallback i { font-size:1.15rem; color:#c4caff; }
+.zeythan-activity-info { flex:1 1 auto; min-width:0; }
+.zeythan-activity-name { margin:0; overflow:hidden; color:#f4f6fb; font-size:1.02rem; font-weight:650; line-height:1.3; text-overflow:ellipsis; white-space:nowrap; }
+.zeythan-activity-type { color:var(--zeythan-muted); font-size:.8rem; }
+.zeythan-activity-count { flex:0 0 auto; display:flex; align-items:baseline; gap:.3rem; }
+.zeythan-activity-count strong { color:#fff; font-size:1.55rem; font-weight:750; line-height:1; }
+.zeythan-activity-count span { color:var(--zeythan-muted); font-size:.78rem; }
+.zeythan-activity-empty { padding:2.5rem 1rem; border:1px dashed var(--zeythan-line); border-radius:18px; color:var(--zeythan-muted); text-align:center; }
+.zeythan-activity-empty i { margin-right:.45rem; }
+
+/* Anasayfa canlı çipi */
+.zeythan-activity-chip { display:inline-flex; align-items:center; gap:.65rem; margin-top:.5rem; padding:.55rem 1.1rem .55rem .9rem; border:1px solid var(--zeythan-line); border-radius:999px; background:rgba(18,25,36,.72); color:#eef2fa; font-size:.9rem; font-weight:600; cursor:pointer; transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.zeythan-activity-chip:hover { transform:translateY(-2px); border-color:rgba(114,133,255,.4); box-shadow:0 10px 24px rgba(0,0,0,.3); }
+.zeythan-activity-chip[hidden] { display:none; }
+.zeythan-activity-chip-cta { display:inline-flex; align-items:center; gap:.35rem; color:#97a5ff; }
+.zeythan-live-dot { flex:0 0 auto; width:9px; height:9px; border-radius:50%; background:#3fb950; animation:zeythan-pulse 2s infinite; }
+@keyframes zeythan-pulse { 0% { box-shadow:0 0 0 0 rgba(63,185,80,.55); } 70% { box-shadow:0 0 0 9px rgba(63,185,80,0); } 100% { box-shadow:0 0 0 0 rgba(63,185,80,0); } }
+body.modal-open .zeythan-sidebar-toggle { opacity:0; pointer-events:none; }
+@media(max-width:640px) {
+  .zeythan-activity-grid { grid-template-columns:1fr; }
+  .zeythan-activity-updated { margin-left:0; width:100%; }
+}
+@media(max-width:380px) {
+  .zeythan-activity-card { gap:.7rem; padding:.8rem .9rem; }
+  .zeythan-activity-icon { width:46px; height:46px; border-radius:13px; }
+  .zeythan-activity-count strong { font-size:1.3rem; }
+}
+@media(prefers-reduced-motion:reduce) { .zeythan-live-dot { animation:none; } .zeythan-activity-card:hover,.zeythan-activity-chip:hover { transform:none; } }

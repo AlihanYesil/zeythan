@@ -3,7 +3,11 @@ const CONFIG = {
     discordUrl: "https://discord.gg/M43GpGxcBy",
     cs2ServerIp: "194.105.5.172",
     cs2ConnectCommand: "CONNECT 194.105.5.172",
-    cs2SteamUrl: "steam://connect/194.105.5.172"
+    cs2SteamUrl: "steam://connect/194.105.5.172",
+    // Sunucu aktiviteleri uç noktası. Boş bırakılırsa activity.js demo veriyle çalışır.
+    activityApiUrl: "https://zeythan.bahadirduzcan.com.tr/api/public/activity",
+    activityToken: "5906ae300241470c12f19055e0618f084dfe9bcbba6a31b4",
+    activityGuildId: "832402784522731540"
 };
 
 // HTTP / HTTPS sunucu ortamında config.json dosyasından canlı veriyi çek (file:// protokolü fallback olarak CONFIG nesnesini kullanır)

@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="ZEYTHAN yayıncı ekibiyle tanışın. Twitch, Kick, TikTok ve Instagram'da içerik üreten topluluk üyelerimizle oyunun nabzını tutun.">
+        content="ZEYTHAN Discord sunucusunda şu an kimler ne oynuyor? Canlı sunucu aktiviteleri, oynanan oyunlar ve çevrimiçi sayıları.">
     <meta name="keywords"
-        content="ZEYTHAN yayıncılarımız, Twitch yayıncıları, Kick yayıncıları, TikTok yayıncıları, Instagram yayıncıları, oyun yayıncıları">
+        content="ZEYTHAN sunucu aktiviteleri, Discord aktivite, oynanan oyunlar, çevrimiçi oyuncu sayısı, CS2, Valorant, topluluk">
     <meta name="author" content="ZEYTHAN Gaming Community">
-    <meta property="og:title" content="ZEYTHAN Yayıncılarımız">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ZEYTHAN Sunucu Aktiviteleri">
     <meta property="og:description"
-        content="Twitch, Kick, TikTok ve Instagram'da aktif ZEYTHAN yayıncılarıyla tanışın.">
+        content="Discord sunucumuzda şu an oynanan oyunları ve çevrimiçi oyuncu sayılarını canlı olarak görün.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="tr_TR">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ZEYTHAN Yayıncılarımız">
+    <meta name="twitter:title" content="ZEYTHAN Sunucu Aktiviteleri">
     <meta name="twitter:description"
-        content="ZEYTHAN'ın öne çıkan yayıncılarına göz atın ve en sevdiğiniz platformda takip edin.">
+        content="ZEYTHAN Discord sunucusundaki canlı oyun aktiviteleri ve çevrimiçi sayıları.">
     <meta name="theme-color" content="#0d1117">
-    <title>ZEYTHAN Yayıncılarımız | Topluluk Yayıncıları</title>
+    <title>ZEYTHAN Sunucu Aktiviteleri | Şu An Ne Oynanıyor?</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='60' font-size='90' text-anchor='middle' dominant-baseline='middle'>🎮</text></svg>">
-    <link rel="canonical" href="https://zeythan.com/yayincilarimiz">
+    <link rel="canonical" href="https://zeythan.com/aktiviteler">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -101,6 +102,7 @@
             flex-direction: column;
             padding: 28px 24px;
             gap: 24px;
+            overflow-y: auto;
         }
 
         body.sidebar-open .zeythan-sidebar {
@@ -303,7 +305,7 @@
 
         .zeythan-hero-subtitle {
             color: #8b949e;
-            max-width: 640px;
+            max-width: 680px;
             margin: 1.25rem auto 0;
             font-size: 1.05rem;
             line-height: 1.6;
@@ -328,188 +330,6 @@
         .zeythan-hero-actions a:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 18px rgba(88, 166, 255, 0.35);
-        }
-
-        .zeythan-streamer-section {
-            padding: 40px 20px 100px;
-        }
-
-        .zeythan-streamer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 28px;
-            max-width: 1240px;
-            margin: 0 auto;
-        }
-
-        .zeythan-streamer-card {
-            background: linear-gradient(160deg, rgba(22, 27, 34, 0.95) 0%, rgba(13, 17, 23, 0.95) 100%);
-            border: 1px solid rgba(88, 166, 255, 0.15);
-            border-radius: 22px;
-            padding: 22px;
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-        }
-
-        .zeythan-streamer-card::before {
-            content: '';
-            position: absolute;
-            inset: -40% -80% auto;
-            height: 65%;
-            background: radial-gradient(circle, rgba(88, 166, 255, 0.24) 0%, transparent 70%);
-            transform: rotate(18deg);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .zeythan-streamer-card:hover {
-            transform: translateY(-6px);
-            border-color: rgba(88, 166, 255, 0.35);
-            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
-        }
-
-        .zeythan-streamer-card:hover::before {
-            opacity: 0.85;
-        }
-
-        .zeythan-streamer-avatar {
-            position: relative;
-            border-radius: 18px;
-            overflow: hidden;
-            width: 100%;
-            aspect-ratio: 1;
-            border: 1px solid rgba(88, 166, 255, 0.25);
-            background: linear-gradient(135deg, rgba(56, 139, 253, 0.25) 0%, rgba(255, 128, 0, 0.18) 100%);
-        }
-
-        .zeythan-streamer-avatar img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .zeythan-streamer-avatar::after {
-            /* content: 'Önerilen boyut: 320x320'; */
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(13, 17, 23, 0.8);
-            border: 1px solid rgba(88, 166, 255, 0.45);
-            border-radius: 999px;
-            padding: 6px 12px;
-            font-size: 0.72rem;
-            letter-spacing: 0.04em;
-            color: #58a6ff;
-        }
-
-        .zeythan-streamer-name {
-            font-size: 1.35rem;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-        }
-
-        .zeythan-streamer-role {
-            font-size: 0.92rem;
-            text-transform: uppercase;
-            letter-spacing: 0.18em;
-            color: rgba(255, 200, 92, 0.88);
-        }
-
-        .zeythan-streamer-desc {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #8b949e;
-        }
-
-        .zeythan-platform-badges {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .zeythan-platform-badges span {
-            border-radius: 999px;
-            padding: 6px 12px;
-            font-size: 0.78rem;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            background: rgba(88, 166, 255, 0.12);
-            border: 1px solid rgba(88, 166, 255, 0.35);
-            color: #f0f6fc;
-            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
-        }
-
-        .zeythan-social-links {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(120px, 1fr));
-            gap: 12px;
-        }
-
-        .zeythan-social-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            border-radius: 14px;
-            padding: 10px;
-            font-weight: 600;
-            color: #f0f6fc;
-            text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border: 1px solid transparent;
-            background: rgba(22, 27, 34, 0.9);
-        }
-
-        .zeythan-social-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.28);
-        }
-
-        .zeythan-social-button.twitch {
-            border-color: rgba(145, 70, 255, 0.4);
-            background: linear-gradient(135deg, rgba(145, 70, 255, 0.18) 0%, rgba(63, 0, 255, 0.18) 100%);
-        }
-
-        .zeythan-social-button.kick {
-            border-color: rgba(89, 255, 124, 0.35);
-            background: linear-gradient(135deg, rgba(89, 255, 124, 0.18) 0%, rgba(16, 185, 129, 0.18) 100%);
-        }
-
-        .zeythan-social-button.tiktok {
-            border-color: rgba(0, 239, 255, 0.35);
-            background: linear-gradient(135deg, rgba(0, 239, 255, 0.18) 0%, rgba(255, 43, 82, 0.18) 100%);
-        }
-
-        .zeythan-social-button.instagram {
-            border-color: rgba(255, 90, 90, 0.35);
-            background: linear-gradient(135deg, rgba(255, 90, 90, 0.18) 0%, rgba(255, 200, 92, 0.18) 100%);
-        }
-
-        .zeythan-social-button i {
-            font-size: 1rem;
-        }
-
-        .zeythan-social-button span {
-            font-size: 0.88rem;
-        }
-
-        .zeythan-meta-info {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            font-size: 0.78rem;
-            color: #6e7681;
-        }
-
-        .zeythan-meta-info i {
-            color: rgba(88, 166, 255, 0.8);
         }
 
         .zeythan-footer {
@@ -537,10 +357,6 @@
                 padding: 100px 16px 64px;
                 min-height: auto;
             }
-
-            .zeythan-streamer-section {
-                padding: 32px 16px 80px;
-            }
         }
 
         @media (max-width: 768px) {
@@ -565,28 +381,6 @@
                 width: 120px;
                 height: 2px;
             }
-
-            .zeythan-streamer-grid {
-                gap: 20px;
-            }
-
-            .zeythan-social-links {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .zeythan-hero-section {
-                padding: 72px 12px 48px;
-            }
-
-            .zeythan-streamer-card {
-                padding: 18px;
-            }
-
-            .zeythan-social-links {
-                grid-template-columns: 1fr;
-            }
         }
 
         ::-webkit-scrollbar {
@@ -606,6 +400,7 @@
             background: #484f58;
         }
     </style>
+    <link rel="stylesheet" href="./site.css">
 </head>
 
 <body class="zeythan-bg-darker">
@@ -635,14 +430,27 @@
                     Oynanılan Oyunlar
                     <i class="fas fa-gamepad"></i>
                 </a>
-                <a class="zeythan-sidebar-link active" href="./yayincilarimiz.html" data-close-on-click="true">
+                <a class="zeythan-sidebar-link" href="./yayincilarimiz.html" data-close-on-click="true">
                     Yayıncılarımız
                     <i class="fas fa-star"></i>
                 </a>
-                <a class="zeythan-sidebar-link" href="./aktiviteler.html" data-close-on-click="true">
+                <a class="zeythan-sidebar-link active" href="./aktiviteler.html" data-close-on-click="true">
                     Sunucu Aktiviteleri
                     <i class="fas fa-signal"></i>
                 </a>
+                <details class="zeythan-vpn-sidebar-menu">
+                    <summary class="zeythan-sidebar-link zeythan-vpn-sidebar-toggle">
+                        VPN <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </summary>
+                    <div class="zeythan-vpn-sidebar-submenu">
+                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./discord-vpn.html" data-close-on-click="true">
+                            SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                        </a>
+                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./goodbyedpi.html" data-close-on-click="true">
+                            GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </details>
                 <a class="zeythan-sidebar-link" href="https://discord.gg/M43GpGxcBy" data-config="discordUrl" target="_blank" rel="noopener"
                     data-close-on-click="true">
                     Discord Sunucusu
@@ -663,13 +471,13 @@
         <section class="zeythan-hero-section">
             <div class="text-center">
                 <h1 class="zeythan-hero-title mb-3">
-                    <span class="title-primary">Yayıncılarımız</span>
+                    <span class="title-primary">Sunucu</span>
                     <span class="title-divider" aria-hidden="true"></span>
-                    <span class="title-secondary">Ekranın Parlayanları</span>
+                    <span class="title-secondary">Aktiviteleri</span>
                 </h1>
                 <p class="zeythan-hero-subtitle">
-                    ZEYTHAN topluluğunun öne çıkan yayıncılarını keşfedin. Sevdikleri oyunları tutku ile paylaşan
-                    içerik üreticilerimizi Twitch, Kick, TikTok ve Instagram üzerinden takip ederek destekleyin.
+                    ZEYTHAN Discord sunucusunda şu an neler oluyor? Hangi oyunlar oynanıyor, kaç kişi çevrimiçi?
+                    Veriler birkaç dakikada bir otomatik güncellenir.
                 </p>
                 <div class="zeythan-hero-actions">
                     <a href="https://discord.gg/M43GpGxcBy" data-config="discordUrl" target="_blank" class="btn btn-lg"
@@ -683,103 +491,10 @@
             </div>
         </section>
 
-        <section id="cs2-info" class="zeythan-streamer-section">
-            <div class="container-fluid">
-                <div class="zeythan-streamer-grid">
-                    <article class="zeythan-streamer-card">
-                        <div class="zeythan-streamer-avatar">
-                            <img src="./blogo.png" alt="Bahadır Düzcan profil görseli">
-                        </div>
-                        <div>
-                            <span class="zeythan-streamer-role">Bahadır Düzcan</span>
-                            <h2 class="zeythan-streamer-name">Bahax41</h2>
-                            <p class="zeythan-streamer-desc">
-                                Kick'te sohbet ağırlıklı yayınlar, TikTok'ta günlük highlight videoları ve Instagram'da
-                                kulis paylaşımlarıyla topluluğu dinamik tutuyor.
-
-
-                            </p>
-                        </div>
-
-                        <div class="zeythan-social-links">
-                            <a class="zeythan-social-button twitch" href="https://www.youtube.com/@bahadirduzcan"
-                                target="_blank" rel="noopener">
-                                <i class="fab fa-youtube"></i>
-                                <span>Youtube</span>
-                            </a>
-                            <a class="zeythan-social-button twitch" href="https://www.twitch.tv/bahax41" target="_blank"
-                                rel="noopener">
-                                <i class="fab fa-twitch"></i>
-                                <span>Twitch</span>
-                            </a>
-                            <a class="zeythan-social-button kick" href="https://kick.com/bahax41" target="_blank"
-                                rel="noopener">
-                                <i class="fas fa-bolt"></i>
-                                <span>Kick</span>
-                            </a>
-                            <a class="zeythan-social-button tiktok" href="https://www.tiktok.com/@bahax41"
-                                target="_blank" rel="noopener">
-                                <i class="fab fa-tiktok"></i>
-                                <span>TikTok</span>
-                            </a>
-                            <a class="zeythan-social-button instagram" href="https://www.instagram.com/bahadirduzcan/"
-                                target="_blank" rel="noopener">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                        </div>
-                        <div class="zeythan-meta-info">
-                            <span><i class="fas fa-calendar-alt"></i> Haftada 4 yayın</span>
-                            <span><i class="fas fa-video"></i> Çoklu platform</span>
-                        </div>
-                    </article>
-
-                    <article class="zeythan-streamer-card">
-                        <div class="zeythan-streamer-avatar">
-                            <img src="./plogo.png" alt="NovaPulse profil görseli">
-                        </div>
-                        <div>
-                            <span class="zeythan-streamer-role">Ali Sarıaslan</span>
-                            <h2 class="zeythan-streamer-name">Pakachu</h2>
-                            <p class="zeythan-streamer-desc">
-                                Yüksek tempolu CS2 maçları ve taktik analizlerle topluluğumuza rehberlik ediyor. Turnuva
-                                yayınlarında takım liderliği yapıyor.
-                            </p>
-                        </div>
-
-                        <div class="zeythan-social-links">
-                            <a class="zeythan-social-button twitch" href="https://www.youtube.com/@pakachu_"
-                                target="_blank" rel="noopener">
-                                <i class="fab fa-youtube"></i>
-                                <span>Youtube</span>
-                            </a>
-                            <a class="zeythan-social-button twitch" href="https://www.twitch.tv/paakachu"
-                                target="_blank" rel="noopener">
-                                <i class="fab fa-twitch"></i>
-                                <span>Twitch</span>
-                            </a>
-                            <a class="zeythan-social-button kick" href="https://kick.com/pakachuuu" target="_blank"
-                                rel="noopener">
-                                <i class="fas fa-bolt"></i>
-                                <span>Kick</span>
-                            </a>
-                            <a class="zeythan-social-button tiktok" href="https://www.tiktok.com/@pakachu.s"
-                                target="_blank" rel="noopener">
-                                <i class="fab fa-tiktok"></i>
-                                <span>TikTok</span>
-                            </a>
-                            <a class="zeythan-social-button instagram" href="https://www.instagram.com" target="_blank"
-                                rel="noopener">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                        </div>
-                        <div class="zeythan-meta-info">
-                            <span><i class="fas fa-calendar-alt"></i> Haftada 5 yayın</span>
-                            <span><i class="fas fa-video"></i> Çoklu platform</span>
-                        </div>
-                    </article>
-
+        <section class="zeythan-activity-section">
+            <div class="zeythan-activity-wrap">
+                <div data-activity-container>
+                    <div class="zeythan-activity-empty"><i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Aktiviteler yükleniyor…</div>
                 </div>
             </div>
         </section>
@@ -788,6 +503,52 @@
     <footer class="zeythan-footer text-center py-4">
         <small>© <span id="currentYear"></span> ZEYTHAN Gaming Topluluğu · Adil ve keyifli oyun deneyimi</small>
     </footer>
+
+    <!-- CS2 Modal -->
+    <div class="modal fade" id="cs2Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content zeythan-modal-content zeythan-bg-darker border-light">
+                <div class="modal-header zeythan-modal-header border-light">
+                    <h5 class="modal-title text-white">
+                        <i class="fab fa-steam"></i> Counter-Strike 2 Sunucu
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning text-dark mb-3" role="status"><i class="fas fa-tools" aria-hidden="true"></i> CS2 sunucumuz şu an için bakımdadır.</div>
+                    <div class="mb-3">
+                        <label class="form-label zeythan-form-label text-muted">Sunucu Bilgisi:</label>
+                        <div class="input-group">
+                            <input type="text"
+                                class="form-control zeythan-form-control bg-secondary text-white border-light"
+                                id="cs2ServerInfo" value="CONNECT 194.105.5.172" data-config="cs2ConnectCommand" readonly>
+                            <button class="btn btn-primary" type="button" onclick="copyCS2Info()">
+                                <i class="fas fa-copy"></i> Kopyala
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label zeythan-form-label text-muted">Sunucuya Bağlan:</label>
+                        <a href="steam://connect/194.105.5.172" data-config="cs2SteamUrl" class="btn btn-success w-100">
+                            <i class="fab fa-steam"></i> CS2'de Sunucuya Git
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer zeythan-modal-footer border-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="copyToast" class="toast zeythan-toast" role="alert">
+            <div class="toast-body bg-success text-white">
+                <i class="fas fa-check-circle"></i> Kopyalandı!
+            </div>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -832,15 +593,15 @@
             });
         }
 
-        function handleMobileViewport() {
-            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                document.body.style.touchAction = 'manipulation';
-            }
+        function copyCS2Info() {
+            const text = document.getElementById('cs2ServerInfo').value;
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = new bootstrap.Toast(document.getElementById('copyToast'));
+                toast.show();
+            });
         }
-
-        handleMobileViewport();
     </script>
+    <script src="./activity.js"></script>
 </body>
 
 </html>
