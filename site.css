@@ -156,6 +156,7 @@ a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid var
 .zeythan-activity-icon img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .zeythan-activity-icon-fallback { color:#f0f6fc; font-size:1.35rem; font-weight:800; }
 .zeythan-activity-icon-fallback i { font-size:1.15rem; color:#c4caff; }
+.zeythan-activity-icon:has(img) .zeythan-activity-icon-fallback { display:none; }
 .zeythan-activity-info { flex:1 1 auto; min-width:0; }
 .zeythan-activity-name { margin:0; overflow:hidden; color:#f4f6fb; font-size:1.02rem; font-weight:650; line-height:1.3; text-overflow:ellipsis; white-space:nowrap; }
 .zeythan-activity-type { color:var(--zeythan-muted); font-size:.8rem; }
