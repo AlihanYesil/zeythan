@@ -1,6 +1,8 @@
 // ZEYTHAN System Constants / Sistem Sabitleri
 const CONFIG = {
-    discordUrl: "https://discord.gg/M43GpGxcBy",
+    // Discord davet linki TEK KAYNAK: sadece buradaki kodu degistir.
+    // applyConfig() sayfadaki tum discord.gg baglantilarini otomatik gunceller.
+    discordUrl: "https://discord.gg/Br3wVHfJkg",
     cs2ServerIp: "194.105.5.172",
     cs2ConnectCommand: "CONNECT 194.105.5.172",
     cs2SteamUrl: "steam://connect/194.105.5.172",

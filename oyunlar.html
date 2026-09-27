@@ -11,7 +11,7 @@
     <meta name="author" content="ZEYTHAN Gaming Community">
     <meta property="og:title" content="ZEYTHAN Oyunlarımız">
     <meta property="og:description"
-        content="Topluluğumuzla düzenli oynadığımız 30'dan fazla oyunu keşfedin, türlere göre filtreleyin ve takımınızı bulun.">
+        content="Topluluğumuzla düzenli oynadığımız 60'tan fazla oyunu keşfedin, türlere göre filtreleyin ve takımınızı bulun.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="tr_TR">
     <meta name="twitter:card" content="summary_large_image">
@@ -19,7 +19,7 @@
     <meta name="twitter:description"
         content="FPS, RPG, hayatta kalma ve daha fazlası: ZEYTHAN oyuncularının favori oyun kataloğu.">
     <meta name="theme-color" content="#0d1117">
-    <title>ZEYTHAN Oyunlarımız | 30+ Topluluk Favorisi</title>
+    <title>ZEYTHAN Oyunlarımız | 60+ Topluluk Favorisi</title>
     <link rel="icon" type="image/png" href="./zeythan-favicon.png">
     <link rel="canonical" href="https://zeythann.com.tr/oyunlar">
     <link href="./bootstrap.min.css" rel="stylesheet">
@@ -360,92 +360,130 @@
 
         .zeythan-games-intro {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 22px;
-            margin-top: 36px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            text-align: left;
         }
 
         .zeythan-games-intro-card {
+            --intro-accent: 88, 166, 255;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(165deg, rgba(22, 27, 34, 0.95) 0%, rgba(13, 17, 23, 0.92) 48%, rgba(27, 35, 48, 0.95) 100%);
-            border: 1px solid rgba(88, 166, 255, 0.18);
-            border-radius: 24px;
-            padding: 26px 24px;
-            display: flex;
-            gap: 18px;
-            align-items: flex-start;
+            isolation: isolate;
+            background: linear-gradient(165deg, rgba(22, 27, 34, 0.95) 0%, rgba(13, 17, 23, 0.94) 58%, rgba(19, 26, 38, 0.96) 100%);
+            border: 1px solid rgba(var(--intro-accent), 0.22);
+            border-radius: 22px;
+            padding: 26px 24px 24px;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: start;
+            gap: 16px;
             transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
 
+        /* ust kenarda ince renk seridi */
+        .zeythan-games-intro-card::before {
+            content: '';
+            position: absolute;
+            inset: 0 0 auto;
+            height: 3px;
+            background: linear-gradient(90deg, rgba(var(--intro-accent), 0.95) 0%, rgba(var(--intro-accent), 0) 85%);
+            z-index: 2;
+        }
+
+        /* kosede yumusak renk pariltisi */
         .zeythan-games-intro-card::after {
             content: '';
             position: absolute;
-            inset: auto -40% -55% -40%;
-            height: 140%;
-            background: radial-gradient(circle, rgba(88, 166, 255, 0.2) 0%, transparent 65%);
-            opacity: 0;
-            transition: opacity 0.4s ease;
+            top: -90px;
+            right: -80px;
+            width: 240px;
+            height: 240px;
+            background: radial-gradient(circle, rgba(var(--intro-accent), 0.22) 0%, transparent 68%);
+            opacity: 0.75;
+            transition: opacity 0.35s ease, transform 0.35s ease;
             pointer-events: none;
+            z-index: 0;
         }
 
         .zeythan-games-intro-card:hover {
             transform: translateY(-6px);
-            border-color: rgba(88, 166, 255, 0.35);
-            box-shadow: 0 18px 32px rgba(0, 0, 0, 0.32);
+            border-color: rgba(var(--intro-accent), 0.45);
+            box-shadow: 0 18px 34px rgba(0, 0, 0, 0.34);
         }
 
         .zeythan-games-intro-card:hover::after {
             opacity: 1;
+            transform: scale(1.08);
         }
 
         .zeythan-intro-icon {
+            position: relative;
+            z-index: 1;
             flex-shrink: 0;
-            width: 60px;
-            height: 60px;
-            border-radius: 18px;
-            background: linear-gradient(145deg, rgba(88, 166, 255, 0.25) 0%, rgba(255, 153, 0, 0.22) 100%);
+            width: 54px;
+            height: 54px;
+            border-radius: 16px;
+            background: linear-gradient(145deg, rgba(var(--intro-accent), 0.34) 0%, rgba(var(--intro-accent), 0.12) 100%);
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid rgba(88, 166, 255, 0.35);
-            box-shadow: 0 10px 24px rgba(15, 20, 30, 0.32);
+            border: 1px solid rgba(var(--intro-accent), 0.4);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
         }
 
         .zeythan-intro-icon i {
-            font-size: 1.6rem;
-            color: #f0f6fc;
+            font-size: 1.35rem;
+            color: rgb(var(--intro-accent));
         }
 
         .zeythan-intro-content {
+            position: relative;
+            z-index: 1;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 8px;
+            min-width: 0;
         }
 
         .zeythan-intro-badge {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.75rem;
-            letter-spacing: 0.08em;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: #91c7ff;
-            background: rgba(88, 166, 255, 0.12);
+            color: rgb(var(--intro-accent));
+            background: rgba(var(--intro-accent), 0.12);
+            border: 1px solid rgba(var(--intro-accent), 0.24);
             border-radius: 999px;
-            padding: 4px 12px;
+            padding: 4px 11px;
         }
 
         .zeythan-games-intro-card h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
+            margin: 2px 0 0;
+            color: #f0f6fc;
+            font-size: 1.12rem;
+            font-weight: 650;
+            letter-spacing: 0.01em;
         }
 
         .zeythan-games-intro-card p {
             color: #99a1b3;
             margin: 0;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             line-height: 1.55;
+        }
+
+        .zeythan-games-intro-card.is-orange {
+            --intro-accent: 255, 153, 61;
+        }
+
+        .zeythan-games-intro-card.is-green {
+            --intro-accent: 63, 185, 80;
         }
 
         .zeythan-games-section {
@@ -559,7 +597,9 @@
 
         .zeythan-games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            /* auto-fill: kart sayisi azalinca bos izgara korunur, boylece
+               filtreleme/arama sirasinda kartlar ve kapak gorselleri buyumez. */
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 28px;
         }
 
@@ -835,7 +875,7 @@
                         </a>
                     </div>
                 </details>
-                <a class="zeythan-sidebar-link" href="https://discord.gg/M43GpGxcBy" data-config="discordUrl" target="_blank" rel="noopener"
+                <a class="zeythan-sidebar-link" href="https://discord.gg/Br3wVHfJkg" data-config="discordUrl" target="_blank" rel="noopener"
                     data-close-on-click="true">
                     Discord Sunucusu
                     <i class="fab fa-discord"></i>
@@ -863,12 +903,12 @@
                 </h1>
                 <p class="zeythan-hero-subtitle">
                     ZEYTHAN ekibi olarak rekabetçi arenadan macera dünyalarına kadar haftalık etkinliklerde buluştuğumuz
-                    30'dan fazla oyunu bu listede topladık. Türlere göre filtreleyin, aradığınız oyunu bulun ve
+                    60'tan fazla oyunu bu listede topladık. Türlere göre filtreleyin, aradığınız oyunu bulun ve
                     Discord'da
                     takımınızı oluşturun.
                 </p>
                 <div class="zeythan-hero-actions">
-                    <a href="https://discord.gg/M43GpGxcBy" data-config="discordUrl" target="_blank"
+                    <a href="https://discord.gg/Br3wVHfJkg" data-config="discordUrl" target="_blank"
                         class="zeythan-button zeythan-button-primary">
                         <i class="fab fa-discord" aria-hidden="true"></i>
                         <span>Topluluğa Katıl</span>
@@ -880,7 +920,7 @@
                 </div>
 
                 <div class="zeythan-games-intro">
-                    <div class="zeythan-games-intro-card">
+                    <div class="zeythan-games-intro-card is-blue">
                         <div class="zeythan-intro-icon">
                             <i class="fas fa-calendar-week" aria-hidden="true"></i>
                         </div>
@@ -891,7 +931,7 @@
                                 Discord'da paylaşılıyor.</p>
                         </div>
                     </div>
-                    <div class="zeythan-games-intro-card">
+                    <div class="zeythan-games-intro-card is-green">
                         <div class="zeythan-intro-icon">
                             <i class="fas fa-users" aria-hidden="true"></i>
                         </div>
@@ -901,7 +941,7 @@
                             <p>FPS, RPG ve sosyal oyun rollerinden seçim yaparak oyun arkadaşlarını kolayca bul.</p>
                         </div>
                     </div>
-                    <div class="zeythan-games-intro-card">
+                    <div class="zeythan-games-intro-card is-orange">
                         <div class="zeythan-intro-icon">
                             <i class="fas fa-trophy" aria-hidden="true"></i>
                         </div>
@@ -925,9 +965,9 @@
                         <div class="zeythan-games-stats">
                             <span class="zeythan-counter-pill">
                                 <i class="fas fa-layer-group" aria-hidden="true"></i>
-                                <span id="visibleGameCount">44 oyun listelendi</span>
+                                <span id="visibleGameCount">64 oyun listelendi</span>
                             </span>
-                            <span class="zeythan-stats-caption">En az 30 oyun - yeni öneriler için #oyun-oner kanalına
+                            <span class="zeythan-stats-caption">En az 60 oyun - yeni öneriler için #oyun-oner kanalına
                                 bekliyoruz.</span>
                         </div>
                     </form>
@@ -1941,6 +1981,460 @@
                             <div class="zeythan-tag-group">
                                 <span class="zeythan-tag">RPG</span>
                                 <span class="zeythan-tag">Keşif</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,pvp,tactical" data-name="Helldivers 2">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/553850/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Helldivers 2 kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Helldivers 2</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Kooperatif</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">Taktik</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,pvp" data-name="Marvel Rivals">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2767030/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Marvel Rivals kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Marvel Rivals</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Kahraman</span>
+                                <span><i class="fas fa-users"></i> 6v6</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">Kahraman</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,pvp" data-name="The Finals">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2073850/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="The Finals kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">The Finals</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Arena</span>
+                                <span><i class="fas fa-users"></i> 3v3v3</span>
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">Arena</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,tactical" data-name="Ready or Not">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1144200/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Ready or Not kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Ready or Not</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Taktik</span>
+                                <span><i class="fas fa-users"></i> 1-5 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">Taktik</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,survival,pvp" data-name="Hunt: Showdown">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/594650/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Hunt Showdown kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Hunt: Showdown</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> PvPvE</span>
+                                <span><i class="fas fa-users"></i> 1-3 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2019</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,survival" data-name="Deep Rock Galactic">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/548430/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Deep Rock Galactic kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Deep Rock Galactic</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Kooperatif</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2020</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,rpg" data-name="Valheim">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/892970/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Valheim kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Valheim</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Viking</span>
+                                <span><i class="fas fa-users"></i> 1-10 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2021</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">RPG</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,rpg,casual" data-name="Terraria">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/105600/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Terraria kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Terraria</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Sandbox</span>
+                                <span><i class="fas fa-users"></i> 1-8 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2011</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">Sandbox</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,rpg" data-name="Project Zomboid">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/108600/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Project Zomboid kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Project Zomboid</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Zombi</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2013</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">RPG</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,mmo" data-name="DayZ">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/221100/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="DayZ kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">DayZ</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Zombi</span>
+                                <span><i class="fas fa-users"></i> MMO</span>
+                                <span><i class="fas fa-calendar"></i> 2018</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">MMO</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="casual,pvp" data-name="Grand Theft Auto V">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Grand Theft Auto V kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Grand Theft Auto V</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Açık Dünya</span>
+                                <span><i class="fas fa-users"></i> Online</span>
+                                <span><i class="fas fa-calendar"></i> 2013</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Açık Dünya</span>
+                                <span class="zeythan-tag">Online</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="rpg" data-name="Monster Hunter: World">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/582010/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Monster Hunter World kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Monster Hunter: World</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Aksiyon RPG</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2018</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">RPG</span>
+                                <span class="zeythan-tag">Aksiyon</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="rpg,tactical" data-name="Sekiro: Shadows Die Twice">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/814380/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Sekiro Shadows Die Twice kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Sekiro: Shadows Die Twice</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Souls-like</span>
+                                <span><i class="fas fa-users"></i> Tek Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2019</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">RPG</span>
+                                <span class="zeythan-tag">Souls-like</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,tactical" data-name="Resident Evil 4">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Resident Evil 4 kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Resident Evil 4</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Korku</span>
+                                <span><i class="fas fa-users"></i> Tek Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">Korku</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,pvp" data-name="Dead by Daylight">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/381210/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Dead by Daylight kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Dead by Daylight</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Asimetrik</span>
+                                <span><i class="fas fa-users"></i> 1v4</span>
+                                <span><i class="fas fa-calendar"></i> 2016</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">Asimetrik</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="fps,mmo" data-name="Warframe">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/230410/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Warframe kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Warframe</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Looter</span>
+                                <span><i class="fas fa-users"></i> MMO</span>
+                                <span><i class="fas fa-calendar"></i> 2013</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">FPS</span>
+                                <span class="zeythan-tag">MMO</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,casual" data-name="Satisfactory">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/526870/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Satisfactory kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Satisfactory</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Fabrika</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">Fabrika</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="casual" data-name="Forza Horizon 5">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1551360/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Forza Horizon 5 kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Forza Horizon 5</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Yarış</span>
+                                <span><i class="fas fa-users"></i> Online</span>
+                                <span><i class="fas fa-calendar"></i> 2021</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Yarış</span>
+                                <span class="zeythan-tag">Online</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fab fa-playstation"></i> Konsol</span>
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,casual" data-name="Phasmophobia">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/739630/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Phasmophobia kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Phasmophobia</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Korku</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2020</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">Korku</span>
+                            </div>
+                        </div>
+                        <div class="zeythan-platform-icons">
+                            <span><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </article>
+
+                    <article class="zeythan-game-card" data-tags="survival,casual" data-name="Lethal Company">
+                        <figure class="zeythan-game-cover">
+                            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1966720/library_600x900.jpg" loading="lazy" decoding="async"
+                                alt="Lethal Company kapak görseli">
+                        </figure>
+                        <div class="zeythan-game-meta">
+                            <h2 class="zeythan-game-name">Lethal Company</h2>
+                            <div class="zeythan-game-details">
+                                <span><i class="fas fa-bolt"></i> Kooperatif</span>
+                                <span><i class="fas fa-users"></i> 1-4 Oyuncu</span>
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                            </div>
+                            <div class="zeythan-tag-group">
+                                <span class="zeythan-tag">Hayatta Kalma</span>
+                                <span class="zeythan-tag">Kooperatif</span>
                             </div>
                         </div>
                         <div class="zeythan-platform-icons">
