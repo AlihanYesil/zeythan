@@ -26,7 +26,7 @@
     <link href="./bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="./bootstrap.bundle.min.js" defer></script>
-    <script src="./config.js?v=20260927d" defer></script>
+    <script src="./config.js?v=20260930a" defer></script>
     <style>
         * {
             margin: 0;
@@ -612,6 +612,7 @@
 </head>
 
 <body class="zeythan-bg-darker">
+<noscript><div class="alert alert-info text-center m-3" role="status">JavaScript kapali oldugu icin davet kodu otomatik yenilenemiyor. Discord'a katilmak icin <a href="https://discord.gg/vySpw7f4" target="_blank" rel="noopener noreferrer">bu baglantiya</a> tiklayin.</div></noscript>
     <button class="zeythan-sidebar-toggle" type="button" aria-label="Menüyü aç">
         <i class="fas fa-bars"></i>
     </button>
@@ -646,20 +647,22 @@
                     Sunucu Aktiviteleri
                     <i class="fas fa-signal"></i>
                 </a>
-                                <details class="zeythan-vpn-sidebar-menu">
+                <details class="zeythan-vpn-sidebar-menu">
                     <summary class="zeythan-sidebar-link zeythan-vpn-sidebar-toggle">
                         VPN <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </summary>
                     <div class="zeythan-vpn-sidebar-submenu">
-                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./discord-vpn" data-close-on-click="true">
+                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./discord-vpn"
+                            data-close-on-click="true">
                             SplitWire <i class="fas fa-shield-halved" aria-hidden="true"></i>
                         </a>
-                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./goodbyedpi" data-close-on-click="true">
+                        <a class="zeythan-sidebar-link zeythan-vpn-sidebar-item" href="./goodbyedpi"
+                            data-close-on-click="true">
                             GoodbyeDPI <i class="fas fa-shield-halved" aria-hidden="true"></i>
                         </a>
                     </div>
                 </details>
-                <a class="zeythan-sidebar-link" href="https://discord.gg/Br3wVHfJkg" data-config="discordUrl" target="_blank" rel="noopener"
+                <a class="zeythan-sidebar-link" data-config="discordUrl" target="_blank" rel="noopener"
                     data-close-on-click="true">
                     Discord Sunucusu
                     <i class="fab fa-discord"></i>
@@ -689,8 +692,8 @@
                             <source src="./zeythan.mp4" type="video/mp4">
 
                         </video>
-                        <img class="zeythan-hero-fallback" src="./zeythan-logo.webp" alt="ZEYTHAN hero görseli" loading="lazy"
-                            hidden>
+                        <img class="zeythan-hero-fallback" src="./zeythan-logo.webp" alt="ZEYTHAN hero görseli"
+                            loading="lazy" hidden>
                     </div>
                     <h1 class="zeythan-hero-title mb-3">
                         <span class="title-primary">ZEYTHAN</span>
@@ -698,19 +701,22 @@
                         <span class="title-secondary">Gaming Topluluğu</span>
                     </h1>
                     <p class="lead text-white mb-3" style="font-size: 1.75rem;">Oyun, ekip, rekabet.</p>
-                    <p class="text-secondary mb-4" style="font-size: 0.95rem; line-height: 1.5;">CS2 sunucumuzda rekabet et, Discord'da ekibini kur. ZEYTHAN'da oyun keyifli, ortam saygılı.</p>
+                    <p class="text-secondary mb-4" style="font-size: 0.95rem; line-height: 1.5;">CS2 sunucumuzda rekabet
+                        et, Discord'da ekibini kur. ZEYTHAN'da oyun keyifli, ortam saygılı.</p>
 
                     <!-- Buttons -->
                     <div class="zeythan-hero-button-stack">
                         <div class="zeythan-hero-button-row">
                             <!-- Discord Button -->
-                            <a href="https://discord.gg/Br3wVHfJkg" data-config="discordUrl" target="_blank" class="btn btn-lg fw-semibold px-4"
+                            <a data-config="discordUrl" target="_blank" rel="noopener"
+                                class="btn btn-lg fw-semibold px-4"
                                 style="background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%); color: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);">
                                 <i class="fab fa-discord"></i> Discord Sunucusuna Katıl
                             </a>
 
                             <!-- CS2 Button with Modal -->
-                            <button class="btn btn-lg fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#cs2Modal"
+                            <button class="btn btn-lg fw-semibold px-4" data-bs-toggle="modal"
+                                data-bs-target="#cs2Modal"
                                 style="background: linear-gradient(135deg, #ff6a00 0%, #cc5500 100%); color: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);">
                                 <i class="fab fa-steam"></i> CS2 Sunucusuna Bağlan
                             </button>
@@ -730,8 +736,8 @@
                     </div>
 
                     <!-- Canlı aktivite çipi -->
-                    <button class="zeythan-activity-chip" type="button" data-activity-chip hidden
-                        data-bs-toggle="modal" data-bs-target="#activityModal">
+                    <button class="zeythan-activity-chip" type="button" data-activity-chip hidden data-bs-toggle="modal"
+                        data-bs-target="#activityModal">
                         <span class="zeythan-live-dot" aria-hidden="true"></span>
                         <span data-activity-chip-text>Sunucu aktiviteleri</span>
                         <span class="zeythan-activity-chip-cta">Detaylar <i class="fas fa-arrow-right"
@@ -756,13 +762,15 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="alert alert-warning text-dark mb-3" role="status"><i class="fas fa-tools" aria-hidden="true"></i> CS2 sunucumuz şu an için bakımdadır.</div>
+                    <div class="alert alert-warning text-dark mb-3" role="status"><i class="fas fa-tools"
+                            aria-hidden="true"></i> CS2 sunucumuz şu an için bakımdadır.</div>
                     <div class="mb-3">
                         <label class="form-label zeythan-form-label text-muted">Sunucu Bilgisi:</label>
                         <div class="input-group">
                             <input type="text"
                                 class="form-control zeythan-form-control bg-secondary text-white border-light"
-                                id="cs2ServerInfo" value="CONNECT 194.105.5.172" data-config="cs2ConnectCommand" readonly>
+                                id="cs2ServerInfo" value="CONNECT 194.105.5.172" data-config="cs2ConnectCommand"
+                                readonly>
                             <button class="btn btn-primary" type="button" onclick="copyCS2Info()">
                                 <i class="fas fa-copy"></i> Kopyala
                             </button>
